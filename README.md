@@ -46,9 +46,9 @@ stock-market-lstm/
 │
 ├── data/
 │   ├── raw/
-│   │   └── AAPL_2018_2022.csv
+│   │   └── raw_data.csv
 │   └── processed/
-│       └── train_test_split.pkl
+│       └── preprocessed.csv
 |   |__ parquetToCSV.py
 │
 ├── notebooks/
