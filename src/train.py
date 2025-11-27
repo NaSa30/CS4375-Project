@@ -4,6 +4,7 @@ from rnn import RNN
 from lstm import LSTM
 from preprocess import create_dataloaders
 import matplotlib.pyplot as plt
+import sys
 
 # training function using batches from data loader
 def train(model, train_loader, epochs=10, verbose=1):
@@ -106,6 +107,11 @@ def plot_bar_metric(results, metric, save_path, title=None):
 
 
 def main():
+
+    #logging all the console information to track progress and best model 
+    log_file = open("results/training_output.log", "w")
+    sys.stdout = log_file
+
     parquet_path = "data/raw/raw_data.parquet"
     # load the dataloaders
     train_loader, test_loader, scaler = create_dataloaders(
@@ -169,10 +175,18 @@ def main():
                         "name": model_name,
                         "metrics": metrics
                     })
-
+        best_model = min(results, key=lambda r: r["metrics"]["mse"])
+        print(f"\nBest {model_type} Model: {best_model['name']} with MSE: {best_model['metrics']['mse']:.6f}, MAE: {best_model['metrics']['mae']:.6f}")
+        
         # plot bar charts for MSE and MAE
         plot_bar_metric(results, "mse", save_path=f"results/{model_type}_mse_comparison.png", title=f"{model_type} MSE Comparison")
         plot_bar_metric(results, "mae", save_path=f"results/{model_type}_mae_comparison.png", title=f"{model_type} MAE Comparison")
+
+
+
+    sys.stdout = sys.__stdout__
+    log_file.close()
+    print("\nTraining complete! Best models saved in results/ directory.")
 
 
 if __name__ == "__main__":

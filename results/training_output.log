@@ -1,0 +1,1024 @@
+
+Training Model: RNN_hs16_lr0.001_ep20
+Starting training.
+
+Epoch 1/20 — avg loss: 3576.301196
+Epoch 2/20 — avg loss: 2460.492696
+Epoch 3/20 — avg loss: 1679.678840
+Epoch 4/20 — avg loss: 1329.390020
+Epoch 5/20 — avg loss: 1201.454692
+Epoch 6/20 — avg loss: 1134.763686
+Epoch 7/20 — avg loss: 1083.785536
+Epoch 8/20 — avg loss: 1039.490741
+Epoch 9/20 — avg loss: 1013.953927
+Epoch 10/20 — avg loss: 987.689559
+Epoch 11/20 — avg loss: 965.231137
+Epoch 12/20 — avg loss: 958.080707
+Epoch 13/20 — avg loss: 947.272800
+Epoch 14/20 — avg loss: 942.897072
+Epoch 15/20 — avg loss: 933.602791
+Epoch 16/20 — avg loss: 936.726220
+Epoch 17/20 — avg loss: 932.195985
+Epoch 18/20 — avg loss: 929.162957
+Epoch 19/20 — avg loss: 923.244960
+Epoch 20/20 — avg loss: 923.452035
+
+Test MSE: 7529.759256, MAE:85.842913
+Saved model → models/RNN_hs16_lr0.001_ep20.npz
+Saved loss plot → results/RNN_hs16_lr0.001_ep20_loss.png
+Saved prediction plot → results/RNN_hs16_lr0.001_ep20_predictions.png
+
+Training Model: RNN_hs16_lr0.001_ep30
+Starting training.
+
+Epoch 1/30 — avg loss: 3563.109768
+Epoch 2/30 — avg loss: 2468.760032
+Epoch 3/30 — avg loss: 1666.956905
+Epoch 4/30 — avg loss: 1325.885733
+Epoch 5/30 — avg loss: 1189.776543
+Epoch 6/30 — avg loss: 1128.856649
+Epoch 7/30 — avg loss: 1081.728778
+Epoch 8/30 — avg loss: 1038.239589
+Epoch 9/30 — avg loss: 1006.507463
+Epoch 10/30 — avg loss: 981.061144
+Epoch 11/30 — avg loss: 964.679826
+Epoch 12/30 — avg loss: 953.344347
+Epoch 13/30 — avg loss: 948.856697
+Epoch 14/30 — avg loss: 941.518604
+Epoch 15/30 — avg loss: 938.033634
+Epoch 16/30 — avg loss: 934.250882
+Epoch 17/30 — avg loss: 930.950857
+Epoch 18/30 — avg loss: 929.049959
+Epoch 19/30 — avg loss: 925.102033
+Epoch 20/30 — avg loss: 925.008453
+Epoch 21/30 — avg loss: 925.440124
+Epoch 22/30 — avg loss: 918.481621
+Epoch 23/30 — avg loss: 922.169558
+Epoch 24/30 — avg loss: 924.113475
+Epoch 25/30 — avg loss: 921.349980
+Epoch 26/30 — avg loss: 919.335207
+Epoch 27/30 — avg loss: 922.211232
+Epoch 28/30 — avg loss: 914.603814
+Epoch 29/30 — avg loss: 915.027833
+Epoch 30/30 — avg loss: 921.054082
+
+Test MSE: 7488.611135, MAE:85.602907
+Saved model → models/RNN_hs16_lr0.001_ep30.npz
+Saved loss plot → results/RNN_hs16_lr0.001_ep30_loss.png
+Saved prediction plot → results/RNN_hs16_lr0.001_ep30_predictions.png
+
+Training Model: RNN_hs16_lr0.001_ep50
+Starting training.
+
+Epoch 1/50 — avg loss: 3564.459410
+Epoch 2/50 — avg loss: 2463.334406
+Epoch 3/50 — avg loss: 1684.305623
+Epoch 4/50 — avg loss: 1326.209935
+Epoch 5/50 — avg loss: 1190.410456
+Epoch 6/50 — avg loss: 1125.786687
+Epoch 7/50 — avg loss: 1077.385984
+Epoch 8/50 — avg loss: 1032.508087
+Epoch 9/50 — avg loss: 1006.502710
+Epoch 10/50 — avg loss: 981.517839
+Epoch 11/50 — avg loss: 965.420995
+Epoch 12/50 — avg loss: 952.148123
+Epoch 13/50 — avg loss: 946.107311
+Epoch 14/50 — avg loss: 940.832604
+Epoch 15/50 — avg loss: 936.759585
+Epoch 16/50 — avg loss: 930.022969
+Epoch 17/50 — avg loss: 927.756634
+Epoch 18/50 — avg loss: 927.754329
+Epoch 19/50 — avg loss: 922.816669
+Epoch 20/50 — avg loss: 926.023785
+Epoch 21/50 — avg loss: 923.736653
+Epoch 22/50 — avg loss: 918.926321
+Epoch 23/50 — avg loss: 925.634596
+Epoch 24/50 — avg loss: 922.854689
+Epoch 25/50 — avg loss: 920.616721
+Epoch 26/50 — avg loss: 919.787399
+Epoch 27/50 — avg loss: 921.050108
+Epoch 28/50 — avg loss: 918.816172
+Epoch 29/50 — avg loss: 917.235247
+Epoch 30/50 — avg loss: 917.482621
+Epoch 31/50 — avg loss: 921.447386
+Epoch 32/50 — avg loss: 920.862478
+Epoch 33/50 — avg loss: 914.210417
+Epoch 34/50 — avg loss: 920.901905
+Epoch 35/50 — avg loss: 916.346637
+Epoch 36/50 — avg loss: 917.720704
+Epoch 37/50 — avg loss: 917.076383
+Epoch 38/50 — avg loss: 919.065761
+Epoch 39/50 — avg loss: 918.782871
+Epoch 40/50 — avg loss: 919.486670
+Epoch 41/50 — avg loss: 918.544069
+Epoch 42/50 — avg loss: 919.042199
+Epoch 43/50 — avg loss: 917.458489
+Epoch 44/50 — avg loss: 917.459218
+Epoch 45/50 — avg loss: 918.671482
+Epoch 46/50 — avg loss: 921.391190
+Epoch 47/50 — avg loss: 915.352329
+Epoch 48/50 — avg loss: 917.931069
+Epoch 49/50 — avg loss: 918.495633
+Epoch 50/50 — avg loss: 920.779076
+
+Test MSE: 7472.671173, MAE:85.509752
+Saved model → models/RNN_hs16_lr0.001_ep50.npz
+Saved loss plot → results/RNN_hs16_lr0.001_ep50_loss.png
+Saved prediction plot → results/RNN_hs16_lr0.001_ep50_predictions.png
+
+Training Model: RNN_hs16_lr0.005_ep20
+Starting training.
+
+Epoch 1/20 — avg loss: 1976.949285
+Epoch 2/20 — avg loss: 999.028000
+Epoch 3/20 — avg loss: 939.017324
+Epoch 4/20 — avg loss: 937.324847
+Epoch 5/20 — avg loss: 919.348637
+Epoch 6/20 — avg loss: 927.170748
+Epoch 7/20 — avg loss: 914.208783
+Epoch 8/20 — avg loss: 925.216439
+Epoch 9/20 — avg loss: 919.254809
+Epoch 10/20 — avg loss: 927.665113
+Epoch 11/20 — avg loss: 917.256673
+Epoch 12/20 — avg loss: 903.182528
+Epoch 13/20 — avg loss: 905.019567
+Epoch 14/20 — avg loss: 849.312274
+Epoch 15/20 — avg loss: 803.452984
+Epoch 16/20 — avg loss: 712.232150
+Epoch 17/20 — avg loss: 697.607792
+Epoch 18/20 — avg loss: 620.735930
+Epoch 19/20 — avg loss: 698.988146
+Epoch 20/20 — avg loss: 578.723593
+
+Test MSE: 3758.177433, MAE:59.978451
+Saved model → models/RNN_hs16_lr0.005_ep20.npz
+Saved loss plot → results/RNN_hs16_lr0.005_ep20_loss.png
+Saved prediction plot → results/RNN_hs16_lr0.005_ep20_predictions.png
+
+Training Model: RNN_hs16_lr0.005_ep30
+Starting training.
+
+Epoch 1/30 — avg loss: 2049.530474
+Epoch 2/30 — avg loss: 1015.079376
+Epoch 3/30 — avg loss: 942.383244
+Epoch 4/30 — avg loss: 935.184921
+Epoch 5/30 — avg loss: 920.075223
+Epoch 6/30 — avg loss: 927.912275
+Epoch 7/30 — avg loss: 908.788852
+Epoch 8/30 — avg loss: 916.175276
+Epoch 9/30 — avg loss: 915.333537
+Epoch 10/30 — avg loss: 943.092175
+Epoch 11/30 — avg loss: 810.070744
+Epoch 12/30 — avg loss: 768.672886
+Epoch 13/30 — avg loss: 694.948178
+Epoch 14/30 — avg loss: 676.933430
+Epoch 15/30 — avg loss: 637.830061
+Epoch 16/30 — avg loss: 553.863993
+Epoch 17/30 — avg loss: 300.994485
+Epoch 18/30 — avg loss: 183.746198
+Epoch 19/30 — avg loss: 174.152628
+Epoch 20/30 — avg loss: 115.161692
+Epoch 21/30 — avg loss: 104.088924
+Epoch 22/30 — avg loss: 93.929080
+Epoch 23/30 — avg loss: 93.159974
+Epoch 24/30 — avg loss: 93.390766
+Epoch 25/30 — avg loss: 70.811315
+Epoch 26/30 — avg loss: 53.762856
+Epoch 27/30 — avg loss: 39.769953
+Epoch 28/30 — avg loss: 32.614647
+Epoch 29/30 — avg loss: 28.273584
+Epoch 30/30 — avg loss: 20.145622
+
+Test MSE: 212.887863, MAE:11.889115
+Saved model → models/RNN_hs16_lr0.005_ep30.npz
+Saved loss plot → results/RNN_hs16_lr0.005_ep30_loss.png
+Saved prediction plot → results/RNN_hs16_lr0.005_ep30_predictions.png
+
+Training Model: RNN_hs16_lr0.005_ep50
+Starting training.
+
+Epoch 1/50 — avg loss: 2034.674992
+Epoch 2/50 — avg loss: 1066.080502
+Epoch 3/50 — avg loss: 935.678714
+Epoch 4/50 — avg loss: 921.123399
+Epoch 5/50 — avg loss: 935.546348
+Epoch 6/50 — avg loss: 928.809723
+Epoch 7/50 — avg loss: 914.464624
+Epoch 8/50 — avg loss: 923.468616
+Epoch 9/50 — avg loss: 906.361927
+Epoch 10/50 — avg loss: 911.184114
+Epoch 11/50 — avg loss: 928.639170
+Epoch 12/50 — avg loss: 884.326300
+Epoch 13/50 — avg loss: 847.522519
+Epoch 14/50 — avg loss: 805.168491
+Epoch 15/50 — avg loss: 735.681272
+Epoch 16/50 — avg loss: 706.601421
+Epoch 17/50 — avg loss: 657.000920
+Epoch 18/50 — avg loss: 625.034092
+Epoch 19/50 — avg loss: 641.432406
+Epoch 20/50 — avg loss: 644.954065
+Epoch 21/50 — avg loss: 606.199460
+Epoch 22/50 — avg loss: 304.452236
+Epoch 23/50 — avg loss: 158.463681
+Epoch 24/50 — avg loss: 107.460935
+Epoch 25/50 — avg loss: 93.141861
+Epoch 26/50 — avg loss: 72.221788
+Epoch 27/50 — avg loss: 59.144028
+Epoch 28/50 — avg loss: 49.065534
+Epoch 29/50 — avg loss: 45.120152
+Epoch 30/50 — avg loss: 37.932155
+Epoch 31/50 — avg loss: 32.876946
+Epoch 32/50 — avg loss: 28.233027
+Epoch 33/50 — avg loss: 22.946713
+Epoch 34/50 — avg loss: 18.470636
+Epoch 35/50 — avg loss: 13.613186
+Epoch 36/50 — avg loss: 11.687673
+Epoch 37/50 — avg loss: 12.317839
+Epoch 38/50 — avg loss: 10.345337
+Epoch 39/50 — avg loss: 9.509084
+Epoch 40/50 — avg loss: 9.233102
+Epoch 41/50 — avg loss: 9.199647
+Epoch 42/50 — avg loss: 9.290434
+Epoch 43/50 — avg loss: 8.915781
+Epoch 44/50 — avg loss: 8.438139
+Epoch 45/50 — avg loss: 9.466432
+Epoch 46/50 — avg loss: 9.373705
+Epoch 47/50 — avg loss: 7.849790
+Epoch 48/50 — avg loss: 7.278318
+Epoch 49/50 — avg loss: 8.877664
+Epoch 50/50 — avg loss: 8.709847
+
+Test MSE: 213.347566, MAE:12.024493
+Saved model → models/RNN_hs16_lr0.005_ep50.npz
+Saved loss plot → results/RNN_hs16_lr0.005_ep50_loss.png
+Saved prediction plot → results/RNN_hs16_lr0.005_ep50_predictions.png
+
+Training Model: RNN_hs32_lr0.001_ep20
+Starting training.
+
+Epoch 1/20 — avg loss: 3047.552973
+Epoch 2/20 — avg loss: 1526.530428
+Epoch 3/20 — avg loss: 1172.858196
+Epoch 4/20 — avg loss: 1065.980894
+Epoch 5/20 — avg loss: 1006.708772
+Epoch 6/20 — avg loss: 959.327294
+Epoch 7/20 — avg loss: 946.818368
+Epoch 8/20 — avg loss: 935.805895
+Epoch 9/20 — avg loss: 936.943581
+Epoch 10/20 — avg loss: 924.129442
+Epoch 11/20 — avg loss: 925.082571
+Epoch 12/20 — avg loss: 915.264152
+Epoch 13/20 — avg loss: 921.702581
+Epoch 14/20 — avg loss: 914.778407
+Epoch 15/20 — avg loss: 931.156181
+Epoch 16/20 — avg loss: 916.552553
+Epoch 17/20 — avg loss: 915.187019
+Epoch 18/20 — avg loss: 915.280453
+Epoch 19/20 — avg loss: 926.947703
+Epoch 20/20 — avg loss: 919.793520
+
+Test MSE: 7476.367413, MAE:85.531362
+Saved model → models/RNN_hs32_lr0.001_ep20.npz
+Saved loss plot → results/RNN_hs32_lr0.001_ep20_loss.png
+Saved prediction plot → results/RNN_hs32_lr0.001_ep20_predictions.png
+
+Training Model: RNN_hs32_lr0.001_ep30
+Starting training.
+
+Epoch 1/30 — avg loss: 3048.303984
+Epoch 2/30 — avg loss: 1536.085350
+Epoch 3/30 — avg loss: 1179.595439
+Epoch 4/30 — avg loss: 1066.045990
+Epoch 5/30 — avg loss: 995.882313
+Epoch 6/30 — avg loss: 967.168667
+Epoch 7/30 — avg loss: 945.606227
+Epoch 8/30 — avg loss: 931.505408
+Epoch 9/30 — avg loss: 929.849093
+Epoch 10/30 — avg loss: 918.248543
+Epoch 11/30 — avg loss: 918.110475
+Epoch 12/30 — avg loss: 914.954251
+Epoch 13/30 — avg loss: 923.837331
+Epoch 14/30 — avg loss: 921.073257
+Epoch 15/30 — avg loss: 925.642323
+Epoch 16/30 — avg loss: 924.196911
+Epoch 17/30 — avg loss: 923.124474
+Epoch 18/30 — avg loss: 920.511488
+Epoch 19/30 — avg loss: 916.732518
+Epoch 20/30 — avg loss: 921.391773
+Epoch 21/30 — avg loss: 924.764508
+Epoch 22/30 — avg loss: 912.972033
+Epoch 23/30 — avg loss: 916.752248
+Epoch 24/30 — avg loss: 916.786794
+Epoch 25/30 — avg loss: 913.413249
+Epoch 26/30 — avg loss: 920.830448
+Epoch 27/30 — avg loss: 918.975791
+Epoch 28/30 — avg loss: 924.912868
+Epoch 29/30 — avg loss: 914.050844
+Epoch 30/30 — avg loss: 917.153997
+
+Test MSE: 7491.650012, MAE:85.620655
+Saved model → models/RNN_hs32_lr0.001_ep30.npz
+Saved loss plot → results/RNN_hs32_lr0.001_ep30_loss.png
+Saved prediction plot → results/RNN_hs32_lr0.001_ep30_predictions.png
+
+Training Model: RNN_hs32_lr0.001_ep50
+Starting training.
+
+Epoch 1/50 — avg loss: 3070.964346
+Epoch 2/50 — avg loss: 1537.776966
+Epoch 3/50 — avg loss: 1176.175945
+Epoch 4/50 — avg loss: 1062.790435
+Epoch 5/50 — avg loss: 996.373734
+Epoch 6/50 — avg loss: 967.818666
+Epoch 7/50 — avg loss: 946.115689
+Epoch 8/50 — avg loss: 934.057024
+Epoch 9/50 — avg loss: 927.753523
+Epoch 10/50 — avg loss: 921.925124
+Epoch 11/50 — avg loss: 926.891334
+Epoch 12/50 — avg loss: 920.819660
+Epoch 13/50 — avg loss: 924.619873
+Epoch 14/50 — avg loss: 919.804695
+Epoch 15/50 — avg loss: 919.220784
+Epoch 16/50 — avg loss: 912.561600
+Epoch 17/50 — avg loss: 918.594379
+Epoch 18/50 — avg loss: 929.074946
+Epoch 19/50 — avg loss: 919.477541
+Epoch 20/50 — avg loss: 916.273495
+Epoch 21/50 — avg loss: 917.438637
+Epoch 22/50 — avg loss: 925.621248
+Epoch 23/50 — avg loss: 918.021252
+Epoch 24/50 — avg loss: 917.783866
+Epoch 25/50 — avg loss: 917.166757
+Epoch 26/50 — avg loss: 917.914350
+Epoch 27/50 — avg loss: 926.502052
+Epoch 28/50 — avg loss: 916.059561
+Epoch 29/50 — avg loss: 913.187099
+Epoch 30/50 — avg loss: 914.314388
+Epoch 31/50 — avg loss: 925.500336
+Epoch 32/50 — avg loss: 917.870631
+Epoch 33/50 — avg loss: 916.010363
+Epoch 34/50 — avg loss: 919.709520
+Epoch 35/50 — avg loss: 926.003888
+Epoch 36/50 — avg loss: 921.815514
+Epoch 37/50 — avg loss: 910.491242
+Epoch 38/50 — avg loss: 917.887226
+Epoch 39/50 — avg loss: 918.003753
+Epoch 40/50 — avg loss: 925.860898
+Epoch 41/50 — avg loss: 918.752034
+Epoch 42/50 — avg loss: 913.302043
+Epoch 43/50 — avg loss: 915.950779
+Epoch 44/50 — avg loss: 920.121447
+Epoch 45/50 — avg loss: 922.749844
+Epoch 46/50 — avg loss: 915.417539
+Epoch 47/50 — avg loss: 916.980872
+Epoch 48/50 — avg loss: 919.284310
+Epoch 49/50 — avg loss: 918.571604
+Epoch 50/50 — avg loss: 917.694732
+
+Test MSE: 7477.454699, MAE:85.537718
+Saved model → models/RNN_hs32_lr0.001_ep50.npz
+Saved loss plot → results/RNN_hs32_lr0.001_ep50_loss.png
+Saved prediction plot → results/RNN_hs32_lr0.001_ep50_predictions.png
+
+Training Model: RNN_hs32_lr0.005_ep20
+Starting training.
+
+Epoch 1/20 — avg loss: 1562.426928
+Epoch 2/20 — avg loss: 918.776231
+Epoch 3/20 — avg loss: 957.005121
+Epoch 4/20 — avg loss: 898.534285
+Epoch 5/20 — avg loss: 926.633384
+Epoch 6/20 — avg loss: 933.422345
+Epoch 7/20 — avg loss: 903.391432
+Epoch 8/20 — avg loss: 914.248401
+Epoch 9/20 — avg loss: 914.984905
+Epoch 10/20 — avg loss: 924.549547
+Epoch 11/20 — avg loss: 908.274905
+Epoch 12/20 — avg loss: 916.007777
+Epoch 13/20 — avg loss: 921.243111
+Epoch 14/20 — avg loss: 930.004604
+Epoch 15/20 — avg loss: 936.661260
+Epoch 16/20 — avg loss: 919.897581
+Epoch 17/20 — avg loss: 926.760118
+Epoch 18/20 — avg loss: 928.428667
+Epoch 19/20 — avg loss: 903.570960
+Epoch 20/20 — avg loss: 924.865881
+
+Test MSE: 7831.919723, MAE:87.585194
+Saved model → models/RNN_hs32_lr0.005_ep20.npz
+Saved loss plot → results/RNN_hs32_lr0.005_ep20_loss.png
+Saved prediction plot → results/RNN_hs32_lr0.005_ep20_predictions.png
+
+Training Model: RNN_hs32_lr0.005_ep30
+Starting training.
+
+Epoch 1/30 — avg loss: 1541.850123
+Epoch 2/30 — avg loss: 912.775311
+Epoch 3/30 — avg loss: 914.652024
+Epoch 4/30 — avg loss: 951.079867
+Epoch 5/30 — avg loss: 899.300885
+Epoch 6/30 — avg loss: 916.385974
+Epoch 7/30 — avg loss: 919.018881
+Epoch 8/30 — avg loss: 930.218178
+Epoch 9/30 — avg loss: 901.063301
+Epoch 10/30 — avg loss: 935.347120
+Epoch 11/30 — avg loss: 922.713528
+Epoch 12/30 — avg loss: 907.796423
+Epoch 13/30 — avg loss: 928.608356
+Epoch 14/30 — avg loss: 933.025020
+Epoch 15/30 — avg loss: 909.938440
+Epoch 16/30 — avg loss: 925.329765
+Epoch 17/30 — avg loss: 905.067737
+Epoch 18/30 — avg loss: 930.701572
+Epoch 19/30 — avg loss: 910.265646
+Epoch 20/30 — avg loss: 907.119837
+Epoch 21/30 — avg loss: 945.234887
+Epoch 22/30 — avg loss: 923.738134
+Epoch 23/30 — avg loss: 913.653881
+Epoch 24/30 — avg loss: 916.204626
+Epoch 25/30 — avg loss: 914.622332
+Epoch 26/30 — avg loss: 932.240440
+Epoch 27/30 — avg loss: 914.516203
+Epoch 28/30 — avg loss: 921.388193
+Epoch 29/30 — avg loss: 907.909236
+Epoch 30/30 — avg loss: 930.173580
+
+Test MSE: 7781.314708, MAE:87.295826
+Saved model → models/RNN_hs32_lr0.005_ep30.npz
+Saved loss plot → results/RNN_hs32_lr0.005_ep30_loss.png
+Saved prediction plot → results/RNN_hs32_lr0.005_ep30_predictions.png
+
+Training Model: RNN_hs32_lr0.005_ep50
+Starting training.
+
+Epoch 1/50 — avg loss: 1586.294269
+Epoch 2/50 — avg loss: 920.478532
+Epoch 3/50 — avg loss: 937.874543
+Epoch 4/50 — avg loss: 906.504706
+Epoch 5/50 — avg loss: 934.460432
+Epoch 6/50 — avg loss: 915.400614
+Epoch 7/50 — avg loss: 928.170730
+Epoch 8/50 — avg loss: 901.121051
+Epoch 9/50 — avg loss: 932.376812
+Epoch 10/50 — avg loss: 920.132723
+Epoch 11/50 — avg loss: 927.354866
+Epoch 12/50 — avg loss: 897.664581
+Epoch 13/50 — avg loss: 919.594448
+Epoch 14/50 — avg loss: 921.602052
+Epoch 15/50 — avg loss: 915.401567
+Epoch 16/50 — avg loss: 919.985757
+Epoch 17/50 — avg loss: 902.867603
+Epoch 18/50 — avg loss: 928.362380
+Epoch 19/50 — avg loss: 913.253245
+Epoch 20/50 — avg loss: 927.700613
+Epoch 21/50 — avg loss: 894.516854
+Epoch 22/50 — avg loss: 951.722819
+Epoch 23/50 — avg loss: 910.071148
+Epoch 24/50 — avg loss: 915.792608
+Epoch 25/50 — avg loss: 938.059272
+Epoch 26/50 — avg loss: 908.309411
+Epoch 27/50 — avg loss: 913.480735
+Epoch 28/50 — avg loss: 924.112250
+Epoch 29/50 — avg loss: 917.637625
+Epoch 30/50 — avg loss: 937.869921
+Epoch 31/50 — avg loss: 905.988136
+Epoch 32/50 — avg loss: 920.382282
+Epoch 33/50 — avg loss: 918.937684
+Epoch 34/50 — avg loss: 917.709069
+Epoch 35/50 — avg loss: 927.711193
+Epoch 36/50 — avg loss: 927.000599
+Epoch 37/50 — avg loss: 918.128250
+Epoch 38/50 — avg loss: 911.826608
+Epoch 39/50 — avg loss: 913.816613
+Epoch 40/50 — avg loss: 932.528046
+Epoch 41/50 — avg loss: 915.843335
+Epoch 42/50 — avg loss: 913.959384
+Epoch 43/50 — avg loss: 944.695685
+Epoch 44/50 — avg loss: 911.022149
+Epoch 45/50 — avg loss: 913.364893
+Epoch 46/50 — avg loss: 937.006816
+Epoch 47/50 — avg loss: 922.058532
+Epoch 48/50 — avg loss: 882.667329
+Epoch 49/50 — avg loss: 947.732331
+Epoch 50/50 — avg loss: 906.701989
+
+Test MSE: 7772.517853, MAE:87.245426
+Saved model → models/RNN_hs32_lr0.005_ep50.npz
+Saved loss plot → results/RNN_hs32_lr0.005_ep50_loss.png
+Saved prediction plot → results/RNN_hs32_lr0.005_ep50_predictions.png
+
+Best RNN Model: RNN_hs16_lr0.005_ep30 with MSE: 212.887863, MAE: 11.889115
+Saved metric bar plot → results/RNN_mse_comparison.png
+Saved metric bar plot → results/RNN_mae_comparison.png
+
+Training Model: LSTM_hs16_lr0.001_ep20
+Starting training.
+
+Epoch 1/20 — avg loss: 3607.215803
+Epoch 2/20 — avg loss: 2486.191127
+Epoch 3/20 — avg loss: 1681.207391
+Epoch 4/20 — avg loss: 1318.949934
+Epoch 5/20 — avg loss: 1192.926123
+Epoch 6/20 — avg loss: 1126.294255
+Epoch 7/20 — avg loss: 1076.987162
+Epoch 8/20 — avg loss: 1031.437111
+Epoch 9/20 — avg loss: 995.450386
+Epoch 10/20 — avg loss: 978.087091
+Epoch 11/20 — avg loss: 958.420711
+Epoch 12/20 — avg loss: 920.016154
+Epoch 13/20 — avg loss: 875.935473
+Epoch 14/20 — avg loss: 855.707591
+Epoch 15/20 — avg loss: 816.318617
+Epoch 16/20 — avg loss: 779.597621
+Epoch 17/20 — avg loss: 747.982285
+Epoch 18/20 — avg loss: 721.555652
+Epoch 19/20 — avg loss: 690.847405
+Epoch 20/20 — avg loss: 671.584630
+
+Test MSE: 4761.458443, MAE:67.828480
+Saved model → models/LSTM_hs16_lr0.001_ep20.npz
+Saved loss plot → results/LSTM_hs16_lr0.001_ep20_loss.png
+Saved prediction plot → results/LSTM_hs16_lr0.001_ep20_predictions.png
+
+Training Model: LSTM_hs16_lr0.001_ep30
+Starting training.
+
+Epoch 1/30 — avg loss: 3597.929068
+Epoch 2/30 — avg loss: 2488.862842
+Epoch 3/30 — avg loss: 1681.488482
+Epoch 4/30 — avg loss: 1313.749062
+Epoch 5/30 — avg loss: 1195.450280
+Epoch 6/30 — avg loss: 1133.825181
+Epoch 7/30 — avg loss: 1076.121030
+Epoch 8/30 — avg loss: 1040.384382
+Epoch 9/30 — avg loss: 1007.872048
+Epoch 10/30 — avg loss: 984.975548
+Epoch 11/30 — avg loss: 964.066737
+Epoch 12/30 — avg loss: 937.234188
+Epoch 13/30 — avg loss: 882.089713
+Epoch 14/30 — avg loss: 860.481001
+Epoch 15/30 — avg loss: 829.692319
+Epoch 16/30 — avg loss: 799.400155
+Epoch 17/30 — avg loss: 768.149348
+Epoch 18/30 — avg loss: 734.821406
+Epoch 19/30 — avg loss: 708.145740
+Epoch 20/30 — avg loss: 678.514368
+Epoch 21/30 — avg loss: 657.444981
+Epoch 22/30 — avg loss: 653.356977
+Epoch 23/30 — avg loss: 647.580355
+Epoch 24/30 — avg loss: 648.081040
+Epoch 25/30 — avg loss: 646.265439
+Epoch 26/30 — avg loss: 658.032965
+Epoch 27/30 — avg loss: 678.699610
+Epoch 28/30 — avg loss: 677.996450
+Epoch 29/30 — avg loss: 677.986175
+Epoch 30/30 — avg loss: 698.751039
+
+Test MSE: 2753.695586, MAE:50.920716
+Saved model → models/LSTM_hs16_lr0.001_ep30.npz
+Saved loss plot → results/LSTM_hs16_lr0.001_ep30_loss.png
+Saved prediction plot → results/LSTM_hs16_lr0.001_ep30_predictions.png
+
+Training Model: LSTM_hs16_lr0.001_ep50
+Starting training.
+
+Epoch 1/50 — avg loss: 3620.003643
+Epoch 2/50 — avg loss: 2503.071348
+Epoch 3/50 — avg loss: 1687.390544
+Epoch 4/50 — avg loss: 1326.516170
+Epoch 5/50 — avg loss: 1196.721236
+Epoch 6/50 — avg loss: 1133.830509
+Epoch 7/50 — avg loss: 1082.999329
+Epoch 8/50 — avg loss: 1041.060760
+Epoch 9/50 — avg loss: 1007.533824
+Epoch 10/50 — avg loss: 985.458569
+Epoch 11/50 — avg loss: 957.475196
+Epoch 12/50 — avg loss: 893.829902
+Epoch 13/50 — avg loss: 871.055577
+Epoch 14/50 — avg loss: 836.437232
+Epoch 15/50 — avg loss: 806.357256
+Epoch 16/50 — avg loss: 765.918080
+Epoch 17/50 — avg loss: 733.072270
+Epoch 18/50 — avg loss: 705.075758
+Epoch 19/50 — avg loss: 677.991977
+Epoch 20/50 — avg loss: 670.233196
+Epoch 21/50 — avg loss: 659.083270
+Epoch 22/50 — avg loss: 647.782990
+Epoch 23/50 — avg loss: 650.963143
+Epoch 24/50 — avg loss: 656.073373
+Epoch 25/50 — avg loss: 678.211978
+Epoch 26/50 — avg loss: 686.386844
+Epoch 27/50 — avg loss: 698.293963
+Epoch 28/50 — avg loss: 707.910875
+Epoch 29/50 — avg loss: 722.438423
+Epoch 30/50 — avg loss: 728.744779
+Epoch 31/50 — avg loss: 741.547884
+Epoch 32/50 — avg loss: 752.192138
+Epoch 33/50 — avg loss: 755.196626
+Epoch 34/50 — avg loss: 734.391117
+Epoch 35/50 — avg loss: 766.057463
+Epoch 36/50 — avg loss: 776.402690
+Epoch 37/50 — avg loss: 769.706656
+Epoch 38/50 — avg loss: 792.886531
+Epoch 39/50 — avg loss: 801.252902
+Epoch 40/50 — avg loss: 788.988402
+Epoch 41/50 — avg loss: 837.069242
+Epoch 42/50 — avg loss: 819.417487
+Epoch 43/50 — avg loss: 858.183281
+Epoch 44/50 — avg loss: 836.043272
+Epoch 45/50 — avg loss: 838.802692
+Epoch 46/50 — avg loss: 841.739675
+Epoch 47/50 — avg loss: 812.466204
+Epoch 48/50 — avg loss: 813.131422
+Epoch 49/50 — avg loss: 793.032314
+Epoch 50/50 — avg loss: 801.400534
+
+Test MSE: 1067.055332, MAE:29.989681
+Saved model → models/LSTM_hs16_lr0.001_ep50.npz
+Saved loss plot → results/LSTM_hs16_lr0.001_ep50_loss.png
+Saved prediction plot → results/LSTM_hs16_lr0.001_ep50_predictions.png
+
+Training Model: LSTM_hs16_lr0.005_ep20
+Starting training.
+
+Epoch 1/20 — avg loss: 2068.634718
+Epoch 2/20 — avg loss: 1021.241573
+Epoch 3/20 — avg loss: 779.470750
+Epoch 4/20 — avg loss: 608.211586
+Epoch 5/20 — avg loss: 570.963305
+Epoch 6/20 — avg loss: 490.519338
+Epoch 7/20 — avg loss: 498.786988
+Epoch 8/20 — avg loss: 126.036014
+Epoch 9/20 — avg loss: 72.796979
+Epoch 10/20 — avg loss: 66.263635
+Epoch 11/20 — avg loss: 50.288753
+Epoch 12/20 — avg loss: 42.434553
+Epoch 13/20 — avg loss: 36.258380
+Epoch 14/20 — avg loss: 32.023975
+Epoch 15/20 — avg loss: 31.099729
+Epoch 16/20 — avg loss: 29.648788
+Epoch 17/20 — avg loss: 30.386808
+Epoch 18/20 — avg loss: 28.213348
+Epoch 19/20 — avg loss: 28.043042
+Epoch 20/20 — avg loss: 30.566032
+
+Test MSE: 499.655652, MAE:18.850212
+Saved model → models/LSTM_hs16_lr0.005_ep20.npz
+Saved loss plot → results/LSTM_hs16_lr0.005_ep20_loss.png
+Saved prediction plot → results/LSTM_hs16_lr0.005_ep20_predictions.png
+
+Training Model: LSTM_hs16_lr0.005_ep30
+Starting training.
+
+Epoch 1/30 — avg loss: 2074.862065
+Epoch 2/30 — avg loss: 1057.643912
+Epoch 3/30 — avg loss: 837.957367
+Epoch 4/30 — avg loss: 657.451770
+Epoch 5/30 — avg loss: 553.727281
+Epoch 6/30 — avg loss: 570.710926
+Epoch 7/30 — avg loss: 629.341673
+Epoch 8/30 — avg loss: 626.215595
+Epoch 9/30 — avg loss: 597.138747
+Epoch 10/30 — avg loss: 442.027083
+Epoch 11/30 — avg loss: 158.231830
+Epoch 12/30 — avg loss: 64.551690
+Epoch 13/30 — avg loss: 41.599989
+Epoch 14/30 — avg loss: 33.888010
+Epoch 15/30 — avg loss: 22.115774
+Epoch 16/30 — avg loss: 16.192324
+Epoch 17/30 — avg loss: 13.460264
+Epoch 18/30 — avg loss: 12.750336
+Epoch 19/30 — avg loss: 11.816463
+Epoch 20/30 — avg loss: 10.804848
+Epoch 21/30 — avg loss: 10.665684
+Epoch 22/30 — avg loss: 10.149790
+Epoch 23/30 — avg loss: 9.524597
+Epoch 24/30 — avg loss: 9.421577
+Epoch 25/30 — avg loss: 8.854867
+Epoch 26/30 — avg loss: 8.967485
+Epoch 27/30 — avg loss: 9.124276
+Epoch 28/30 — avg loss: 9.121725
+Epoch 29/30 — avg loss: 8.666506
+Epoch 30/30 — avg loss: 8.787307
+
+Test MSE: 223.114154, MAE:12.219059
+Saved model → models/LSTM_hs16_lr0.005_ep30.npz
+Saved loss plot → results/LSTM_hs16_lr0.005_ep30_loss.png
+Saved prediction plot → results/LSTM_hs16_lr0.005_ep30_predictions.png
+
+Training Model: LSTM_hs16_lr0.005_ep50
+Starting training.
+
+Epoch 1/50 — avg loss: 2038.844725
+Epoch 2/50 — avg loss: 1062.516561
+Epoch 3/50 — avg loss: 876.935648
+Epoch 4/50 — avg loss: 674.898760
+Epoch 5/50 — avg loss: 480.179257
+Epoch 6/50 — avg loss: 397.591235
+Epoch 7/50 — avg loss: 380.531711
+Epoch 8/50 — avg loss: 334.934524
+Epoch 9/50 — avg loss: 155.222328
+Epoch 10/50 — avg loss: 58.771610
+Epoch 11/50 — avg loss: 39.371495
+Epoch 12/50 — avg loss: 27.048961
+Epoch 13/50 — avg loss: 21.065982
+Epoch 14/50 — avg loss: 19.991337
+Epoch 15/50 — avg loss: 19.264204
+Epoch 16/50 — avg loss: 18.949188
+Epoch 17/50 — avg loss: 17.988742
+Epoch 18/50 — avg loss: 13.672461
+Epoch 19/50 — avg loss: 11.872888
+Epoch 20/50 — avg loss: 11.653166
+Epoch 21/50 — avg loss: 10.541312
+Epoch 22/50 — avg loss: 9.289192
+Epoch 23/50 — avg loss: 8.860946
+Epoch 24/50 — avg loss: 9.185887
+Epoch 25/50 — avg loss: 8.260990
+Epoch 26/50 — avg loss: 8.138160
+Epoch 27/50 — avg loss: 7.354967
+Epoch 28/50 — avg loss: 7.266976
+Epoch 29/50 — avg loss: 7.026804
+Epoch 30/50 — avg loss: 6.807856
+Epoch 31/50 — avg loss: 6.558759
+Epoch 32/50 — avg loss: 6.067233
+Epoch 33/50 — avg loss: 5.655877
+Epoch 34/50 — avg loss: 5.056459
+Epoch 35/50 — avg loss: 5.138730
+Epoch 36/50 — avg loss: 5.203425
+Epoch 37/50 — avg loss: 4.657062
+Epoch 38/50 — avg loss: 4.030269
+Epoch 39/50 — avg loss: 3.892642
+Epoch 40/50 — avg loss: 3.854914
+Epoch 41/50 — avg loss: 3.649123
+Epoch 42/50 — avg loss: 3.760057
+Epoch 43/50 — avg loss: 3.446078
+Epoch 44/50 — avg loss: 3.520755
+Epoch 45/50 — avg loss: 3.336464
+Epoch 46/50 — avg loss: 3.283132
+Epoch 47/50 — avg loss: 3.115236
+Epoch 48/50 — avg loss: 3.124201
+Epoch 49/50 — avg loss: 2.983226
+Epoch 50/50 — avg loss: 2.961101
+
+Test MSE: 288.244577, MAE:13.857178
+Saved model → models/LSTM_hs16_lr0.005_ep50.npz
+Saved loss plot → results/LSTM_hs16_lr0.005_ep50_loss.png
+Saved prediction plot → results/LSTM_hs16_lr0.005_ep50_predictions.png
+
+Training Model: LSTM_hs32_lr0.001_ep20
+Starting training.
+
+Epoch 1/20 — avg loss: 3101.633613
+Epoch 2/20 — avg loss: 1533.670199
+Epoch 3/20 — avg loss: 1151.575180
+Epoch 4/20 — avg loss: 1055.186884
+Epoch 5/20 — avg loss: 998.640143
+Epoch 6/20 — avg loss: 967.478783
+Epoch 7/20 — avg loss: 948.794303
+Epoch 8/20 — avg loss: 938.607740
+Epoch 9/20 — avg loss: 928.903778
+Epoch 10/20 — avg loss: 939.900250
+Epoch 11/20 — avg loss: 864.652767
+Epoch 12/20 — avg loss: 622.454620
+Epoch 13/20 — avg loss: 425.061778
+Epoch 14/20 — avg loss: 286.873529
+Epoch 15/20 — avg loss: 217.069913
+Epoch 16/20 — avg loss: 211.230988
+Epoch 17/20 — avg loss: 117.865048
+Epoch 18/20 — avg loss: 81.191275
+Epoch 19/20 — avg loss: 63.205752
+Epoch 20/20 — avg loss: 50.908592
+
+Test MSE: 692.924759, MAE:23.146946
+Saved model → models/LSTM_hs32_lr0.001_ep20.npz
+Saved loss plot → results/LSTM_hs32_lr0.001_ep20_loss.png
+Saved prediction plot → results/LSTM_hs32_lr0.001_ep20_predictions.png
+
+Training Model: LSTM_hs32_lr0.001_ep30
+Starting training.
+
+Epoch 1/30 — avg loss: 3104.648992
+Epoch 2/30 — avg loss: 1551.971050
+Epoch 3/30 — avg loss: 1171.797441
+Epoch 4/30 — avg loss: 1072.850127
+Epoch 5/30 — avg loss: 990.110235
+Epoch 6/30 — avg loss: 963.421687
+Epoch 7/30 — avg loss: 949.626461
+Epoch 8/30 — avg loss: 939.852685
+Epoch 9/30 — avg loss: 927.637853
+Epoch 10/30 — avg loss: 928.141940
+Epoch 11/30 — avg loss: 920.780146
+Epoch 12/30 — avg loss: 922.767325
+Epoch 13/30 — avg loss: 817.977082
+Epoch 14/30 — avg loss: 560.730955
+Epoch 15/30 — avg loss: 375.292185
+Epoch 16/30 — avg loss: 258.367427
+Epoch 17/30 — avg loss: 201.463131
+Epoch 18/30 — avg loss: 161.649068
+Epoch 19/30 — avg loss: 110.418373
+Epoch 20/30 — avg loss: 100.025529
+Epoch 21/30 — avg loss: 91.250073
+Epoch 22/30 — avg loss: 82.491897
+Epoch 23/30 — avg loss: 63.660973
+Epoch 24/30 — avg loss: 53.563471
+Epoch 25/30 — avg loss: 48.891667
+Epoch 26/30 — avg loss: 45.835471
+Epoch 27/30 — avg loss: 42.800700
+Epoch 28/30 — avg loss: 41.562272
+Epoch 29/30 — avg loss: 37.925311
+Epoch 30/30 — avg loss: 36.782634
+
+Test MSE: 498.741647, MAE:18.894511
+Saved model → models/LSTM_hs32_lr0.001_ep30.npz
+Saved loss plot → results/LSTM_hs32_lr0.001_ep30_loss.png
+Saved prediction plot → results/LSTM_hs32_lr0.001_ep30_predictions.png
+
+Training Model: LSTM_hs32_lr0.001_ep50
+Starting training.
+
+Epoch 1/50 — avg loss: 3097.251189
+Epoch 2/50 — avg loss: 1548.728739
+Epoch 3/50 — avg loss: 1169.344780
+Epoch 4/50 — avg loss: 1062.402401
+Epoch 5/50 — avg loss: 1012.927436
+Epoch 6/50 — avg loss: 961.122983
+Epoch 7/50 — avg loss: 943.819043
+Epoch 8/50 — avg loss: 939.116741
+Epoch 9/50 — avg loss: 924.302643
+Epoch 10/50 — avg loss: 925.135426
+Epoch 11/50 — avg loss: 917.195005
+Epoch 12/50 — avg loss: 883.800695
+Epoch 13/50 — avg loss: 782.394245
+Epoch 14/50 — avg loss: 729.868872
+Epoch 15/50 — avg loss: 692.893186
+Epoch 16/50 — avg loss: 639.239292
+Epoch 17/50 — avg loss: 626.426836
+Epoch 18/50 — avg loss: 606.708318
+Epoch 19/50 — avg loss: 590.753498
+Epoch 20/50 — avg loss: 599.235087
+Epoch 21/50 — avg loss: 607.270671
+Epoch 22/50 — avg loss: 615.146215
+Epoch 23/50 — avg loss: 629.840383
+Epoch 24/50 — avg loss: 639.873895
+Epoch 25/50 — avg loss: 594.594122
+Epoch 26/50 — avg loss: 553.950470
+Epoch 27/50 — avg loss: 576.776915
+Epoch 28/50 — avg loss: 564.101997
+Epoch 29/50 — avg loss: 358.723307
+Epoch 30/50 — avg loss: 158.306463
+Epoch 31/50 — avg loss: 119.032454
+Epoch 32/50 — avg loss: 84.778728
+Epoch 33/50 — avg loss: 65.430368
+Epoch 34/50 — avg loss: 53.763742
+Epoch 35/50 — avg loss: 46.078865
+Epoch 36/50 — avg loss: 44.876271
+Epoch 37/50 — avg loss: 39.148249
+Epoch 38/50 — avg loss: 39.198438
+Epoch 39/50 — avg loss: 36.924856
+Epoch 40/50 — avg loss: 35.583832
+Epoch 41/50 — avg loss: 35.924973
+Epoch 42/50 — avg loss: 37.019188
+Epoch 43/50 — avg loss: 34.797549
+Epoch 44/50 — avg loss: 30.089174
+Epoch 45/50 — avg loss: 24.447190
+Epoch 46/50 — avg loss: 20.282569
+Epoch 47/50 — avg loss: 18.029995
+Epoch 48/50 — avg loss: 17.392693
+Epoch 49/50 — avg loss: 15.938648
+Epoch 50/50 — avg loss: 15.853778
+
+Test MSE: 215.895634, MAE:11.949769
+Saved model → models/LSTM_hs32_lr0.001_ep50.npz
+Saved loss plot → results/LSTM_hs32_lr0.001_ep50_loss.png
+Saved prediction plot → results/LSTM_hs32_lr0.001_ep50_predictions.png
+
+Training Model: LSTM_hs32_lr0.005_ep20
+Starting training.
+
+Epoch 1/20 — avg loss: 1583.343835
+Epoch 2/20 — avg loss: 945.650528
+Epoch 3/20 — avg loss: 534.818783
+Epoch 4/20 — avg loss: 107.389585
+Epoch 5/20 — avg loss: 51.837566
+Epoch 6/20 — avg loss: 26.364231
+Epoch 7/20 — avg loss: 86.776797
+Epoch 8/20 — avg loss: 44.501885
+Epoch 9/20 — avg loss: 11.608054
+Epoch 10/20 — avg loss: 17.062507
+Epoch 11/20 — avg loss: 7.783460
+Epoch 12/20 — avg loss: 6.640394
+Epoch 13/20 — avg loss: 6.509302
+Epoch 14/20 — avg loss: 5.903506
+Epoch 15/20 — avg loss: 17.452585
+Epoch 16/20 — avg loss: 5.634320
+Epoch 17/20 — avg loss: 5.398492
+Epoch 18/20 — avg loss: 13.470901
+Epoch 19/20 — avg loss: 4.192242
+Epoch 20/20 — avg loss: 4.236354
+
+Test MSE: 298.390487, MAE:14.107607
+Saved model → models/LSTM_hs32_lr0.005_ep20.npz
+Saved loss plot → results/LSTM_hs32_lr0.005_ep20_loss.png
+Saved prediction plot → results/LSTM_hs32_lr0.005_ep20_predictions.png
+
+Training Model: LSTM_hs32_lr0.005_ep30
+Starting training.
+
+Epoch 1/30 — avg loss: 1564.066898
+Epoch 2/30 — avg loss: 937.073249
+Epoch 3/30 — avg loss: 810.414484
+Epoch 4/30 — avg loss: 511.374105
+Epoch 5/30 — avg loss: 188.833504
+Epoch 6/30 — avg loss: 54.888977
+Epoch 7/30 — avg loss: 30.833560
+Epoch 8/30 — avg loss: 24.517452
+Epoch 9/30 — avg loss: 17.767034
+Epoch 10/30 — avg loss: 13.384072
+Epoch 11/30 — avg loss: 11.654862
+Epoch 12/30 — avg loss: 9.458450
+Epoch 13/30 — avg loss: 8.054136
+Epoch 14/30 — avg loss: 6.531125
+Epoch 15/30 — avg loss: 5.657529
+Epoch 16/30 — avg loss: 5.807015
+Epoch 17/30 — avg loss: 5.128839
+Epoch 18/30 — avg loss: 4.483915
+Epoch 19/30 — avg loss: 4.025221
+Epoch 20/30 — avg loss: 4.043851
+Epoch 21/30 — avg loss: 3.660003
+Epoch 22/30 — avg loss: 3.632740
+Epoch 23/30 — avg loss: 3.555010
+Epoch 24/30 — avg loss: 3.758652
+Epoch 25/30 — avg loss: 3.344642
+Epoch 26/30 — avg loss: 3.385747
+Epoch 27/30 — avg loss: 3.655997
+Epoch 28/30 — avg loss: 3.392105
+Epoch 29/30 — avg loss: 3.208497
+Epoch 30/30 — avg loss: 3.042256
+
+Test MSE: 288.132254, MAE:13.842463
+Saved model → models/LSTM_hs32_lr0.005_ep30.npz
+Saved loss plot → results/LSTM_hs32_lr0.005_ep30_loss.png
+Saved prediction plot → results/LSTM_hs32_lr0.005_ep30_predictions.png
+
+Training Model: LSTM_hs32_lr0.005_ep50
+Starting training.
+
+Epoch 1/50 — avg loss: 1571.506046
+Epoch 2/50 — avg loss: 940.374109
+Epoch 3/50 — avg loss: 676.764097
+Epoch 4/50 — avg loss: 302.089899
+Epoch 5/50 — avg loss: 89.366586
+Epoch 6/50 — avg loss: 51.543943
+Epoch 7/50 — avg loss: 26.569352
+Epoch 8/50 — avg loss: 16.954068
+Epoch 9/50 — avg loss: 13.894365
+Epoch 10/50 — avg loss: 10.450461
+Epoch 11/50 — avg loss: 9.172928
+Epoch 12/50 — avg loss: 7.587013
+Epoch 13/50 — avg loss: 6.946159
+Epoch 14/50 — avg loss: 5.800065
+Epoch 15/50 — avg loss: 5.129521
+Epoch 16/50 — avg loss: 4.919839
+Epoch 17/50 — avg loss: 4.517526
+Epoch 18/50 — avg loss: 4.110769
+Epoch 19/50 — avg loss: 5.466318
+Epoch 20/50 — avg loss: 3.913062
+Epoch 21/50 — avg loss: 3.813800
+Epoch 22/50 — avg loss: 3.618653
+Epoch 23/50 — avg loss: 3.673694
+Epoch 24/50 — avg loss: 3.478721
+Epoch 25/50 — avg loss: 3.762027
+Epoch 26/50 — avg loss: 3.354752
+Epoch 27/50 — avg loss: 3.160495
+Epoch 28/50 — avg loss: 3.172421
+Epoch 29/50 — avg loss: 3.104971
+Epoch 30/50 — avg loss: 3.173542
+Epoch 31/50 — avg loss: 3.211943
+Epoch 32/50 — avg loss: 3.293400
+Epoch 33/50 — avg loss: 3.085740
+Epoch 34/50 — avg loss: 2.954531
+Epoch 35/50 — avg loss: 3.057411
+Epoch 36/50 — avg loss: 2.952099
+Epoch 37/50 — avg loss: 2.819299
+Epoch 38/50 — avg loss: 2.810934
+Epoch 39/50 — avg loss: 2.547654
+Epoch 40/50 — avg loss: 2.673353
+Epoch 41/50 — avg loss: 2.554823
+Epoch 42/50 — avg loss: 2.580905
+Epoch 43/50 — avg loss: 2.537027
+Epoch 44/50 — avg loss: 2.534144
+Epoch 45/50 — avg loss: 2.544178
+Epoch 46/50 — avg loss: 2.598443
+Epoch 47/50 — avg loss: 2.532704
+Epoch 48/50 — avg loss: 2.472723
+Epoch 49/50 — avg loss: 2.591974
+Epoch 50/50 — avg loss: 2.558356
+
+Test MSE: 272.303968, MAE:13.468083
+Saved model → models/LSTM_hs32_lr0.005_ep50.npz
+Saved loss plot → results/LSTM_hs32_lr0.005_ep50_loss.png
+Saved prediction plot → results/LSTM_hs32_lr0.005_ep50_predictions.png
+
+Best LSTM Model: LSTM_hs32_lr0.001_ep50 with MSE: 215.895634, MAE: 11.949769
+Saved metric bar plot → results/LSTM_mse_comparison.png
+Saved metric bar plot → results/LSTM_mae_comparison.png
