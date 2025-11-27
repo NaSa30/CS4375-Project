@@ -1,6 +1,7 @@
 import os
 import numpy as np
 from rnn import RNN
+from lstm import LSTM
 from preprocess import create_dataloaders
 import matplotlib.pyplot as plt
 
@@ -57,9 +58,9 @@ def evaluate(model, test_loader):
     targets = np.array(targets)
 
     mse = np.mean((preds - targets)**2)
-    print(f"\nTest MSE: {mse:.6f}")
-
-    return preds, targets, mse
+    mae = np.mean(np.abs(preds - targets))
+    print(f"\nTest MSE: {mse:.6f}, MAE:{mae:.6f}")
+    return preds, targets, {"mse": mse, "mae": mae}
 
 # plot and save training loss curve
 def plot_losses(losses, save_path="training_loss.png"):
@@ -71,12 +72,42 @@ def plot_losses(losses, save_path="training_loss.png"):
     plt.grid(True)
     plt.savefig(save_path)
     print(f"Saved loss plot → {save_path}")
+    plt.close()
+
+def plot_predictions(preds, targets, title, save_path):
+    plt.figure(figsize=(10, 5))
+    plt.plot(targets, label="True", linewidth=2)
+    plt.plot(preds, label="Predicted", alpha=0.8)
+    plt.xlabel("Time")
+    plt.ylabel("Scaled Price")
+    plt.title(title)
+    plt.legend()
+    plt.grid(True)
+    plt.tight_layout()
+    plt.savefig(save_path)
+    print(f"Saved prediction plot → {save_path}")
+    plt.close()
+
+def plot_bar_metric(results, metric, save_path, title=None):
+    names = [r["name"] for r in results]
+    values = [r["metrics"][metric] for r in results]
+
+    plt.figure(figsize=(8, 5))
+    plt.bar(names, values)
+    plt.xticks(rotation=45, ha="right")
+    plt.ylabel(metric.upper())
+    if title is None:
+        title = f"{metric.upper()} by Model Configuration"
+    plt.title(title)
+    plt.tight_layout()
+    plt.savefig(save_path)
+    print(f"Saved metric bar plot → {save_path}")
+    plt.close()
 
 
 def main():
     parquet_path = "data/raw/raw_data.parquet"
-
-    # load dataloaders
+    # load the dataloaders
     train_loader, test_loader, scaler = create_dataloaders(
         parquet_path,
         sequence_length=30,
@@ -84,35 +115,64 @@ def main():
         shuffle=True
     )
 
-    input_size = 5          # number of features
-    hidden_size = 32
-    output_size = 1
+    # define hyperparameter grids
+    input_size = 5
+    output_size  = 1
     seq_len = 30
-    lr = 0.001
+    hidden_sizes = [16, 32]
+    learning_rates = [0.001, 0.005]
+    epochs_list = [20, 30, 50]   
 
-    # initialize model
-    model = RNN(
-        inputSize=input_size,
-        hiddenSize=hidden_size,
-        outputSize=output_size,
-        length=seq_len,
-        learnRate=lr,
-        seed=42
-    )
+    # initialize model by running over all the hyperparameter combinations
+    for model_type in ["RNN", "LSTM"]:
+        results = [] #this is the results for each model type or configuation
+        all_loss_curves = {}  # to store loss curves for all configurations
 
-    # train
-    losses = train(model, train_loader, epochs=10, verbose=1)
+        for hidden_size in hidden_sizes:
+            for lr in learning_rates:
+                for epochs in epochs_list:
+                    model_name = f"{model_type}_hs{hidden_size}_lr{lr}_ep{epochs}"
+                    print(f"\nTraining Model: {model_name}")
 
-    # evaluate
-    preds, targets, mse = evaluate(model, test_loader)
+                    # initialize the model
+                    if model_type == "RNN":
+                        model = RNN(input_size, hidden_size, output_size, seq_len, lr)
+                    else:
+                        model = LSTM(input_size, hidden_size, output_size, seq_len,lr)
 
-    # save model
-    os.makedirs("models", exist_ok=True)
-    model.save("models/rnn_stock_model.npz")
-    print("Saved model → models/rnn_stock_model.npz")
+                    # train the model
+                    losses = train(model, train_loader, epochs=epochs, verbose=1)
+                    all_loss_curves[model_name] = losses
 
-    # save loss plot to file
-    plot_losses(losses)
+                    # evaluate the model
+                    preds, targets, metrics = evaluate(model, test_loader)
+
+                    # save model
+                    model_path = os.path.join("models", f"{model_name}.npz")
+                    model.save(model_path)
+                    print(f"Saved model → {model_path}")
+
+
+                    # save training loss plot
+                    plot_losses(losses, save_path=f"results/{model_name}_loss.png")
+
+                    # save prediction plot
+                    plot_predictions(
+                        preds,
+                        targets,
+                        title=f"{model_name} Predictions",
+                        save_path=f"results/{model_name}_predictions.png"
+                    )
+
+                    # store results
+                    results.append({
+                        "name": model_name,
+                        "metrics": metrics
+                    })
+
+        # plot bar charts for MSE and MAE
+        plot_bar_metric(results, "mse", save_path=f"results/{model_type}_mse_comparison.png", title=f"{model_type} MSE Comparison")
+        plot_bar_metric(results, "mae", save_path=f"results/{model_type}_mae_comparison.png", title=f"{model_type} MAE Comparison")
 
 
 if __name__ == "__main__":

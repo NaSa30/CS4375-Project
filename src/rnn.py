@@ -110,12 +110,13 @@ class RNN:
                     loss = self.backward(xnp[j], ynp[j])
                     total += loss
                     count += 1
-                
-                average = total / max(1, count)
-                losses.append(average)
 
-                if (i + 1) % verbose == 0:
-                    print(f"Epoch {i + 1}/{i} average loss: {average:.3f}")
+            # it said to fix this indentation
+            average = total / max(1, count)
+            losses.append(average)
+
+            if (i + 1) % verbose == 0:
+                print(f"Epoch {i + 1}/{i} average loss: {average:.3f}")
 
         return losses
     
