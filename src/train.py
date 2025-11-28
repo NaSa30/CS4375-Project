@@ -60,8 +60,18 @@ def evaluate(model, test_loader):
 
     mse = np.mean((preds - targets)**2)
     mae = np.mean(np.abs(preds - targets))
-    print(f"\nTest MSE: {mse:.6f}, MAE:{mae:.6f}")
-    return preds, targets, {"mse": mse, "mae": mae}
+    # calculate r^2 for accuracy too
+    ss_res = np.sum((preds - targets) ** 2)
+    ss_tot = np.sum((targets - np.mean(targets)) ** 2)
+    r2 = 0.0
+    if ss_tot == 0:
+        r2 = 0.0
+    else:
+        r2 = 1 - (ss_res / ss_tot)
+
+    print(f"\nAccuracy: R2: {r2:.6f}")
+    print(f"\nMSE: {mse:.6f}, MAE:{mae:.6f}")
+    return preds, targets, {"mse": mse, "mae": mae, "r2": r2}
 
 # plot and save training loss curve
 def plot_losses(losses, save_path="training_loss.png"):
@@ -105,6 +115,27 @@ def plot_bar_metric(results, metric, save_path, title=None):
     print(f"Saved metric bar plot → {save_path}")
     plt.close()
 
+def plot_r2_comparison(results, save_path, title=None):
+    names = [r["name"] for r in results]
+    test_r2 = [r["metrics"]["r2"] for r in results]
+    train_r2 = [r["train_metrics"]["r2"] for r in results]
+    x = np.arange(len(names))
+    width = 0.35
+
+    plt.figure(figsize=(10, 5))
+    plt.bar(x - width/2, train_r2, width, label="Train R²")
+    plt.bar(x + width/2, test_r2, width, label="Test R²")
+
+    plt.xticks(x, names, rotation=45, ha="right")
+    plt.ylabel("R² Score")
+    if title is None:
+        title = "Train vs Test R² Comparison"
+    plt.title(title)
+    plt.legend()
+    plt.tight_layout()
+    plt.savefig(save_path)
+    print(f"Saved R² comparison plot → {save_path}")
+    plt.close()
 
 def main():
 
@@ -120,6 +151,13 @@ def main():
         batch_size=16,
         shuffle=True
     )
+
+    # training dataset size info
+    train_size = len(train_loader.dataset)
+    test_size = len(test_loader.dataset)
+    total_size = train_size + test_size
+    train_pct = (train_size / total_size) * 100
+    test_pct = (test_size / total_size) * 100
 
     # define hyperparameter grids
     input_size = 5
@@ -139,6 +177,21 @@ def main():
                 for epochs in epochs_list:
                     model_name = f"{model_type}_hs{hidden_size}_lr{lr}_ep{epochs}"
                     print(f"\nTraining Model: {model_name}")
+                    print("Parameters:")
+                    print(f"    Model Type          = {model_type}")
+                    print(f"    Hidden Size         = {hidden_size}")
+                    print(f"    Learning Rate       = {lr}")
+                    print(f"    Epochs              = {epochs}")
+                    print(f"    Input Size          = {input_size}")
+                    print(f"    Output Size         = {output_size}")
+                    print(f"    Sequence Length     = {seq_len}")
+                    print(f"    Batch Size          = 16")
+                    print(f"    Error Function      = MSE/MAE")
+                    print("\nDataset:")
+                    print(f"    Total Samples       = {total_size}")
+                    print(f"    Train/Test Split    = {int(train_pct)}:{int(test_pct)}")
+                    print(f"    Train Samples       = {train_size}")
+                    print(f"    Test Samples        = {test_size}")
 
                     # initialize the model
                     if model_type == "RNN":
@@ -151,8 +204,13 @@ def main():
                     all_loss_curves[model_name] = losses
 
                     # evaluate the model
+                    print("\nTest ")
                     preds, targets, metrics = evaluate(model, test_loader)
+                    
 
+                    # evaluate on training set too
+                    print("\nTrain ")
+                    train_preds, train_targets, train_metrics = evaluate(model, train_loader)
                     # save model
                     model_path = os.path.join("models", f"{model_name}.npz")
                     model.save(model_path)
@@ -173,14 +231,16 @@ def main():
                     # store results
                     results.append({
                         "name": model_name,
-                        "metrics": metrics
+                        "metrics": metrics,
+                        "train_metrics": train_metrics
                     })
         best_model = min(results, key=lambda r: r["metrics"]["mse"])
         print(f"\nBest {model_type} Model: {best_model['name']} with MSE: {best_model['metrics']['mse']:.6f}, MAE: {best_model['metrics']['mae']:.6f}")
         
-        # plot bar charts for MSE and MAE
+        # plot bar charts for MSE and MAE and R2 comparison
         plot_bar_metric(results, "mse", save_path=f"results/{model_type}_mse_comparison.png", title=f"{model_type} MSE Comparison")
         plot_bar_metric(results, "mae", save_path=f"results/{model_type}_mae_comparison.png", title=f"{model_type} MAE Comparison")
+        plot_r2_comparison(results,  save_path=f"results/{model_type}_r2_comparison.png", title=f"{model_type} Train vs Test R² Comparison")
 
 
 
