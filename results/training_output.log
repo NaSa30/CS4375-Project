@@ -1,1650 +1,1530 @@
-
 Training Model: RNN_hs16_lr0.001_ep20
-Parameters:
-    Model Type          = RNN
-    Hidden Size         = 16
-    Learning Rate       = 0.001
-    Epochs              = 20
-    Input Size          = 5
-    Output Size         = 1
-    Sequence Length     = 30
-    Batch Size          = 16
-    Error Function      = MSE/MAE
+Parameter Tested:
+	Model Type = RNN
+	Hidden Size = 16
+	Learning Rate = 0.001
+	Epochs = 20
+	Number of Inputs = 5
+	Number of Outputs = 1
+	Window Length = 30
+	Batch Size = 16
+	Error Function = MSE/MAE
 
-Dataset:
-    Total Samples       = 1229
-    Train/Test Split    = 79:20
-    Train Samples       = 977
-    Test Samples        = 252
+Dataset Information:
+	Total Samples = 1199
+	Train/Test Split = 81:18
+	Train Samples = 977
+	Test Samples = 222
 Starting training.
 
-Epoch 1/20 — avg loss: 3570.490943
-Epoch 2/20 — avg loss: 2458.703196
-Epoch 3/20 — avg loss: 1679.451472
-Epoch 4/20 — avg loss: 1322.220414
-Epoch 5/20 — avg loss: 1199.226562
-Epoch 6/20 — avg loss: 1122.709906
-Epoch 7/20 — avg loss: 1072.646452
-Epoch 8/20 — avg loss: 1038.947928
-Epoch 9/20 — avg loss: 1001.240751
-Epoch 10/20 — avg loss: 978.401966
-Epoch 11/20 — avg loss: 966.061503
-Epoch 12/20 — avg loss: 958.667935
-Epoch 13/20 — avg loss: 946.074617
-Epoch 14/20 — avg loss: 943.478654
-Epoch 15/20 — avg loss: 938.203083
-Epoch 16/20 — avg loss: 931.694262
-Epoch 17/20 — avg loss: 931.852288
-Epoch 18/20 — avg loss: 922.103265
-Epoch 19/20 — avg loss: 924.257376
-Epoch 20/20 — avg loss: 925.804787
+Epoch 1/20 — avg loss: 3566.433334
+Epoch 2/20 — avg loss: 2458.503912
+Epoch 3/20 — avg loss: 1670.804792
+Epoch 4/20 — avg loss: 1327.643808
+Epoch 5/20 — avg loss: 1191.949352
+Epoch 6/20 — avg loss: 1127.251955
+Epoch 7/20 — avg loss: 1076.747060
+Epoch 8/20 — avg loss: 1035.791124
+Epoch 9/20 — avg loss: 1007.767466
+Epoch 10/20 — avg loss: 980.326698
+Epoch 11/20 — avg loss: 966.299522
+Epoch 12/20 — avg loss: 952.442725
+Epoch 13/20 — avg loss: 941.240495
+Epoch 14/20 — avg loss: 939.023041
+Epoch 15/20 — avg loss: 936.393498
+Epoch 16/20 — avg loss: 935.904598
+Epoch 17/20 — avg loss: 930.841350
+Epoch 18/20 — avg loss: 934.178111
+Epoch 19/20 — avg loss: 922.051073
+Epoch 20/20 — avg loss: 927.091607
 
-Test 
+Test Evalution:
 
-Accuracy: R2: -11819.903920
+MSE: 7166.518076, MAE: 83.817085
 
-MSE: 7540.679733, MAE:85.906497
+Train Evaluation:
 
-Train 
-
-Accuracy: R2: -1136.936614
-
-MSE: 1847.869762, MAE:34.383645
-Saved model → models/RNN_hs16_lr0.001_ep20.npz
-Saved loss plot → results/RNN_hs16_lr0.001_ep20_loss.png
-Saved prediction plot → results/RNN_hs16_lr0.001_ep20_predictions.png
-
+MSE: 1847.989605, MAE: 34.383664
+Saved model to models/RNN_hs16_lr0.001_ep20.npz
+Saved loss plot to results/RNN_hs16_lr0.001_ep20_loss.png
+Saved prediction plot to results/RNN_hs16_lr0.001_ep20_predictions.png
 Training Model: RNN_hs16_lr0.001_ep30
-Parameters:
-    Model Type          = RNN
-    Hidden Size         = 16
-    Learning Rate       = 0.001
-    Epochs              = 30
-    Input Size          = 5
-    Output Size         = 1
-    Sequence Length     = 30
-    Batch Size          = 16
-    Error Function      = MSE/MAE
+Parameter Tested:
+	Model Type = RNN
+	Hidden Size = 16
+	Learning Rate = 0.001
+	Epochs = 30
+	Number of Inputs = 5
+	Number of Outputs = 1
+	Window Length = 30
+	Batch Size = 16
+	Error Function = MSE/MAE
 
-Dataset:
-    Total Samples       = 1229
-    Train/Test Split    = 79:20
-    Train Samples       = 977
-    Test Samples        = 252
+Dataset Information:
+	Total Samples = 1199
+	Train/Test Split = 81:18
+	Train Samples = 977
+	Test Samples = 222
 Starting training.
 
-Epoch 1/30 — avg loss: 3559.977353
-Epoch 2/30 — avg loss: 2476.219190
-Epoch 3/30 — avg loss: 1673.760177
-Epoch 4/30 — avg loss: 1318.965875
-Epoch 5/30 — avg loss: 1196.330131
-Epoch 6/30 — avg loss: 1126.794372
-Epoch 7/30 — avg loss: 1079.322866
-Epoch 8/30 — avg loss: 1043.658963
-Epoch 9/30 — avg loss: 1004.049734
-Epoch 10/30 — avg loss: 984.697474
-Epoch 11/30 — avg loss: 958.830807
-Epoch 12/30 — avg loss: 951.368753
-Epoch 13/30 — avg loss: 947.801704
-Epoch 14/30 — avg loss: 947.987220
-Epoch 15/30 — avg loss: 938.357479
-Epoch 16/30 — avg loss: 931.347744
-Epoch 17/30 — avg loss: 926.294727
-Epoch 18/30 — avg loss: 930.270350
-Epoch 19/30 — avg loss: 928.799453
-Epoch 20/30 — avg loss: 920.304997
-Epoch 21/30 — avg loss: 925.767670
-Epoch 22/30 — avg loss: 922.193552
-Epoch 23/30 — avg loss: 923.765035
-Epoch 24/30 — avg loss: 919.306504
-Epoch 25/30 — avg loss: 922.967182
-Epoch 26/30 — avg loss: 915.963364
-Epoch 27/30 — avg loss: 919.234714
-Epoch 28/30 — avg loss: 922.658788
-Epoch 29/30 — avg loss: 923.512435
-Epoch 30/30 — avg loss: 918.025441
+Epoch 1/30 — avg loss: 3569.803136
+Epoch 2/30 — avg loss: 2463.177923
+Epoch 3/30 — avg loss: 1663.549731
+Epoch 4/30 — avg loss: 1318.114388
+Epoch 5/30 — avg loss: 1199.331548
+Epoch 6/30 — avg loss: 1128.297055
+Epoch 7/30 — avg loss: 1072.155889
+Epoch 8/30 — avg loss: 1039.075573
+Epoch 9/30 — avg loss: 1008.579227
+Epoch 10/30 — avg loss: 978.748735
+Epoch 11/30 — avg loss: 964.928311
+Epoch 12/30 — avg loss: 955.462796
+Epoch 13/30 — avg loss: 947.293397
+Epoch 14/30 — avg loss: 946.080647
+Epoch 15/30 — avg loss: 931.932202
+Epoch 16/30 — avg loss: 932.306916
+Epoch 17/30 — avg loss: 929.733949
+Epoch 18/30 — avg loss: 927.302046
+Epoch 19/30 — avg loss: 926.260062
+Epoch 20/30 — avg loss: 924.891221
+Epoch 21/30 — avg loss: 921.996660
+Epoch 22/30 — avg loss: 920.662825
+Epoch 23/30 — avg loss: 926.272285
+Epoch 24/30 — avg loss: 925.265033
+Epoch 25/30 — avg loss: 918.381850
+Epoch 26/30 — avg loss: 916.254925
+Epoch 27/30 — avg loss: 919.834663
+Epoch 28/30 — avg loss: 918.936777
+Epoch 29/30 — avg loss: 922.157419
+Epoch 30/30 — avg loss: 917.407808
 
-Test 
+Test Evalution:
 
-Accuracy: R2: -11727.036285
+MSE: 7112.267333, MAE: 83.492832
 
-MSE: 7481.438485, MAE:85.561002
+Train Evaluation:
 
-Train 
-
-Accuracy: R2: -1130.131125
-
-MSE: 1836.818480, MAE:34.382531
-Saved model → models/RNN_hs16_lr0.001_ep30.npz
-Saved loss plot → results/RNN_hs16_lr0.001_ep30_loss.png
-Saved prediction plot → results/RNN_hs16_lr0.001_ep30_predictions.png
-
+MSE: 1837.608288, MAE: 34.382556
+Saved model to models/RNN_hs16_lr0.001_ep30.npz
+Saved loss plot to results/RNN_hs16_lr0.001_ep30_loss.png
+Saved prediction plot to results/RNN_hs16_lr0.001_ep30_predictions.png
 Training Model: RNN_hs16_lr0.001_ep50
-Parameters:
-    Model Type          = RNN
-    Hidden Size         = 16
-    Learning Rate       = 0.001
-    Epochs              = 50
-    Input Size          = 5
-    Output Size         = 1
-    Sequence Length     = 30
-    Batch Size          = 16
-    Error Function      = MSE/MAE
+Parameter Tested:
+	Model Type = RNN
+	Hidden Size = 16
+	Learning Rate = 0.001
+	Epochs = 50
+	Number of Inputs = 5
+	Number of Outputs = 1
+	Window Length = 30
+	Batch Size = 16
+	Error Function = MSE/MAE
 
-Dataset:
-    Total Samples       = 1229
-    Train/Test Split    = 79:20
-    Train Samples       = 977
-    Test Samples        = 252
+Dataset Information:
+	Total Samples = 1199
+	Train/Test Split = 81:18
+	Train Samples = 977
+	Test Samples = 222
 Starting training.
 
-Epoch 1/50 — avg loss: 3565.952094
-Epoch 2/50 — avg loss: 2457.740133
-Epoch 3/50 — avg loss: 1678.653449
-Epoch 4/50 — avg loss: 1330.766313
-Epoch 5/50 — avg loss: 1199.206836
-Epoch 6/50 — avg loss: 1128.336994
-Epoch 7/50 — avg loss: 1079.816526
-Epoch 8/50 — avg loss: 1040.010953
-Epoch 9/50 — avg loss: 1006.896036
-Epoch 10/50 — avg loss: 985.910450
-Epoch 11/50 — avg loss: 963.267511
-Epoch 12/50 — avg loss: 951.137449
-Epoch 13/50 — avg loss: 943.243302
-Epoch 14/50 — avg loss: 937.812117
-Epoch 15/50 — avg loss: 940.173094
-Epoch 16/50 — avg loss: 931.709272
-Epoch 17/50 — avg loss: 931.628002
-Epoch 18/50 — avg loss: 929.180097
-Epoch 19/50 — avg loss: 925.233670
-Epoch 20/50 — avg loss: 926.339734
-Epoch 21/50 — avg loss: 924.522958
-Epoch 22/50 — avg loss: 926.632734
-Epoch 23/50 — avg loss: 921.997770
-Epoch 24/50 — avg loss: 917.544049
-Epoch 25/50 — avg loss: 920.403263
-Epoch 26/50 — avg loss: 921.404491
-Epoch 27/50 — avg loss: 916.226076
-Epoch 28/50 — avg loss: 918.283434
-Epoch 29/50 — avg loss: 918.210072
-Epoch 30/50 — avg loss: 919.946365
-Epoch 31/50 — avg loss: 921.127044
-Epoch 32/50 — avg loss: 921.277433
-Epoch 33/50 — avg loss: 917.727705
-Epoch 34/50 — avg loss: 916.704359
-Epoch 35/50 — avg loss: 918.584581
-Epoch 36/50 — avg loss: 913.885507
-Epoch 37/50 — avg loss: 919.010782
-Epoch 38/50 — avg loss: 915.775024
-Epoch 39/50 — avg loss: 915.776412
-Epoch 40/50 — avg loss: 919.053150
-Epoch 41/50 — avg loss: 923.853265
-Epoch 42/50 — avg loss: 918.810094
-Epoch 43/50 — avg loss: 918.144843
-Epoch 44/50 — avg loss: 920.846028
-Epoch 45/50 — avg loss: 921.530383
-Epoch 46/50 — avg loss: 913.179338
-Epoch 47/50 — avg loss: 915.354543
-Epoch 48/50 — avg loss: 917.456047
-Epoch 49/50 — avg loss: 919.076682
-Epoch 50/50 — avg loss: 918.995325
+Epoch 1/50 — avg loss: 3564.421128
+Epoch 2/50 — avg loss: 2463.021044
+Epoch 3/50 — avg loss: 1677.649503
+Epoch 4/50 — avg loss: 1323.817557
+Epoch 5/50 — avg loss: 1193.533877
+Epoch 6/50 — avg loss: 1129.305172
+Epoch 7/50 — avg loss: 1078.573557
+Epoch 8/50 — avg loss: 1042.080959
+Epoch 9/50 — avg loss: 1005.374305
+Epoch 10/50 — avg loss: 985.212538
+Epoch 11/50 — avg loss: 966.701874
+Epoch 12/50 — avg loss: 956.438215
+Epoch 13/50 — avg loss: 949.693610
+Epoch 14/50 — avg loss: 937.941952
+Epoch 15/50 — avg loss: 938.059855
+Epoch 16/50 — avg loss: 929.432953
+Epoch 17/50 — avg loss: 928.505057
+Epoch 18/50 — avg loss: 926.575033
+Epoch 19/50 — avg loss: 924.280248
+Epoch 20/50 — avg loss: 927.711570
+Epoch 21/50 — avg loss: 925.928238
+Epoch 22/50 — avg loss: 927.911277
+Epoch 23/50 — avg loss: 920.692804
+Epoch 24/50 — avg loss: 917.862824
+Epoch 25/50 — avg loss: 920.728706
+Epoch 26/50 — avg loss: 920.109385
+Epoch 27/50 — avg loss: 920.841713
+Epoch 28/50 — avg loss: 917.906043
+Epoch 29/50 — avg loss: 922.071981
+Epoch 30/50 — avg loss: 916.903379
+Epoch 31/50 — avg loss: 919.454947
+Epoch 32/50 — avg loss: 918.115510
+Epoch 33/50 — avg loss: 915.305582
+Epoch 34/50 — avg loss: 919.837859
+Epoch 35/50 — avg loss: 924.202673
+Epoch 36/50 — avg loss: 917.478993
+Epoch 37/50 — avg loss: 917.228704
+Epoch 38/50 — avg loss: 918.407832
+Epoch 39/50 — avg loss: 920.748888
+Epoch 40/50 — avg loss: 914.357702
+Epoch 41/50 — avg loss: 916.090554
+Epoch 42/50 — avg loss: 917.468827
+Epoch 43/50 — avg loss: 915.683828
+Epoch 44/50 — avg loss: 914.699074
+Epoch 45/50 — avg loss: 918.394513
+Epoch 46/50 — avg loss: 918.394102
+Epoch 47/50 — avg loss: 918.387734
+Epoch 48/50 — avg loss: 919.941360
+Epoch 49/50 — avg loss: 917.407898
+Epoch 50/50 — avg loss: 921.309353
 
-Test 
+Test Evalution:
 
-Accuracy: R2: -11721.195247
+MSE: 7115.418017, MAE: 83.511698
 
-MSE: 7477.712426, MAE:85.539225
+Train Evaluation:
 
-Train 
-
-Accuracy: R2: -1129.729261
-
-MSE: 1836.165903, MAE:34.382549
-Saved model → models/RNN_hs16_lr0.001_ep50.npz
-Saved loss plot → results/RNN_hs16_lr0.001_ep50_loss.png
-Saved prediction plot → results/RNN_hs16_lr0.001_ep50_predictions.png
-
+MSE: 1838.253182, MAE: 34.382577
+Saved model to models/RNN_hs16_lr0.001_ep50.npz
+Saved loss plot to results/RNN_hs16_lr0.001_ep50_loss.png
+Saved prediction plot to results/RNN_hs16_lr0.001_ep50_predictions.png
 Training Model: RNN_hs16_lr0.005_ep20
-Parameters:
-    Model Type          = RNN
-    Hidden Size         = 16
-    Learning Rate       = 0.005
-    Epochs              = 20
-    Input Size          = 5
-    Output Size         = 1
-    Sequence Length     = 30
-    Batch Size          = 16
-    Error Function      = MSE/MAE
+Parameter Tested:
+	Model Type = RNN
+	Hidden Size = 16
+	Learning Rate = 0.005
+	Epochs = 20
+	Number of Inputs = 5
+	Number of Outputs = 1
+	Window Length = 30
+	Batch Size = 16
+	Error Function = MSE/MAE
 
-Dataset:
-    Total Samples       = 1229
-    Train/Test Split    = 79:20
-    Train Samples       = 977
-    Test Samples        = 252
+Dataset Information:
+	Total Samples = 1199
+	Train/Test Split = 81:18
+	Train Samples = 977
+	Test Samples = 222
 Starting training.
 
-Epoch 1/20 — avg loss: 2057.082638
-Epoch 2/20 — avg loss: 1050.921775
-Epoch 3/20 — avg loss: 939.228565
-Epoch 4/20 — avg loss: 921.497794
-Epoch 5/20 — avg loss: 927.429019
-Epoch 6/20 — avg loss: 933.274508
-Epoch 7/20 — avg loss: 913.124135
-Epoch 8/20 — avg loss: 925.683695
-Epoch 9/20 — avg loss: 907.551050
-Epoch 10/20 — avg loss: 945.939346
-Epoch 11/20 — avg loss: 915.165935
-Epoch 12/20 — avg loss: 916.741323
-Epoch 13/20 — avg loss: 865.897583
-Epoch 14/20 — avg loss: 849.635676
-Epoch 15/20 — avg loss: 782.038536
-Epoch 16/20 — avg loss: 729.156470
-Epoch 17/20 — avg loss: 670.386948
-Epoch 18/20 — avg loss: 638.872171
-Epoch 19/20 — avg loss: 535.190571
-Epoch 20/20 — avg loss: 413.748884
+Epoch 1/20 — avg loss: 2068.718142
+Epoch 2/20 — avg loss: 1048.167197
+Epoch 3/20 — avg loss: 945.533119
+Epoch 4/20 — avg loss: 928.223128
+Epoch 5/20 — avg loss: 917.146297
+Epoch 6/20 — avg loss: 936.707915
+Epoch 7/20 — avg loss: 939.794111
+Epoch 8/20 — avg loss: 911.074626
+Epoch 9/20 — avg loss: 920.246667
+Epoch 10/20 — avg loss: 927.385016
+Epoch 11/20 — avg loss: 924.037391
+Epoch 12/20 — avg loss: 919.121772
+Epoch 13/20 — avg loss: 871.970147
+Epoch 14/20 — avg loss: 809.568334
+Epoch 15/20 — avg loss: 729.740868
+Epoch 16/20 — avg loss: 642.994265
+Epoch 17/20 — avg loss: 580.531404
+Epoch 18/20 — avg loss: 480.452446
+Epoch 19/20 — avg loss: 342.807236
+Epoch 20/20 — avg loss: 174.354235
 
-Test 
+Test Evalution:
 
-Accuracy: R2: -3309.637171
+MSE: 924.220099, MAE: 27.982115
 
-MSE: 2111.890494, MAE:44.171671
+Train Evaluation:
 
-Train 
-
-Accuracy: R2: -1602.716256
-
-MSE: 2604.238883, MAE:41.654263
-Saved model → models/RNN_hs16_lr0.005_ep20.npz
-Saved loss plot → results/RNN_hs16_lr0.005_ep20_loss.png
-Saved prediction plot → results/RNN_hs16_lr0.005_ep20_predictions.png
-
+MSE: 2938.642589, MAE: 42.485730
+Saved model to models/RNN_hs16_lr0.005_ep20.npz
+Saved loss plot to results/RNN_hs16_lr0.005_ep20_loss.png
+Saved prediction plot to results/RNN_hs16_lr0.005_ep20_predictions.png
 Training Model: RNN_hs16_lr0.005_ep30
-Parameters:
-    Model Type          = RNN
-    Hidden Size         = 16
-    Learning Rate       = 0.005
-    Epochs              = 30
-    Input Size          = 5
-    Output Size         = 1
-    Sequence Length     = 30
-    Batch Size          = 16
-    Error Function      = MSE/MAE
+Parameter Tested:
+	Model Type = RNN
+	Hidden Size = 16
+	Learning Rate = 0.005
+	Epochs = 30
+	Number of Inputs = 5
+	Number of Outputs = 1
+	Window Length = 30
+	Batch Size = 16
+	Error Function = MSE/MAE
 
-Dataset:
-    Total Samples       = 1229
-    Train/Test Split    = 79:20
-    Train Samples       = 977
-    Test Samples        = 252
+Dataset Information:
+	Total Samples = 1199
+	Train/Test Split = 81:18
+	Train Samples = 977
+	Test Samples = 222
 Starting training.
 
-Epoch 1/30 — avg loss: 2069.919174
-Epoch 2/30 — avg loss: 1060.724553
-Epoch 3/30 — avg loss: 960.352473
-Epoch 4/30 — avg loss: 928.836848
-Epoch 5/30 — avg loss: 908.837126
-Epoch 6/30 — avg loss: 922.742663
-Epoch 7/30 — avg loss: 928.919466
-Epoch 8/30 — avg loss: 930.598553
-Epoch 9/30 — avg loss: 908.529341
-Epoch 10/30 — avg loss: 930.490278
-Epoch 11/30 — avg loss: 893.122183
-Epoch 12/30 — avg loss: 863.150877
-Epoch 13/30 — avg loss: 784.845679
-Epoch 14/30 — avg loss: 741.059044
-Epoch 15/30 — avg loss: 656.371117
-Epoch 16/30 — avg loss: 428.394232
-Epoch 17/30 — avg loss: 304.239300
-Epoch 18/30 — avg loss: 217.853119
-Epoch 19/30 — avg loss: 114.666509
-Epoch 20/30 — avg loss: 80.893298
-Epoch 21/30 — avg loss: 60.723690
-Epoch 22/30 — avg loss: 49.223548
-Epoch 23/30 — avg loss: 41.171257
-Epoch 24/30 — avg loss: 31.162671
-Epoch 25/30 — avg loss: 24.455668
-Epoch 26/30 — avg loss: 19.631268
-Epoch 27/30 — avg loss: 16.549105
-Epoch 28/30 — avg loss: 13.702029
-Epoch 29/30 — avg loss: 12.098924
-Epoch 30/30 — avg loss: 11.531934
+Epoch 1/30 — avg loss: 2069.792290
+Epoch 2/30 — avg loss: 1038.410563
+Epoch 3/30 — avg loss: 943.513155
+Epoch 4/30 — avg loss: 930.523913
+Epoch 5/30 — avg loss: 910.912827
+Epoch 6/30 — avg loss: 930.725951
+Epoch 7/30 — avg loss: 905.698605
+Epoch 8/30 — avg loss: 924.219993
+Epoch 9/30 — avg loss: 937.308453
+Epoch 10/30 — avg loss: 912.107184
+Epoch 11/30 — avg loss: 922.823230
+Epoch 12/30 — avg loss: 900.594891
+Epoch 13/30 — avg loss: 871.756065
+Epoch 14/30 — avg loss: 851.991151
+Epoch 15/30 — avg loss: 805.041115
+Epoch 16/30 — avg loss: 693.206523
+Epoch 17/30 — avg loss: 681.663017
+Epoch 18/30 — avg loss: 644.399776
+Epoch 19/30 — avg loss: 611.606231
+Epoch 20/30 — avg loss: 582.681318
+Epoch 21/30 — avg loss: 424.509931
+Epoch 22/30 — avg loss: 222.862419
+Epoch 23/30 — avg loss: 118.520933
+Epoch 24/30 — avg loss: 94.740094
+Epoch 25/30 — avg loss: 66.048578
+Epoch 26/30 — avg loss: 50.264196
+Epoch 27/30 — avg loss: 44.417710
+Epoch 28/30 — avg loss: 39.724405
+Epoch 29/30 — avg loss: 36.075386
+Epoch 30/30 — avg loss: 37.239031
 
-Test 
+Test Evalution:
 
-Accuracy: R2: -351.951323
+MSE: 249.341786, MAE: 12.582845
 
-MSE: 225.151385, MAE:12.187135
+Train Evaluation:
 
-Train 
-
-Accuracy: R2: -1915.692327
-
-MSE: 3112.473710, MAE:43.820024
-Saved model → models/RNN_hs16_lr0.005_ep30.npz
-Saved loss plot → results/RNN_hs16_lr0.005_ep30_loss.png
-Saved prediction plot → results/RNN_hs16_lr0.005_ep30_predictions.png
-
+MSE: 2989.439396, MAE: 42.904207
+Saved model to models/RNN_hs16_lr0.005_ep30.npz
+Saved loss plot to results/RNN_hs16_lr0.005_ep30_loss.png
+Saved prediction plot to results/RNN_hs16_lr0.005_ep30_predictions.png
 Training Model: RNN_hs16_lr0.005_ep50
-Parameters:
-    Model Type          = RNN
-    Hidden Size         = 16
-    Learning Rate       = 0.005
-    Epochs              = 50
-    Input Size          = 5
-    Output Size         = 1
-    Sequence Length     = 30
-    Batch Size          = 16
-    Error Function      = MSE/MAE
+Parameter Tested:
+	Model Type = RNN
+	Hidden Size = 16
+	Learning Rate = 0.005
+	Epochs = 50
+	Number of Inputs = 5
+	Number of Outputs = 1
+	Window Length = 30
+	Batch Size = 16
+	Error Function = MSE/MAE
 
-Dataset:
-    Total Samples       = 1229
-    Train/Test Split    = 79:20
-    Train Samples       = 977
-    Test Samples        = 252
+Dataset Information:
+	Total Samples = 1199
+	Train/Test Split = 81:18
+	Train Samples = 977
+	Test Samples = 222
 Starting training.
 
-Epoch 1/50 — avg loss: 2054.632049
-Epoch 2/50 — avg loss: 1069.285804
-Epoch 3/50 — avg loss: 938.729354
-Epoch 4/50 — avg loss: 938.040671
-Epoch 5/50 — avg loss: 929.457816
-Epoch 6/50 — avg loss: 918.508921
-Epoch 7/50 — avg loss: 918.556989
-Epoch 8/50 — avg loss: 917.389207
-Epoch 9/50 — avg loss: 911.545879
-Epoch 10/50 — avg loss: 930.777690
-Epoch 11/50 — avg loss: 904.444023
-Epoch 12/50 — avg loss: 926.739133
-Epoch 13/50 — avg loss: 913.646462
-Epoch 14/50 — avg loss: 907.028559
-Epoch 15/50 — avg loss: 873.106227
-Epoch 16/50 — avg loss: 826.186246
-Epoch 17/50 — avg loss: 718.470140
-Epoch 18/50 — avg loss: 604.718493
-Epoch 19/50 — avg loss: 427.610600
-Epoch 20/50 — avg loss: 305.167582
-Epoch 21/50 — avg loss: 210.381104
-Epoch 22/50 — avg loss: 95.480070
-Epoch 23/50 — avg loss: 68.112639
-Epoch 24/50 — avg loss: 52.138403
-Epoch 25/50 — avg loss: 37.030443
-Epoch 26/50 — avg loss: 32.746221
-Epoch 27/50 — avg loss: 29.512928
-Epoch 28/50 — avg loss: 24.798172
-Epoch 29/50 — avg loss: 21.181609
-Epoch 30/50 — avg loss: 16.265550
-Epoch 31/50 — avg loss: 14.121178
-Epoch 32/50 — avg loss: 13.230119
-Epoch 33/50 — avg loss: 11.981014
-Epoch 34/50 — avg loss: 11.156941
-Epoch 35/50 — avg loss: 10.513962
-Epoch 36/50 — avg loss: 10.228619
-Epoch 37/50 — avg loss: 10.049155
-Epoch 38/50 — avg loss: 9.270723
-Epoch 39/50 — avg loss: 9.273094
-Epoch 40/50 — avg loss: 9.140102
-Epoch 41/50 — avg loss: 7.976775
-Epoch 42/50 — avg loss: 7.698365
-Epoch 43/50 — avg loss: 7.603620
-Epoch 44/50 — avg loss: 7.502624
-Epoch 45/50 — avg loss: 7.344715
-Epoch 46/50 — avg loss: 7.085268
-Epoch 47/50 — avg loss: 6.886205
-Epoch 48/50 — avg loss: 6.718100
-Epoch 49/50 — avg loss: 6.380245
-Epoch 50/50 — avg loss: 6.328650
+Epoch 1/50 — avg loss: 2033.980855
+Epoch 2/50 — avg loss: 1061.029147
+Epoch 3/50 — avg loss: 954.147083
+Epoch 4/50 — avg loss: 938.247810
+Epoch 5/50 — avg loss: 921.898232
+Epoch 6/50 — avg loss: 905.270135
+Epoch 7/50 — avg loss: 920.896966
+Epoch 8/50 — avg loss: 917.942021
+Epoch 9/50 — avg loss: 929.986921
+Epoch 10/50 — avg loss: 911.483449
+Epoch 11/50 — avg loss: 929.585730
+Epoch 12/50 — avg loss: 914.880166
+Epoch 13/50 — avg loss: 916.430227
+Epoch 14/50 — avg loss: 920.011817
+Epoch 15/50 — avg loss: 922.400495
+Epoch 16/50 — avg loss: 910.317016
+Epoch 17/50 — avg loss: 885.097163
+Epoch 18/50 — avg loss: 850.164849
+Epoch 19/50 — avg loss: 805.980976
+Epoch 20/50 — avg loss: 763.976536
+Epoch 21/50 — avg loss: 654.905843
+Epoch 22/50 — avg loss: 408.911361
+Epoch 23/50 — avg loss: 266.751745
+Epoch 24/50 — avg loss: 112.409150
+Epoch 25/50 — avg loss: 89.361480
+Epoch 26/50 — avg loss: 69.403668
+Epoch 27/50 — avg loss: 52.128495
+Epoch 28/50 — avg loss: 41.372725
+Epoch 29/50 — avg loss: 41.209464
+Epoch 30/50 — avg loss: 46.663373
+Epoch 31/50 — avg loss: 42.038457
+Epoch 32/50 — avg loss: 31.121285
+Epoch 33/50 — avg loss: 28.683247
+Epoch 34/50 — avg loss: 15.983718
+Epoch 35/50 — avg loss: 15.303754
+Epoch 36/50 — avg loss: 7.106053
+Epoch 37/50 — avg loss: 8.472968
+Epoch 38/50 — avg loss: 8.585328
+Epoch 39/50 — avg loss: 6.511682
+Epoch 40/50 — avg loss: 7.529640
+Epoch 41/50 — avg loss: 5.530761
+Epoch 42/50 — avg loss: 5.694242
+Epoch 43/50 — avg loss: 5.245654
+Epoch 44/50 — avg loss: 5.382633
+Epoch 45/50 — avg loss: 6.188813
+Epoch 46/50 — avg loss: 5.278431
+Epoch 47/50 — avg loss: 7.413648
+Epoch 48/50 — avg loss: 8.799555
+Epoch 49/50 — avg loss: 5.367791
+Epoch 50/50 — avg loss: 7.109687
 
-Test 
+Test Evalution:
 
-Accuracy: R2: -396.695607
+MSE: 246.860631, MAE: 12.856282
 
-MSE: 253.694237, MAE:12.980771
+Train Evaluation:
 
-Train 
-
-Accuracy: R2: -1911.884323
-
-MSE: 3106.289978, MAE:43.797245
-Saved model → models/RNN_hs16_lr0.005_ep50.npz
-Saved loss plot → results/RNN_hs16_lr0.005_ep50_loss.png
-Saved prediction plot → results/RNN_hs16_lr0.005_ep50_predictions.png
-
+MSE: 3198.581019, MAE: 44.422011
+Saved model to models/RNN_hs16_lr0.005_ep50.npz
+Saved loss plot to results/RNN_hs16_lr0.005_ep50_loss.png
+Saved prediction plot to results/RNN_hs16_lr0.005_ep50_predictions.png
 Training Model: RNN_hs32_lr0.001_ep20
-Parameters:
-    Model Type          = RNN
-    Hidden Size         = 32
-    Learning Rate       = 0.001
-    Epochs              = 20
-    Input Size          = 5
-    Output Size         = 1
-    Sequence Length     = 30
-    Batch Size          = 16
-    Error Function      = MSE/MAE
+Parameter Tested:
+	Model Type = RNN
+	Hidden Size = 32
+	Learning Rate = 0.001
+	Epochs = 20
+	Number of Inputs = 5
+	Number of Outputs = 1
+	Window Length = 30
+	Batch Size = 16
+	Error Function = MSE/MAE
 
-Dataset:
-    Total Samples       = 1229
-    Train/Test Split    = 79:20
-    Train Samples       = 977
-    Test Samples        = 252
+Dataset Information:
+	Total Samples = 1199
+	Train/Test Split = 81:18
+	Train Samples = 977
+	Test Samples = 222
 Starting training.
 
-Epoch 1/20 — avg loss: 3047.599646
-Epoch 2/20 — avg loss: 1550.099608
-Epoch 3/20 — avg loss: 1186.527794
-Epoch 4/20 — avg loss: 1080.550004
-Epoch 5/20 — avg loss: 997.064875
-Epoch 6/20 — avg loss: 961.264463
-Epoch 7/20 — avg loss: 946.711556
-Epoch 8/20 — avg loss: 943.450649
-Epoch 9/20 — avg loss: 929.982016
-Epoch 10/20 — avg loss: 919.854024
-Epoch 11/20 — avg loss: 925.736399
-Epoch 12/20 — avg loss: 924.626376
-Epoch 13/20 — avg loss: 923.433950
-Epoch 14/20 — avg loss: 914.937111
-Epoch 15/20 — avg loss: 919.515415
-Epoch 16/20 — avg loss: 914.678822
-Epoch 17/20 — avg loss: 923.078800
-Epoch 18/20 — avg loss: 921.798373
-Epoch 19/20 — avg loss: 924.793307
-Epoch 20/20 — avg loss: 918.829047
+Epoch 1/20 — avg loss: 3047.567353
+Epoch 2/20 — avg loss: 1541.685848
+Epoch 3/20 — avg loss: 1172.067369
+Epoch 4/20 — avg loss: 1076.604185
+Epoch 5/20 — avg loss: 1003.682216
+Epoch 6/20 — avg loss: 957.535855
+Epoch 7/20 — avg loss: 946.621874
+Epoch 8/20 — avg loss: 938.190582
+Epoch 9/20 — avg loss: 925.854103
+Epoch 10/20 — avg loss: 938.187187
+Epoch 11/20 — avg loss: 930.020192
+Epoch 12/20 — avg loss: 921.021762
+Epoch 13/20 — avg loss: 913.499627
+Epoch 14/20 — avg loss: 921.864203
+Epoch 15/20 — avg loss: 916.751799
+Epoch 16/20 — avg loss: 907.526445
+Epoch 17/20 — avg loss: 928.188782
+Epoch 18/20 — avg loss: 918.611307
+Epoch 19/20 — avg loss: 921.911803
+Epoch 20/20 — avg loss: 913.777278
 
-Test 
+Test Evalution:
 
-Accuracy: R2: -11671.570328
+MSE: 7151.521236, MAE: 83.727575
 
-MSE: 7446.056165, MAE:85.353985
+Train Evaluation:
 
-Train 
-
-Accuracy: R2: -1126.113345
-
-MSE: 1830.294099, MAE:34.382831
-Saved model → models/RNN_hs32_lr0.001_ep20.npz
-Saved loss plot → results/RNN_hs32_lr0.001_ep20_loss.png
-Saved prediction plot → results/RNN_hs32_lr0.001_ep20_predictions.png
-
+MSE: 1845.081655, MAE: 34.383203
+Saved model to models/RNN_hs32_lr0.001_ep20.npz
+Saved loss plot to results/RNN_hs32_lr0.001_ep20_loss.png
+Saved prediction plot to results/RNN_hs32_lr0.001_ep20_predictions.png
 Training Model: RNN_hs32_lr0.001_ep30
-Parameters:
-    Model Type          = RNN
-    Hidden Size         = 32
-    Learning Rate       = 0.001
-    Epochs              = 30
-    Input Size          = 5
-    Output Size         = 1
-    Sequence Length     = 30
-    Batch Size          = 16
-    Error Function      = MSE/MAE
+Parameter Tested:
+	Model Type = RNN
+	Hidden Size = 32
+	Learning Rate = 0.001
+	Epochs = 30
+	Number of Inputs = 5
+	Number of Outputs = 1
+	Window Length = 30
+	Batch Size = 16
+	Error Function = MSE/MAE
 
-Dataset:
-    Total Samples       = 1229
-    Train/Test Split    = 79:20
-    Train Samples       = 977
-    Test Samples        = 252
+Dataset Information:
+	Total Samples = 1199
+	Train/Test Split = 81:18
+	Train Samples = 977
+	Test Samples = 222
 Starting training.
 
-Epoch 1/30 — avg loss: 3069.109763
-Epoch 2/30 — avg loss: 1509.556204
-Epoch 3/30 — avg loss: 1157.824061
-Epoch 4/30 — avg loss: 1057.101513
-Epoch 5/30 — avg loss: 990.186434
-Epoch 6/30 — avg loss: 959.834479
-Epoch 7/30 — avg loss: 944.431213
-Epoch 8/30 — avg loss: 932.377373
-Epoch 9/30 — avg loss: 934.873118
-Epoch 10/30 — avg loss: 923.364242
-Epoch 11/30 — avg loss: 920.497036
-Epoch 12/30 — avg loss: 928.748375
-Epoch 13/30 — avg loss: 919.443631
-Epoch 14/30 — avg loss: 914.872035
-Epoch 15/30 — avg loss: 920.644458
-Epoch 16/30 — avg loss: 923.072981
-Epoch 17/30 — avg loss: 912.464190
-Epoch 18/30 — avg loss: 915.130911
-Epoch 19/30 — avg loss: 911.985475
-Epoch 20/30 — avg loss: 925.772383
-Epoch 21/30 — avg loss: 912.313485
-Epoch 22/30 — avg loss: 920.589944
-Epoch 23/30 — avg loss: 912.997344
-Epoch 24/30 — avg loss: 928.663093
-Epoch 25/30 — avg loss: 920.964448
-Epoch 26/30 — avg loss: 911.538481
-Epoch 27/30 — avg loss: 926.904351
-Epoch 28/30 — avg loss: 922.244932
-Epoch 29/30 — avg loss: 913.683486
-Epoch 30/30 — avg loss: 915.450743
+Epoch 1/30 — avg loss: 3039.211647
+Epoch 2/30 — avg loss: 1523.365920
+Epoch 3/30 — avg loss: 1171.307257
+Epoch 4/30 — avg loss: 1068.183035
+Epoch 5/30 — avg loss: 1010.546149
+Epoch 6/30 — avg loss: 954.181892
+Epoch 7/30 — avg loss: 942.993526
+Epoch 8/30 — avg loss: 937.628092
+Epoch 9/30 — avg loss: 932.162611
+Epoch 10/30 — avg loss: 928.311659
+Epoch 11/30 — avg loss: 931.702958
+Epoch 12/30 — avg loss: 925.991510
+Epoch 13/30 — avg loss: 917.987565
+Epoch 14/30 — avg loss: 924.127412
+Epoch 15/30 — avg loss: 918.497622
+Epoch 16/30 — avg loss: 918.729574
+Epoch 17/30 — avg loss: 910.917183
+Epoch 18/30 — avg loss: 915.726932
+Epoch 19/30 — avg loss: 924.737555
+Epoch 20/30 — avg loss: 910.661059
+Epoch 21/30 — avg loss: 918.148253
+Epoch 22/30 — avg loss: 918.095268
+Epoch 23/30 — avg loss: 928.612584
+Epoch 24/30 — avg loss: 919.948151
+Epoch 25/30 — avg loss: 920.337337
+Epoch 26/30 — avg loss: 917.759409
+Epoch 27/30 — avg loss: 917.773784
+Epoch 28/30 — avg loss: 919.156545
+Epoch 29/30 — avg loss: 916.421027
+Epoch 30/30 — avg loss: 918.274366
 
-Test 
+Test Evalution:
 
-Accuracy: R2: -11711.517868
+MSE: 7085.216094, MAE: 83.330677
 
-MSE: 7471.539123, MAE:85.503132
+Train Evaluation:
 
-Train 
-
-Accuracy: R2: -1128.992890
-
-MSE: 1834.970127, MAE:34.382588
-Saved model → models/RNN_hs32_lr0.001_ep30.npz
-Saved loss plot → results/RNN_hs32_lr0.001_ep30_loss.png
-Saved prediction plot → results/RNN_hs32_lr0.001_ep30_predictions.png
-
+MSE: 1832.471348, MAE: 34.382669
+Saved model to models/RNN_hs32_lr0.001_ep30.npz
+Saved loss plot to results/RNN_hs32_lr0.001_ep30_loss.png
+Saved prediction plot to results/RNN_hs32_lr0.001_ep30_predictions.png
 Training Model: RNN_hs32_lr0.001_ep50
-Parameters:
-    Model Type          = RNN
-    Hidden Size         = 32
-    Learning Rate       = 0.001
-    Epochs              = 50
-    Input Size          = 5
-    Output Size         = 1
-    Sequence Length     = 30
-    Batch Size          = 16
-    Error Function      = MSE/MAE
+Parameter Tested:
+	Model Type = RNN
+	Hidden Size = 32
+	Learning Rate = 0.001
+	Epochs = 50
+	Number of Inputs = 5
+	Number of Outputs = 1
+	Window Length = 30
+	Batch Size = 16
+	Error Function = MSE/MAE
 
-Dataset:
-    Total Samples       = 1229
-    Train/Test Split    = 79:20
-    Train Samples       = 977
-    Test Samples        = 252
+Dataset Information:
+	Total Samples = 1199
+	Train/Test Split = 81:18
+	Train Samples = 977
+	Test Samples = 222
 Starting training.
 
-Epoch 1/50 — avg loss: 3035.206285
-Epoch 2/50 — avg loss: 1527.936822
-Epoch 3/50 — avg loss: 1164.127320
-Epoch 4/50 — avg loss: 1065.338743
-Epoch 5/50 — avg loss: 999.214038
-Epoch 6/50 — avg loss: 961.117424
-Epoch 7/50 — avg loss: 941.270787
-Epoch 8/50 — avg loss: 938.314721
-Epoch 9/50 — avg loss: 930.134662
-Epoch 10/50 — avg loss: 923.560620
-Epoch 11/50 — avg loss: 926.585866
-Epoch 12/50 — avg loss: 928.984120
-Epoch 13/50 — avg loss: 919.272459
-Epoch 14/50 — avg loss: 917.579080
-Epoch 15/50 — avg loss: 924.920264
-Epoch 16/50 — avg loss: 928.347843
-Epoch 17/50 — avg loss: 918.325774
-Epoch 18/50 — avg loss: 924.496372
-Epoch 19/50 — avg loss: 918.129558
-Epoch 20/50 — avg loss: 920.178925
-Epoch 21/50 — avg loss: 918.538606
-Epoch 22/50 — avg loss: 916.357705
-Epoch 23/50 — avg loss: 918.953266
-Epoch 24/50 — avg loss: 918.489926
-Epoch 25/50 — avg loss: 916.069148
-Epoch 26/50 — avg loss: 920.722666
-Epoch 27/50 — avg loss: 914.067612
-Epoch 28/50 — avg loss: 919.905138
-Epoch 29/50 — avg loss: 912.178161
-Epoch 30/50 — avg loss: 926.003710
-Epoch 31/50 — avg loss: 915.448120
-Epoch 32/50 — avg loss: 918.880220
-Epoch 33/50 — avg loss: 917.983638
-Epoch 34/50 — avg loss: 924.073551
-Epoch 35/50 — avg loss: 918.481722
-Epoch 36/50 — avg loss: 916.723357
-Epoch 37/50 — avg loss: 910.260107
-Epoch 38/50 — avg loss: 914.793863
-Epoch 39/50 — avg loss: 921.057104
-Epoch 40/50 — avg loss: 917.723244
-Epoch 41/50 — avg loss: 918.569250
-Epoch 42/50 — avg loss: 919.279042
-Epoch 43/50 — avg loss: 920.084581
-Epoch 44/50 — avg loss: 921.287489
-Epoch 45/50 — avg loss: 924.877186
-Epoch 46/50 — avg loss: 922.616375
-Epoch 47/50 — avg loss: 916.583509
-Epoch 48/50 — avg loss: 918.979628
-Epoch 49/50 — avg loss: 917.257761
-Epoch 50/50 — avg loss: 917.632855
+Epoch 1/50 — avg loss: 3051.997402
+Epoch 2/50 — avg loss: 1540.233440
+Epoch 3/50 — avg loss: 1170.549569
+Epoch 4/50 — avg loss: 1065.139883
+Epoch 5/50 — avg loss: 1008.481103
+Epoch 6/50 — avg loss: 962.089962
+Epoch 7/50 — avg loss: 951.340642
+Epoch 8/50 — avg loss: 941.890064
+Epoch 9/50 — avg loss: 928.443747
+Epoch 10/50 — avg loss: 915.447733
+Epoch 11/50 — avg loss: 922.283598
+Epoch 12/50 — avg loss: 920.597013
+Epoch 13/50 — avg loss: 926.696379
+Epoch 14/50 — avg loss: 922.590254
+Epoch 15/50 — avg loss: 920.446325
+Epoch 16/50 — avg loss: 919.759114
+Epoch 17/50 — avg loss: 919.179664
+Epoch 18/50 — avg loss: 915.520265
+Epoch 19/50 — avg loss: 907.289877
+Epoch 20/50 — avg loss: 931.496084
+Epoch 21/50 — avg loss: 920.933274
+Epoch 22/50 — avg loss: 921.021898
+Epoch 23/50 — avg loss: 916.814799
+Epoch 24/50 — avg loss: 918.078898
+Epoch 25/50 — avg loss: 918.451936
+Epoch 26/50 — avg loss: 910.076651
+Epoch 27/50 — avg loss: 918.762639
+Epoch 28/50 — avg loss: 921.831007
+Epoch 29/50 — avg loss: 917.568273
+Epoch 30/50 — avg loss: 916.186929
+Epoch 31/50 — avg loss: 919.361182
+Epoch 32/50 — avg loss: 918.450087
+Epoch 33/50 — avg loss: 923.259737
+Epoch 34/50 — avg loss: 924.075228
+Epoch 35/50 — avg loss: 915.716180
+Epoch 36/50 — avg loss: 918.845645
+Epoch 37/50 — avg loss: 915.173954
+Epoch 38/50 — avg loss: 928.856140
+Epoch 39/50 — avg loss: 922.205993
+Epoch 40/50 — avg loss: 913.573365
+Epoch 41/50 — avg loss: 910.272269
+Epoch 42/50 — avg loss: 915.527832
+Epoch 43/50 — avg loss: 919.628160
+Epoch 44/50 — avg loss: 925.769958
+Epoch 45/50 — avg loss: 921.464766
+Epoch 46/50 — avg loss: 919.835814
+Epoch 47/50 — avg loss: 920.266937
+Epoch 48/50 — avg loss: 920.437899
+Epoch 49/50 — avg loss: 915.647915
+Epoch 50/50 — avg loss: 910.511671
 
-Test 
+Test Evalution:
 
-Accuracy: R2: -11675.328496
+MSE: 7121.907928, MAE: 83.550545
 
-MSE: 7448.453540, MAE:85.368027
+Train Evaluation:
 
-Train 
-
-Accuracy: R2: -1126.378771
-
-MSE: 1830.725117, MAE:34.382789
-Saved model → models/RNN_hs32_lr0.001_ep50.npz
-Saved loss plot → results/RNN_hs32_lr0.001_ep50_loss.png
-Saved prediction plot → results/RNN_hs32_lr0.001_ep50_predictions.png
-
+MSE: 1839.412539, MAE: 34.382614
+Saved model to models/RNN_hs32_lr0.001_ep50.npz
+Saved loss plot to results/RNN_hs32_lr0.001_ep50_loss.png
+Saved prediction plot to results/RNN_hs32_lr0.001_ep50_predictions.png
 Training Model: RNN_hs32_lr0.005_ep20
-Parameters:
-    Model Type          = RNN
-    Hidden Size         = 32
-    Learning Rate       = 0.005
-    Epochs              = 20
-    Input Size          = 5
-    Output Size         = 1
-    Sequence Length     = 30
-    Batch Size          = 16
-    Error Function      = MSE/MAE
+Parameter Tested:
+	Model Type = RNN
+	Hidden Size = 32
+	Learning Rate = 0.005
+	Epochs = 20
+	Number of Inputs = 5
+	Number of Outputs = 1
+	Window Length = 30
+	Batch Size = 16
+	Error Function = MSE/MAE
 
-Dataset:
-    Total Samples       = 1229
-    Train/Test Split    = 79:20
-    Train Samples       = 977
-    Test Samples        = 252
+Dataset Information:
+	Total Samples = 1199
+	Train/Test Split = 81:18
+	Train Samples = 977
+	Test Samples = 222
 Starting training.
 
-Epoch 1/20 — avg loss: 1590.901168
-Epoch 2/20 — avg loss: 935.373104
-Epoch 3/20 — avg loss: 929.405463
-Epoch 4/20 — avg loss: 907.175524
-Epoch 5/20 — avg loss: 913.668582
-Epoch 6/20 — avg loss: 925.320623
-Epoch 7/20 — avg loss: 913.322663
-Epoch 8/20 — avg loss: 937.129056
-Epoch 9/20 — avg loss: 901.499701
-Epoch 10/20 — avg loss: 940.834490
-Epoch 11/20 — avg loss: 920.779994
-Epoch 12/20 — avg loss: 924.110889
-Epoch 13/20 — avg loss: 912.911358
-Epoch 14/20 — avg loss: 922.870571
-Epoch 15/20 — avg loss: 925.838972
-Epoch 16/20 — avg loss: 904.394204
-Epoch 17/20 — avg loss: 929.452921
-Epoch 18/20 — avg loss: 928.912600
-Epoch 19/20 — avg loss: 901.631275
-Epoch 20/20 — avg loss: 921.284839
+Epoch 1/20 — avg loss: 1535.951170
+Epoch 2/20 — avg loss: 925.036588
+Epoch 3/20 — avg loss: 923.236201
+Epoch 4/20 — avg loss: 924.927643
+Epoch 5/20 — avg loss: 916.076938
+Epoch 6/20 — avg loss: 918.534258
+Epoch 7/20 — avg loss: 942.211641
+Epoch 8/20 — avg loss: 932.762886
+Epoch 9/20 — avg loss: 911.351643
+Epoch 10/20 — avg loss: 912.674459
+Epoch 11/20 — avg loss: 934.475887
+Epoch 12/20 — avg loss: 909.397883
+Epoch 13/20 — avg loss: 909.613435
+Epoch 14/20 — avg loss: 924.889036
+Epoch 15/20 — avg loss: 931.227671
+Epoch 16/20 — avg loss: 895.265612
+Epoch 17/20 — avg loss: 928.690218
+Epoch 18/20 — avg loss: 928.476865
+Epoch 19/20 — avg loss: 918.457776
+Epoch 20/20 — avg loss: 934.655254
 
-Test 
+Test Evalution:
 
-Accuracy: R2: -12330.761004
+MSE: 6930.116500, MAE: 82.394794
 
-MSE: 7866.560874, MAE:87.782728
+Train Evaluation:
 
-Train 
-
-Accuracy: R2: -1176.442688
-
-MSE: 1912.022790, MAE:34.413436
-Saved model → models/RNN_hs32_lr0.005_ep20.npz
-Saved loss plot → results/RNN_hs32_lr0.005_ep20_loss.png
-Saved prediction plot → results/RNN_hs32_lr0.005_ep20_predictions.png
-
+MSE: 1803.986228, MAE: 34.390091
+Saved model to models/RNN_hs32_lr0.005_ep20.npz
+Saved loss plot to results/RNN_hs32_lr0.005_ep20_loss.png
+Saved prediction plot to results/RNN_hs32_lr0.005_ep20_predictions.png
 Training Model: RNN_hs32_lr0.005_ep30
-Parameters:
-    Model Type          = RNN
-    Hidden Size         = 32
-    Learning Rate       = 0.005
-    Epochs              = 30
-    Input Size          = 5
-    Output Size         = 1
-    Sequence Length     = 30
-    Batch Size          = 16
-    Error Function      = MSE/MAE
+Parameter Tested:
+	Model Type = RNN
+	Hidden Size = 32
+	Learning Rate = 0.005
+	Epochs = 30
+	Number of Inputs = 5
+	Number of Outputs = 1
+	Window Length = 30
+	Batch Size = 16
+	Error Function = MSE/MAE
 
-Dataset:
-    Total Samples       = 1229
-    Train/Test Split    = 79:20
-    Train Samples       = 977
-    Test Samples        = 252
+Dataset Information:
+	Total Samples = 1199
+	Train/Test Split = 81:18
+	Train Samples = 977
+	Test Samples = 222
 Starting training.
 
-Epoch 1/30 — avg loss: 1574.678280
-Epoch 2/30 — avg loss: 947.945073
-Epoch 3/30 — avg loss: 914.516967
-Epoch 4/30 — avg loss: 917.155207
-Epoch 5/30 — avg loss: 928.871371
-Epoch 6/30 — avg loss: 926.128538
-Epoch 7/30 — avg loss: 917.191126
-Epoch 8/30 — avg loss: 915.370346
-Epoch 9/30 — avg loss: 900.139427
-Epoch 10/30 — avg loss: 938.626712
-Epoch 11/30 — avg loss: 919.010506
-Epoch 12/30 — avg loss: 919.530899
-Epoch 13/30 — avg loss: 930.936675
-Epoch 14/30 — avg loss: 907.445626
-Epoch 15/30 — avg loss: 932.222095
-Epoch 16/30 — avg loss: 914.947885
-Epoch 17/30 — avg loss: 930.232467
-Epoch 18/30 — avg loss: 915.114199
-Epoch 19/30 — avg loss: 928.969617
-Epoch 20/30 — avg loss: 931.699643
-Epoch 21/30 — avg loss: 899.463203
-Epoch 22/30 — avg loss: 933.081669
-Epoch 23/30 — avg loss: 911.729082
-Epoch 24/30 — avg loss: 921.189659
-Epoch 25/30 — avg loss: 926.019673
-Epoch 26/30 — avg loss: 903.110585
-Epoch 27/30 — avg loss: 916.951976
-Epoch 28/30 — avg loss: 926.065617
-Epoch 29/30 — avg loss: 920.929584
-Epoch 30/30 — avg loss: 905.944319
+Epoch 1/30 — avg loss: 1604.255604
+Epoch 2/30 — avg loss: 955.183412
+Epoch 3/30 — avg loss: 887.604819
+Epoch 4/30 — avg loss: 947.779192
+Epoch 5/30 — avg loss: 917.261802
+Epoch 6/30 — avg loss: 928.285542
+Epoch 7/30 — avg loss: 931.619021
+Epoch 8/30 — avg loss: 909.066484
+Epoch 9/30 — avg loss: 931.926998
+Epoch 10/30 — avg loss: 902.818095
+Epoch 11/30 — avg loss: 924.015529
+Epoch 12/30 — avg loss: 921.308709
+Epoch 13/30 — avg loss: 933.237788
+Epoch 14/30 — avg loss: 919.883335
+Epoch 15/30 — avg loss: 906.135007
+Epoch 16/30 — avg loss: 923.085466
+Epoch 17/30 — avg loss: 923.967227
+Epoch 18/30 — avg loss: 908.848434
+Epoch 19/30 — avg loss: 935.087945
+Epoch 20/30 — avg loss: 905.848476
+Epoch 21/30 — avg loss: 931.706517
+Epoch 22/30 — avg loss: 914.926502
+Epoch 23/30 — avg loss: 919.459757
+Epoch 24/30 — avg loss: 915.242600
+Epoch 25/30 — avg loss: 943.536403
+Epoch 26/30 — avg loss: 910.566821
+Epoch 27/30 — avg loss: 917.368049
+Epoch 28/30 — avg loss: 930.037585
+Epoch 29/30 — avg loss: 919.250351
+Epoch 30/30 — avg loss: 924.031274
 
-Test 
+Test Evalution:
 
-Accuracy: R2: -12059.564350
+MSE: 7051.058236, MAE: 83.125471
 
-MSE: 7693.561658, MAE:86.791752
+Train Evaluation:
 
-Train 
-
-Accuracy: R2: -1155.025365
-
-MSE: 1877.243679, MAE:34.392918
-Saved model → models/RNN_hs32_lr0.005_ep30.npz
-Saved loss plot → results/RNN_hs32_lr0.005_ep30_loss.png
-Saved prediction plot → results/RNN_hs32_lr0.005_ep30_predictions.png
-
+MSE: 1826.069836, MAE: 34.383248
+Saved model to models/RNN_hs32_lr0.005_ep30.npz
+Saved loss plot to results/RNN_hs32_lr0.005_ep30_loss.png
+Saved prediction plot to results/RNN_hs32_lr0.005_ep30_predictions.png
 Training Model: RNN_hs32_lr0.005_ep50
-Parameters:
-    Model Type          = RNN
-    Hidden Size         = 32
-    Learning Rate       = 0.005
-    Epochs              = 50
-    Input Size          = 5
-    Output Size         = 1
-    Sequence Length     = 30
-    Batch Size          = 16
-    Error Function      = MSE/MAE
+Parameter Tested:
+	Model Type = RNN
+	Hidden Size = 32
+	Learning Rate = 0.005
+	Epochs = 50
+	Number of Inputs = 5
+	Number of Outputs = 1
+	Window Length = 30
+	Batch Size = 16
+	Error Function = MSE/MAE
 
-Dataset:
-    Total Samples       = 1229
-    Train/Test Split    = 79:20
-    Train Samples       = 977
-    Test Samples        = 252
+Dataset Information:
+	Total Samples = 1199
+	Train/Test Split = 81:18
+	Train Samples = 977
+	Test Samples = 222
 Starting training.
 
-Epoch 1/50 — avg loss: 1526.416041
-Epoch 2/50 — avg loss: 929.695404
-Epoch 3/50 — avg loss: 910.668195
-Epoch 4/50 — avg loss: 915.540584
-Epoch 5/50 — avg loss: 921.154596
-Epoch 6/50 — avg loss: 928.347469
-Epoch 7/50 — avg loss: 912.887608
-Epoch 8/50 — avg loss: 916.604626
-Epoch 9/50 — avg loss: 906.791573
-Epoch 10/50 — avg loss: 942.569838
-Epoch 11/50 — avg loss: 932.871390
-Epoch 12/50 — avg loss: 892.482129
-Epoch 13/50 — avg loss: 900.190407
-Epoch 14/50 — avg loss: 941.957051
-Epoch 15/50 — avg loss: 918.349696
-Epoch 16/50 — avg loss: 914.896916
-Epoch 17/50 — avg loss: 914.633455
-Epoch 18/50 — avg loss: 925.005583
-Epoch 19/50 — avg loss: 897.355234
-Epoch 20/50 — avg loss: 937.391953
-Epoch 21/50 — avg loss: 918.795220
-Epoch 22/50 — avg loss: 934.445620
-Epoch 23/50 — avg loss: 911.306064
-Epoch 24/50 — avg loss: 907.806156
-Epoch 25/50 — avg loss: 900.302073
-Epoch 26/50 — avg loss: 949.580236
-Epoch 27/50 — avg loss: 905.930436
-Epoch 28/50 — avg loss: 927.260636
-Epoch 29/50 — avg loss: 908.839748
-Epoch 30/50 — avg loss: 910.296811
-Epoch 31/50 — avg loss: 935.590909
-Epoch 32/50 — avg loss: 918.964757
-Epoch 33/50 — avg loss: 934.123179
-Epoch 34/50 — avg loss: 894.199403
-Epoch 35/50 — avg loss: 924.741943
-Epoch 36/50 — avg loss: 934.700966
-Epoch 37/50 — avg loss: 943.811797
-Epoch 38/50 — avg loss: 909.761776
-Epoch 39/50 — avg loss: 911.635458
-Epoch 40/50 — avg loss: 927.756298
-Epoch 41/50 — avg loss: 916.145312
-Epoch 42/50 — avg loss: 900.897337
-Epoch 43/50 — avg loss: 901.845127
-Epoch 44/50 — avg loss: 933.199323
-Epoch 45/50 — avg loss: 897.057972
-Epoch 46/50 — avg loss: 925.509053
-Epoch 47/50 — avg loss: 923.693761
-Epoch 48/50 — avg loss: 932.244769
-Epoch 49/50 — avg loss: 907.388995
-Epoch 50/50 — avg loss: 926.611655
+Epoch 1/50 — avg loss: 1571.410212
+Epoch 2/50 — avg loss: 943.262521
+Epoch 3/50 — avg loss: 934.817567
+Epoch 4/50 — avg loss: 926.136585
+Epoch 5/50 — avg loss: 904.496846
+Epoch 6/50 — avg loss: 937.103572
+Epoch 7/50 — avg loss: 910.154576
+Epoch 8/50 — avg loss: 927.111505
+Epoch 9/50 — avg loss: 906.254197
+Epoch 10/50 — avg loss: 920.011928
+Epoch 11/50 — avg loss: 929.182100
+Epoch 12/50 — avg loss: 911.239021
+Epoch 13/50 — avg loss: 916.955903
+Epoch 14/50 — avg loss: 896.444375
+Epoch 15/50 — avg loss: 928.338341
+Epoch 16/50 — avg loss: 933.871017
+Epoch 17/50 — avg loss: 930.184027
+Epoch 18/50 — avg loss: 896.109285
+Epoch 19/50 — avg loss: 931.007743
+Epoch 20/50 — avg loss: 915.066620
+Epoch 21/50 — avg loss: 919.847000
+Epoch 22/50 — avg loss: 911.686899
+Epoch 23/50 — avg loss: 936.593910
+Epoch 24/50 — avg loss: 902.765528
+Epoch 25/50 — avg loss: 936.718944
+Epoch 26/50 — avg loss: 921.039145
+Epoch 27/50 — avg loss: 918.921444
+Epoch 28/50 — avg loss: 912.359317
+Epoch 29/50 — avg loss: 930.527358
+Epoch 30/50 — avg loss: 922.546545
+Epoch 31/50 — avg loss: 918.817341
+Epoch 32/50 — avg loss: 910.469756
+Epoch 33/50 — avg loss: 929.786022
+Epoch 34/50 — avg loss: 917.381468
+Epoch 35/50 — avg loss: 930.039596
+Epoch 36/50 — avg loss: 913.672629
+Epoch 37/50 — avg loss: 907.687091
+Epoch 38/50 — avg loss: 927.490252
+Epoch 39/50 — avg loss: 936.892622
+Epoch 40/50 — avg loss: 923.531491
+Epoch 41/50 — avg loss: 910.705798
+Epoch 42/50 — avg loss: 931.521072
+Epoch 43/50 — avg loss: 934.255607
+Epoch 44/50 — avg loss: 916.060874
+Epoch 45/50 — avg loss: 916.750984
+Epoch 46/50 — avg loss: 926.169472
+Epoch 47/50 — avg loss: 912.854678
+Epoch 48/50 — avg loss: 916.475707
+Epoch 49/50 — avg loss: 910.789066
+Epoch 50/50 — avg loss: 924.916612
 
-Test 
+Test Evalution:
 
-Accuracy: R2: -11939.470254
+MSE: 7178.488316, MAE: 83.888461
 
-MSE: 7616.952363, MAE:86.349284
+Train Evaluation:
 
-Train 
-
-Accuracy: R2: -1145.854636
-
-MSE: 1862.351539, MAE:34.387700
-Saved model → models/RNN_hs32_lr0.005_ep50.npz
-Saved loss plot → results/RNN_hs32_lr0.005_ep50_loss.png
-Saved prediction plot → results/RNN_hs32_lr0.005_ep50_predictions.png
-
-Best RNN Model: RNN_hs16_lr0.005_ep30 with MSE: 225.151385, MAE: 12.187135
-Saved metric bar plot → results/RNN_mse_comparison.png
-Saved metric bar plot → results/RNN_mae_comparison.png
-Saved R² comparison plot → results/RNN_r2_comparison.png
-
+MSE: 1850.268423, MAE: 34.384024
+Saved model to models/RNN_hs32_lr0.005_ep50.npz
+Saved loss plot to results/RNN_hs32_lr0.005_ep50_loss.png
+Saved prediction plot to results/RNN_hs32_lr0.005_ep50_predictions.png
+Best RNN Model: RNN_hs16_lr0.005_ep50
+MSE: 246.860631
+MAE: 12.856282
+Saved metric bar plot to results/RNN_mse_comparison.png
+Saved metric bar plot to results/RNN_mae_comparison.png
 Training Model: LSTM_hs16_lr0.001_ep20
-Parameters:
-    Model Type          = LSTM
-    Hidden Size         = 16
-    Learning Rate       = 0.001
-    Epochs              = 20
-    Input Size          = 5
-    Output Size         = 1
-    Sequence Length     = 30
-    Batch Size          = 16
-    Error Function      = MSE/MAE
+Parameter Tested:
+	Model Type = LSTM
+	Hidden Size = 16
+	Learning Rate = 0.001
+	Epochs = 20
+	Number of Inputs = 5
+	Number of Outputs = 1
+	Window Length = 30
+	Batch Size = 16
+	Error Function = MSE/MAE
 
-Dataset:
-    Total Samples       = 1229
-    Train/Test Split    = 79:20
-    Train Samples       = 977
-    Test Samples        = 252
+Dataset Information:
+	Total Samples = 1199
+	Train/Test Split = 81:18
+	Train Samples = 977
+	Test Samples = 222
 Starting training.
 
-Epoch 1/20 — avg loss: 3610.512841
-Epoch 2/20 — avg loss: 2484.325526
-Epoch 3/20 — avg loss: 1692.474306
-Epoch 4/20 — avg loss: 1330.286908
-Epoch 5/20 — avg loss: 1198.207227
-Epoch 6/20 — avg loss: 1128.961362
-Epoch 7/20 — avg loss: 1081.075849
-Epoch 8/20 — avg loss: 1043.541091
-Epoch 9/20 — avg loss: 1011.681769
-Epoch 10/20 — avg loss: 978.145548
-Epoch 11/20 — avg loss: 956.963556
-Epoch 12/20 — avg loss: 908.807466
-Epoch 13/20 — avg loss: 874.247140
-Epoch 14/20 — avg loss: 852.044336
-Epoch 15/20 — avg loss: 817.678170
-Epoch 16/20 — avg loss: 775.704724
-Epoch 17/20 — avg loss: 736.046617
-Epoch 18/20 — avg loss: 705.439195
-Epoch 19/20 — avg loss: 684.237987
-Epoch 20/20 — avg loss: 665.002747
+Epoch 1/20 — avg loss: 3609.992084
+Epoch 2/20 — avg loss: 2490.375462
+Epoch 3/20 — avg loss: 1681.477427
+Epoch 4/20 — avg loss: 1332.607882
+Epoch 5/20 — avg loss: 1196.282343
+Epoch 6/20 — avg loss: 1127.679682
+Epoch 7/20 — avg loss: 1082.917603
+Epoch 8/20 — avg loss: 1034.266688
+Epoch 9/20 — avg loss: 1007.533700
+Epoch 10/20 — avg loss: 979.608166
+Epoch 11/20 — avg loss: 962.786967
+Epoch 12/20 — avg loss: 923.118840
+Epoch 13/20 — avg loss: 877.866634
+Epoch 14/20 — avg loss: 854.854216
+Epoch 15/20 — avg loss: 821.822367
+Epoch 16/20 — avg loss: 785.080682
+Epoch 17/20 — avg loss: 756.980923
+Epoch 18/20 — avg loss: 729.947129
+Epoch 19/20 — avg loss: 704.970167
+Epoch 20/20 — avg loss: 679.005272
 
-Test 
+Test Evalution:
 
-Accuracy: R2: -7329.496808
+MSE: 4510.101339, MAE: 66.097550
 
-MSE: 4676.201506, MAE:67.197075
+Train Evaluation:
 
-Train 
-
-Accuracy: R2: -1407.697407
-
-MSE: 2287.552145, MAE:40.341348
-Saved model → models/LSTM_hs16_lr0.001_ep20.npz
-Saved loss plot → results/LSTM_hs16_lr0.001_ep20_loss.png
-Saved prediction plot → results/LSTM_hs16_lr0.001_ep20_predictions.png
-
+MSE: 2129.070935, MAE: 39.225596
+Saved model to models/LSTM_hs16_lr0.001_ep20.npz
+Saved loss plot to results/LSTM_hs16_lr0.001_ep20_loss.png
+Saved prediction plot to results/LSTM_hs16_lr0.001_ep20_predictions.png
 Training Model: LSTM_hs16_lr0.001_ep30
-Parameters:
-    Model Type          = LSTM
-    Hidden Size         = 16
-    Learning Rate       = 0.001
-    Epochs              = 30
-    Input Size          = 5
-    Output Size         = 1
-    Sequence Length     = 30
-    Batch Size          = 16
-    Error Function      = MSE/MAE
+Parameter Tested:
+	Model Type = LSTM
+	Hidden Size = 16
+	Learning Rate = 0.001
+	Epochs = 30
+	Number of Inputs = 5
+	Number of Outputs = 1
+	Window Length = 30
+	Batch Size = 16
+	Error Function = MSE/MAE
 
-Dataset:
-    Total Samples       = 1229
-    Train/Test Split    = 79:20
-    Train Samples       = 977
-    Test Samples        = 252
+Dataset Information:
+	Total Samples = 1199
+	Train/Test Split = 81:18
+	Train Samples = 977
+	Test Samples = 222
 Starting training.
 
-Epoch 1/30 — avg loss: 3613.835697
-Epoch 2/30 — avg loss: 2478.938438
-Epoch 3/30 — avg loss: 1689.733580
-Epoch 4/30 — avg loss: 1325.824975
-Epoch 5/30 — avg loss: 1196.814373
-Epoch 6/30 — avg loss: 1135.841045
-Epoch 7/30 — avg loss: 1072.369932
-Epoch 8/30 — avg loss: 1041.752154
-Epoch 9/30 — avg loss: 1005.182617
-Epoch 10/30 — avg loss: 977.985070
-Epoch 11/30 — avg loss: 956.759006
-Epoch 12/30 — avg loss: 904.206713
-Epoch 13/30 — avg loss: 864.830867
-Epoch 14/30 — avg loss: 842.666263
-Epoch 15/30 — avg loss: 804.397389
-Epoch 16/30 — avg loss: 769.864094
-Epoch 17/30 — avg loss: 743.776226
-Epoch 18/30 — avg loss: 713.845287
-Epoch 19/30 — avg loss: 687.646651
-Epoch 20/30 — avg loss: 669.566109
-Epoch 21/30 — avg loss: 668.154921
-Epoch 22/30 — avg loss: 653.612464
-Epoch 23/30 — avg loss: 652.323253
-Epoch 24/30 — avg loss: 662.244291
-Epoch 25/30 — avg loss: 660.933188
-Epoch 26/30 — avg loss: 668.483059
-Epoch 27/30 — avg loss: 661.335817
-Epoch 28/30 — avg loss: 685.411373
-Epoch 29/30 — avg loss: 695.752097
-Epoch 30/30 — avg loss: 702.793684
+Epoch 1/30 — avg loss: 3604.480396
+Epoch 2/30 — avg loss: 2473.107136
+Epoch 3/30 — avg loss: 1696.645055
+Epoch 4/30 — avg loss: 1329.260914
+Epoch 5/30 — avg loss: 1195.074827
+Epoch 6/30 — avg loss: 1131.555112
+Epoch 7/30 — avg loss: 1076.395722
+Epoch 8/30 — avg loss: 1034.219554
+Epoch 9/30 — avg loss: 1008.498337
+Epoch 10/30 — avg loss: 980.306940
+Epoch 11/30 — avg loss: 962.355487
+Epoch 12/30 — avg loss: 912.759662
+Epoch 13/30 — avg loss: 878.075724
+Epoch 14/30 — avg loss: 853.238720
+Epoch 15/30 — avg loss: 816.351857
+Epoch 16/30 — avg loss: 782.019777
+Epoch 17/30 — avg loss: 746.428365
+Epoch 18/30 — avg loss: 722.040892
+Epoch 19/30 — avg loss: 692.192340
+Epoch 20/30 — avg loss: 670.939944
+Epoch 21/30 — avg loss: 662.530086
+Epoch 22/30 — avg loss: 660.678286
+Epoch 23/30 — avg loss: 658.275242
+Epoch 24/30 — avg loss: 671.907197
+Epoch 25/30 — avg loss: 659.435918
+Epoch 26/30 — avg loss: 673.909660
+Epoch 27/30 — avg loss: 686.172572
+Epoch 28/30 — avg loss: 687.322186
+Epoch 29/30 — avg loss: 696.780476
+Epoch 30/30 — avg loss: 712.741692
 
-Test 
+Test Evalution:
 
-Accuracy: R2: -4246.099377
+MSE: 2525.391038, MAE: 48.827932
 
-MSE: 2709.269647, MAE:50.482686
+Train Evaluation:
 
-Train 
-
-Accuracy: R2: -1511.614055
-
-MSE: 2456.300061, MAE:42.723389
-Saved model → models/LSTM_hs16_lr0.001_ep30.npz
-Saved loss plot → results/LSTM_hs16_lr0.001_ep30_loss.png
-Saved prediction plot → results/LSTM_hs16_lr0.001_ep30_predictions.png
-
+MSE: 2454.724352, MAE: 42.698856
+Saved model to models/LSTM_hs16_lr0.001_ep30.npz
+Saved loss plot to results/LSTM_hs16_lr0.001_ep30_loss.png
+Saved prediction plot to results/LSTM_hs16_lr0.001_ep30_predictions.png
 Training Model: LSTM_hs16_lr0.001_ep50
-Parameters:
-    Model Type          = LSTM
-    Hidden Size         = 16
-    Learning Rate       = 0.001
-    Epochs              = 50
-    Input Size          = 5
-    Output Size         = 1
-    Sequence Length     = 30
-    Batch Size          = 16
-    Error Function      = MSE/MAE
+Parameter Tested:
+	Model Type = LSTM
+	Hidden Size = 16
+	Learning Rate = 0.001
+	Epochs = 50
+	Number of Inputs = 5
+	Number of Outputs = 1
+	Window Length = 30
+	Batch Size = 16
+	Error Function = MSE/MAE
 
-Dataset:
-    Total Samples       = 1229
-    Train/Test Split    = 79:20
-    Train Samples       = 977
-    Test Samples        = 252
+Dataset Information:
+	Total Samples = 1199
+	Train/Test Split = 81:18
+	Train Samples = 977
+	Test Samples = 222
 Starting training.
 
-Epoch 1/50 — avg loss: 3605.413305
-Epoch 2/50 — avg loss: 2488.478802
-Epoch 3/50 — avg loss: 1683.813837
-Epoch 4/50 — avg loss: 1328.323958
-Epoch 5/50 — avg loss: 1193.137788
-Epoch 6/50 — avg loss: 1129.083619
-Epoch 7/50 — avg loss: 1078.469359
-Epoch 8/50 — avg loss: 1043.747816
-Epoch 9/50 — avg loss: 1008.431942
-Epoch 10/50 — avg loss: 980.590136
-Epoch 11/50 — avg loss: 963.741330
-Epoch 12/50 — avg loss: 925.966544
-Epoch 13/50 — avg loss: 866.195531
-Epoch 14/50 — avg loss: 843.970055
-Epoch 15/50 — avg loss: 810.493040
-Epoch 16/50 — avg loss: 774.928720
-Epoch 17/50 — avg loss: 747.146886
-Epoch 18/50 — avg loss: 718.910707
-Epoch 19/50 — avg loss: 691.985327
-Epoch 20/50 — avg loss: 675.194268
-Epoch 21/50 — avg loss: 655.182692
-Epoch 22/50 — avg loss: 655.283401
-Epoch 23/50 — avg loss: 658.723008
-Epoch 24/50 — avg loss: 655.297214
-Epoch 25/50 — avg loss: 661.199452
-Epoch 26/50 — avg loss: 662.084483
-Epoch 27/50 — avg loss: 678.431658
-Epoch 28/50 — avg loss: 687.176973
-Epoch 29/50 — avg loss: 699.578586
-Epoch 30/50 — avg loss: 706.568491
-Epoch 31/50 — avg loss: 729.477454
-Epoch 32/50 — avg loss: 728.854379
-Epoch 33/50 — avg loss: 732.698133
-Epoch 34/50 — avg loss: 735.149253
-Epoch 35/50 — avg loss: 766.053347
-Epoch 36/50 — avg loss: 773.975651
-Epoch 37/50 — avg loss: 776.154739
-Epoch 38/50 — avg loss: 785.794667
-Epoch 39/50 — avg loss: 788.536156
-Epoch 40/50 — avg loss: 800.025737
-Epoch 41/50 — avg loss: 812.565431
-Epoch 42/50 — avg loss: 832.580413
-Epoch 43/50 — avg loss: 832.150086
-Epoch 44/50 — avg loss: 838.098605
-Epoch 45/50 — avg loss: 865.139745
-Epoch 46/50 — avg loss: 874.189852
-Epoch 47/50 — avg loss: 872.312901
-Epoch 48/50 — avg loss: 873.072264
-Epoch 49/50 — avg loss: 882.610655
-Epoch 50/50 — avg loss: 901.594641
+Epoch 1/50 — avg loss: 3599.791663
+Epoch 2/50 — avg loss: 2482.748854
+Epoch 3/50 — avg loss: 1679.517180
+Epoch 4/50 — avg loss: 1321.629309
+Epoch 5/50 — avg loss: 1198.939546
+Epoch 6/50 — avg loss: 1125.906941
+Epoch 7/50 — avg loss: 1073.971550
+Epoch 8/50 — avg loss: 1030.566417
+Epoch 9/50 — avg loss: 1005.359244
+Epoch 10/50 — avg loss: 980.634974
+Epoch 11/50 — avg loss: 964.704307
+Epoch 12/50 — avg loss: 930.535854
+Epoch 13/50 — avg loss: 875.424718
+Epoch 14/50 — avg loss: 846.792147
+Epoch 15/50 — avg loss: 818.285189
+Epoch 16/50 — avg loss: 790.617199
+Epoch 17/50 — avg loss: 757.269339
+Epoch 18/50 — avg loss: 731.532624
+Epoch 19/50 — avg loss: 702.607353
+Epoch 20/50 — avg loss: 673.529234
+Epoch 21/50 — avg loss: 663.329627
+Epoch 22/50 — avg loss: 653.944526
+Epoch 23/50 — avg loss: 646.790750
+Epoch 24/50 — avg loss: 650.257449
+Epoch 25/50 — avg loss: 655.434812
+Epoch 26/50 — avg loss: 665.804129
+Epoch 27/50 — avg loss: 655.231523
+Epoch 28/50 — avg loss: 680.921276
+Epoch 29/50 — avg loss: 699.517988
+Epoch 30/50 — avg loss: 701.168898
+Epoch 31/50 — avg loss: 724.203831
+Epoch 32/50 — avg loss: 726.771079
+Epoch 33/50 — avg loss: 747.385108
+Epoch 34/50 — avg loss: 762.253635
+Epoch 35/50 — avg loss: 763.467714
+Epoch 36/50 — avg loss: 784.153766
+Epoch 37/50 — avg loss: 787.574165
+Epoch 38/50 — avg loss: 802.345925
+Epoch 39/50 — avg loss: 823.132892
+Epoch 40/50 — avg loss: 830.395668
+Epoch 41/50 — avg loss: 859.603417
+Epoch 42/50 — avg loss: 860.257291
+Epoch 43/50 — avg loss: 880.395116
+Epoch 44/50 — avg loss: 884.765449
+Epoch 45/50 — avg loss: 886.288787
+Epoch 46/50 — avg loss: 891.453260
+Epoch 47/50 — avg loss: 897.929658
+Epoch 48/50 — avg loss: 876.347015
+Epoch 49/50 — avg loss: 891.994003
+Epoch 50/50 — avg loss: 884.412255
 
-Test 
+Test Evalution:
 
-Accuracy: R2: -2006.070170
+MSE: 961.684888, MAE: 28.460435
 
-MSE: 1280.331306, MAE:32.972552
+Train Evaluation:
 
-Train 
-
-Accuracy: R2: -1858.899558
-
-MSE: 3020.249205, MAE:45.741493
-Saved model → models/LSTM_hs16_lr0.001_ep50.npz
-Saved loss plot → results/LSTM_hs16_lr0.001_ep50_loss.png
-Saved prediction plot → results/LSTM_hs16_lr0.001_ep50_predictions.png
-
+MSE: 3017.521927, MAE: 45.801274
+Saved model to models/LSTM_hs16_lr0.001_ep50.npz
+Saved loss plot to results/LSTM_hs16_lr0.001_ep50_loss.png
+Saved prediction plot to results/LSTM_hs16_lr0.001_ep50_predictions.png
 Training Model: LSTM_hs16_lr0.005_ep20
-Parameters:
-    Model Type          = LSTM
-    Hidden Size         = 16
-    Learning Rate       = 0.005
-    Epochs              = 20
-    Input Size          = 5
-    Output Size         = 1
-    Sequence Length     = 30
-    Batch Size          = 16
-    Error Function      = MSE/MAE
+Parameter Tested:
+	Model Type = LSTM
+	Hidden Size = 16
+	Learning Rate = 0.005
+	Epochs = 20
+	Number of Inputs = 5
+	Number of Outputs = 1
+	Window Length = 30
+	Batch Size = 16
+	Error Function = MSE/MAE
 
-Dataset:
-    Total Samples       = 1229
-    Train/Test Split    = 79:20
-    Train Samples       = 977
-    Test Samples        = 252
+Dataset Information:
+	Total Samples = 1199
+	Train/Test Split = 81:18
+	Train Samples = 977
+	Test Samples = 222
 Starting training.
 
-Epoch 1/20 — avg loss: 2038.197889
-Epoch 2/20 — avg loss: 1014.309109
-Epoch 3/20 — avg loss: 809.793607
-Epoch 4/20 — avg loss: 634.572381
-Epoch 5/20 — avg loss: 500.179554
-Epoch 6/20 — avg loss: 182.601860
-Epoch 7/20 — avg loss: 83.787495
-Epoch 8/20 — avg loss: 76.836498
-Epoch 9/20 — avg loss: 37.876449
-Epoch 10/20 — avg loss: 21.543711
-Epoch 11/20 — avg loss: 17.673199
-Epoch 12/20 — avg loss: 13.399844
-Epoch 13/20 — avg loss: 11.546852
-Epoch 14/20 — avg loss: 10.432612
-Epoch 15/20 — avg loss: 9.419478
-Epoch 16/20 — avg loss: 8.285987
-Epoch 17/20 — avg loss: 7.878491
-Epoch 18/20 — avg loss: 7.320565
-Epoch 19/20 — avg loss: 7.336785
-Epoch 20/20 — avg loss: 6.879131
+Epoch 1/20 — avg loss: 2060.114444
+Epoch 2/20 — avg loss: 1057.156279
+Epoch 3/20 — avg loss: 866.773748
+Epoch 4/20 — avg loss: 670.255208
+Epoch 5/20 — avg loss: 557.855964
+Epoch 6/20 — avg loss: 500.802651
+Epoch 7/20 — avg loss: 423.050964
+Epoch 8/20 — avg loss: 376.991482
+Epoch 9/20 — avg loss: 339.422549
+Epoch 10/20 — avg loss: 366.406074
+Epoch 11/20 — avg loss: 353.040877
+Epoch 12/20 — avg loss: 286.418834
+Epoch 13/20 — avg loss: 125.487759
+Epoch 14/20 — avg loss: 71.817300
+Epoch 15/20 — avg loss: 44.657039
+Epoch 16/20 — avg loss: 26.788565
+Epoch 17/20 — avg loss: 19.676309
+Epoch 18/20 — avg loss: 16.224192
+Epoch 19/20 — avg loss: 13.890599
+Epoch 20/20 — avg loss: 12.875044
 
-Test 
+Test Evalution:
 
-Accuracy: R2: -344.105598
+MSE: 298.674653, MAE: 13.918033
 
-MSE: 220.146514, MAE:12.239276
+Train Evaluation:
 
-Train 
-
-Accuracy: R2: -1918.483164
-
-MSE: 3117.005688, MAE:43.860601
-Saved model → models/LSTM_hs16_lr0.005_ep20.npz
-Saved loss plot → results/LSTM_hs16_lr0.005_ep20_loss.png
-Saved prediction plot → results/LSTM_hs16_lr0.005_ep20_predictions.png
-
+MSE: 3033.197367, MAE: 43.355322
+Saved model to models/LSTM_hs16_lr0.005_ep20.npz
+Saved loss plot to results/LSTM_hs16_lr0.005_ep20_loss.png
+Saved prediction plot to results/LSTM_hs16_lr0.005_ep20_predictions.png
 Training Model: LSTM_hs16_lr0.005_ep30
-Parameters:
-    Model Type          = LSTM
-    Hidden Size         = 16
-    Learning Rate       = 0.005
-    Epochs              = 30
-    Input Size          = 5
-    Output Size         = 1
-    Sequence Length     = 30
-    Batch Size          = 16
-    Error Function      = MSE/MAE
+Parameter Tested:
+	Model Type = LSTM
+	Hidden Size = 16
+	Learning Rate = 0.005
+	Epochs = 30
+	Number of Inputs = 5
+	Number of Outputs = 1
+	Window Length = 30
+	Batch Size = 16
+	Error Function = MSE/MAE
 
-Dataset:
-    Total Samples       = 1229
-    Train/Test Split    = 79:20
-    Train Samples       = 977
-    Test Samples        = 252
+Dataset Information:
+	Total Samples = 1199
+	Train/Test Split = 81:18
+	Train Samples = 977
+	Test Samples = 222
 Starting training.
 
-Epoch 1/30 — avg loss: 2079.932320
-Epoch 2/30 — avg loss: 1032.325457
-Epoch 3/30 — avg loss: 865.729579
-Epoch 4/30 — avg loss: 668.610911
-Epoch 5/30 — avg loss: 590.279366
-Epoch 6/30 — avg loss: 519.506384
-Epoch 7/30 — avg loss: 486.961011
-Epoch 8/30 — avg loss: 145.615780
-Epoch 9/30 — avg loss: 63.738634
-Epoch 10/30 — avg loss: 37.364017
-Epoch 11/30 — avg loss: 23.778762
-Epoch 12/30 — avg loss: 18.188968
-Epoch 13/30 — avg loss: 15.456632
-Epoch 14/30 — avg loss: 15.276394
-Epoch 15/30 — avg loss: 18.799229
-Epoch 16/30 — avg loss: 16.165034
-Epoch 17/30 — avg loss: 11.617058
-Epoch 18/30 — avg loss: 10.756931
-Epoch 19/30 — avg loss: 9.995947
-Epoch 20/30 — avg loss: 10.252473
-Epoch 21/30 — avg loss: 9.687173
-Epoch 22/30 — avg loss: 8.909988
-Epoch 23/30 — avg loss: 8.874050
-Epoch 24/30 — avg loss: 8.372648
-Epoch 25/30 — avg loss: 7.580312
-Epoch 26/30 — avg loss: 7.275598
-Epoch 27/30 — avg loss: 7.511581
-Epoch 28/30 — avg loss: 8.108587
-Epoch 29/30 — avg loss: 8.033096
-Epoch 30/30 — avg loss: 7.518239
+Epoch 1/30 — avg loss: 2064.648379
+Epoch 2/30 — avg loss: 1043.736196
+Epoch 3/30 — avg loss: 882.699137
+Epoch 4/30 — avg loss: 684.926023
+Epoch 5/30 — avg loss: 546.378700
+Epoch 6/30 — avg loss: 519.173661
+Epoch 7/30 — avg loss: 285.500683
+Epoch 8/30 — avg loss: 105.727962
+Epoch 9/30 — avg loss: 50.647628
+Epoch 10/30 — avg loss: 40.127209
+Epoch 11/30 — avg loss: 35.327722
+Epoch 12/30 — avg loss: 30.172915
+Epoch 13/30 — avg loss: 22.144063
+Epoch 14/30 — avg loss: 17.537440
+Epoch 15/30 — avg loss: 14.589913
+Epoch 16/30 — avg loss: 11.894893
+Epoch 17/30 — avg loss: 11.085977
+Epoch 18/30 — avg loss: 11.204628
+Epoch 19/30 — avg loss: 10.518767
+Epoch 20/30 — avg loss: 10.178562
+Epoch 21/30 — avg loss: 10.614269
+Epoch 22/30 — avg loss: 11.093004
+Epoch 23/30 — avg loss: 10.264688
+Epoch 24/30 — avg loss: 10.027210
+Epoch 25/30 — avg loss: 9.390099
+Epoch 26/30 — avg loss: 8.386149
+Epoch 27/30 — avg loss: 7.656574
+Epoch 28/30 — avg loss: 7.304899
+Epoch 29/30 — avg loss: 6.492399
+Epoch 30/30 — avg loss: 6.173185
 
-Test 
+Test Evalution:
 
-Accuracy: R2: -337.520297
+MSE: 220.881401, MAE: 12.028632
 
-MSE: 215.945681, MAE:12.074974
+Train Evaluation:
 
-Train 
-
-Accuracy: R2: -1944.461188
-
-MSE: 3159.190819, MAE:44.179606
-Saved model → models/LSTM_hs16_lr0.005_ep30.npz
-Saved loss plot → results/LSTM_hs16_lr0.005_ep30_loss.png
-Saved prediction plot → results/LSTM_hs16_lr0.005_ep30_predictions.png
-
+MSE: 3087.139389, MAE: 43.610604
+Saved model to models/LSTM_hs16_lr0.005_ep30.npz
+Saved loss plot to results/LSTM_hs16_lr0.005_ep30_loss.png
+Saved prediction plot to results/LSTM_hs16_lr0.005_ep30_predictions.png
 Training Model: LSTM_hs16_lr0.005_ep50
-Parameters:
-    Model Type          = LSTM
-    Hidden Size         = 16
-    Learning Rate       = 0.005
-    Epochs              = 50
-    Input Size          = 5
-    Output Size         = 1
-    Sequence Length     = 30
-    Batch Size          = 16
-    Error Function      = MSE/MAE
+Parameter Tested:
+	Model Type = LSTM
+	Hidden Size = 16
+	Learning Rate = 0.005
+	Epochs = 50
+	Number of Inputs = 5
+	Number of Outputs = 1
+	Window Length = 30
+	Batch Size = 16
+	Error Function = MSE/MAE
 
-Dataset:
-    Total Samples       = 1229
-    Train/Test Split    = 79:20
-    Train Samples       = 977
-    Test Samples        = 252
+Dataset Information:
+	Total Samples = 1199
+	Train/Test Split = 81:18
+	Train Samples = 977
+	Test Samples = 222
 Starting training.
 
-Epoch 1/50 — avg loss: 2103.947872
-Epoch 2/50 — avg loss: 1066.920323
-Epoch 3/50 — avg loss: 794.438942
-Epoch 4/50 — avg loss: 628.035891
-Epoch 5/50 — avg loss: 554.985633
-Epoch 6/50 — avg loss: 400.112044
-Epoch 7/50 — avg loss: 95.519081
-Epoch 8/50 — avg loss: 70.313641
-Epoch 9/50 — avg loss: 40.434459
-Epoch 10/50 — avg loss: 29.677384
-Epoch 11/50 — avg loss: 27.903735
-Epoch 12/50 — avg loss: 30.511236
-Epoch 13/50 — avg loss: 32.319175
-Epoch 14/50 — avg loss: 31.076939
-Epoch 15/50 — avg loss: 29.821814
-Epoch 16/50 — avg loss: 32.402190
-Epoch 17/50 — avg loss: 35.619114
-Epoch 18/50 — avg loss: 30.598063
-Epoch 19/50 — avg loss: 17.349290
-Epoch 20/50 — avg loss: 16.075505
-Epoch 21/50 — avg loss: 17.160725
-Epoch 22/50 — avg loss: 15.391398
-Epoch 23/50 — avg loss: 13.940107
-Epoch 24/50 — avg loss: 12.410298
-Epoch 25/50 — avg loss: 12.043282
-Epoch 26/50 — avg loss: 11.986177
-Epoch 27/50 — avg loss: 12.513906
-Epoch 28/50 — avg loss: 12.092084
-Epoch 29/50 — avg loss: 11.058830
-Epoch 30/50 — avg loss: 14.068275
-Epoch 31/50 — avg loss: 15.560246
-Epoch 32/50 — avg loss: 17.312788
-Epoch 33/50 — avg loss: 16.467977
-Epoch 34/50 — avg loss: 16.762115
-Epoch 35/50 — avg loss: 16.011755
-Epoch 36/50 — avg loss: 11.576574
-Epoch 37/50 — avg loss: 9.022960
-Epoch 38/50 — avg loss: 8.436376
-Epoch 39/50 — avg loss: 7.711821
-Epoch 40/50 — avg loss: 7.329194
-Epoch 41/50 — avg loss: 6.932298
-Epoch 42/50 — avg loss: 6.949450
-Epoch 43/50 — avg loss: 6.725277
-Epoch 44/50 — avg loss: 7.196583
-Epoch 45/50 — avg loss: 7.520331
-Epoch 46/50 — avg loss: 8.496454
-Epoch 47/50 — avg loss: 9.187111
-Epoch 48/50 — avg loss: 9.301644
-Epoch 49/50 — avg loss: 10.157962
-Epoch 50/50 — avg loss: 10.286865
+Epoch 1/50 — avg loss: 2083.021163
+Epoch 2/50 — avg loss: 1027.711983
+Epoch 3/50 — avg loss: 815.931468
+Epoch 4/50 — avg loss: 616.610001
+Epoch 5/50 — avg loss: 562.710492
+Epoch 6/50 — avg loss: 505.757288
+Epoch 7/50 — avg loss: 472.168289
+Epoch 8/50 — avg loss: 444.024087
+Epoch 9/50 — avg loss: 216.206986
+Epoch 10/50 — avg loss: 68.121420
+Epoch 11/50 — avg loss: 44.980729
+Epoch 12/50 — avg loss: 46.887140
+Epoch 13/50 — avg loss: 27.610910
+Epoch 14/50 — avg loss: 21.962097
+Epoch 15/50 — avg loss: 16.543502
+Epoch 16/50 — avg loss: 14.126512
+Epoch 17/50 — avg loss: 13.625806
+Epoch 18/50 — avg loss: 12.417633
+Epoch 19/50 — avg loss: 11.773807
+Epoch 20/50 — avg loss: 12.084936
+Epoch 21/50 — avg loss: 11.255983
+Epoch 22/50 — avg loss: 11.296780
+Epoch 23/50 — avg loss: 10.992824
+Epoch 24/50 — avg loss: 10.345120
+Epoch 25/50 — avg loss: 10.662754
+Epoch 26/50 — avg loss: 11.020512
+Epoch 27/50 — avg loss: 8.579696
+Epoch 28/50 — avg loss: 8.024466
+Epoch 29/50 — avg loss: 8.413703
+Epoch 30/50 — avg loss: 8.594072
+Epoch 31/50 — avg loss: 7.412068
+Epoch 32/50 — avg loss: 7.002712
+Epoch 33/50 — avg loss: 7.057833
+Epoch 34/50 — avg loss: 7.100165
+Epoch 35/50 — avg loss: 6.403724
+Epoch 36/50 — avg loss: 6.263574
+Epoch 37/50 — avg loss: 6.047621
+Epoch 38/50 — avg loss: 6.267765
+Epoch 39/50 — avg loss: 6.259613
+Epoch 40/50 — avg loss: 6.666008
+Epoch 41/50 — avg loss: 6.135220
+Epoch 42/50 — avg loss: 5.991788
+Epoch 43/50 — avg loss: 5.850759
+Epoch 44/50 — avg loss: 5.808100
+Epoch 45/50 — avg loss: 5.450362
+Epoch 46/50 — avg loss: 5.561139
+Epoch 47/50 — avg loss: 5.306045
+Epoch 48/50 — avg loss: 5.101044
+Epoch 49/50 — avg loss: 4.836282
+Epoch 50/50 — avg loss: 4.739593
 
-Test 
+Test Evalution:
 
-Accuracy: R2: -318.419941
+MSE: 226.106807, MAE: 12.301822
 
-MSE: 203.761361, MAE:11.739858
+Train Evaluation:
 
-Train 
-
-Accuracy: R2: -1946.723846
-
-MSE: 3162.865098, MAE:44.135140
-Saved model → models/LSTM_hs16_lr0.005_ep50.npz
-Saved loss plot → results/LSTM_hs16_lr0.005_ep50_loss.png
-Saved prediction plot → results/LSTM_hs16_lr0.005_ep50_predictions.png
-
+MSE: 3137.525187, MAE: 43.982679
+Saved model to models/LSTM_hs16_lr0.005_ep50.npz
+Saved loss plot to results/LSTM_hs16_lr0.005_ep50_loss.png
+Saved prediction plot to results/LSTM_hs16_lr0.005_ep50_predictions.png
 Training Model: LSTM_hs32_lr0.001_ep20
-Parameters:
-    Model Type          = LSTM
-    Hidden Size         = 32
-    Learning Rate       = 0.001
-    Epochs              = 20
-    Input Size          = 5
-    Output Size         = 1
-    Sequence Length     = 30
-    Batch Size          = 16
-    Error Function      = MSE/MAE
+Parameter Tested:
+	Model Type = LSTM
+	Hidden Size = 32
+	Learning Rate = 0.001
+	Epochs = 20
+	Number of Inputs = 5
+	Number of Outputs = 1
+	Window Length = 30
+	Batch Size = 16
+	Error Function = MSE/MAE
 
-Dataset:
-    Total Samples       = 1229
-    Train/Test Split    = 79:20
-    Train Samples       = 977
-    Test Samples        = 252
+Dataset Information:
+	Total Samples = 1199
+	Train/Test Split = 81:18
+	Train Samples = 977
+	Test Samples = 222
 Starting training.
 
-Epoch 1/20 — avg loss: 3110.493892
-Epoch 2/20 — avg loss: 1583.069508
-Epoch 3/20 — avg loss: 1182.808654
-Epoch 4/20 — avg loss: 1075.919816
-Epoch 5/20 — avg loss: 999.613430
-Epoch 6/20 — avg loss: 962.586356
-Epoch 7/20 — avg loss: 943.691357
-Epoch 8/20 — avg loss: 937.917613
-Epoch 9/20 — avg loss: 926.752455
-Epoch 10/20 — avg loss: 926.972023
-Epoch 11/20 — avg loss: 916.789200
-Epoch 12/20 — avg loss: 804.599611
-Epoch 13/20 — avg loss: 553.706964
-Epoch 14/20 — avg loss: 382.798027
-Epoch 15/20 — avg loss: 245.816549
-Epoch 16/20 — avg loss: 149.103587
-Epoch 17/20 — avg loss: 90.621448
-Epoch 18/20 — avg loss: 70.734701
-Epoch 19/20 — avg loss: 57.233897
-Epoch 20/20 — avg loss: 50.129712
+Epoch 1/20 — avg loss: 3099.269522
+Epoch 2/20 — avg loss: 1538.078537
+Epoch 3/20 — avg loss: 1172.596716
+Epoch 4/20 — avg loss: 1061.549328
+Epoch 5/20 — avg loss: 990.618700
+Epoch 6/20 — avg loss: 958.463948
+Epoch 7/20 — avg loss: 952.996995
+Epoch 8/20 — avg loss: 933.357712
+Epoch 9/20 — avg loss: 939.313799
+Epoch 10/20 — avg loss: 927.415440
+Epoch 11/20 — avg loss: 924.741528
+Epoch 12/20 — avg loss: 920.115396
+Epoch 13/20 — avg loss: 846.404777
+Epoch 14/20 — avg loss: 754.943688
+Epoch 15/20 — avg loss: 710.071885
+Epoch 16/20 — avg loss: 665.187007
+Epoch 17/20 — avg loss: 629.170651
+Epoch 18/20 — avg loss: 594.951214
+Epoch 19/20 — avg loss: 569.941566
+Epoch 20/20 — avg loss: 561.911364
 
-Test 
+Test Evalution:
 
-Accuracy: R2: -965.409629
+MSE: 2834.966359, MAE: 51.901309
 
-MSE: 616.482932, MAE:21.539924
+Train Evaluation:
 
-Train 
-
-Accuracy: R2: -1792.659795
-
-MSE: 2912.683938, MAE:42.358220
-Saved model → models/LSTM_hs32_lr0.001_ep20.npz
-Saved loss plot → results/LSTM_hs32_lr0.001_ep20_loss.png
-Saved prediction plot → results/LSTM_hs32_lr0.001_ep20_predictions.png
-
+MSE: 2090.692409, MAE: 40.835110
+Saved model to models/LSTM_hs32_lr0.001_ep20.npz
+Saved loss plot to results/LSTM_hs32_lr0.001_ep20_loss.png
+Saved prediction plot to results/LSTM_hs32_lr0.001_ep20_predictions.png
 Training Model: LSTM_hs32_lr0.001_ep30
-Parameters:
-    Model Type          = LSTM
-    Hidden Size         = 32
-    Learning Rate       = 0.001
-    Epochs              = 30
-    Input Size          = 5
-    Output Size         = 1
-    Sequence Length     = 30
-    Batch Size          = 16
-    Error Function      = MSE/MAE
+Parameter Tested:
+	Model Type = LSTM
+	Hidden Size = 32
+	Learning Rate = 0.001
+	Epochs = 30
+	Number of Inputs = 5
+	Number of Outputs = 1
+	Window Length = 30
+	Batch Size = 16
+	Error Function = MSE/MAE
 
-Dataset:
-    Total Samples       = 1229
-    Train/Test Split    = 79:20
-    Train Samples       = 977
-    Test Samples        = 252
+Dataset Information:
+	Total Samples = 1199
+	Train/Test Split = 81:18
+	Train Samples = 977
+	Test Samples = 222
 Starting training.
 
-Epoch 1/30 — avg loss: 3122.265358
-Epoch 2/30 — avg loss: 1547.778512
-Epoch 3/30 — avg loss: 1175.943734
-Epoch 4/30 — avg loss: 1069.946062
-Epoch 5/30 — avg loss: 997.180231
-Epoch 6/30 — avg loss: 964.505464
-Epoch 7/30 — avg loss: 946.585395
-Epoch 8/30 — avg loss: 932.146085
-Epoch 9/30 — avg loss: 933.159352
-Epoch 10/30 — avg loss: 917.652208
-Epoch 11/30 — avg loss: 853.572985
-Epoch 12/30 — avg loss: 762.694900
-Epoch 13/30 — avg loss: 719.379170
-Epoch 14/30 — avg loss: 667.823011
-Epoch 15/30 — avg loss: 639.143710
-Epoch 16/30 — avg loss: 616.136335
-Epoch 17/30 — avg loss: 611.067238
-Epoch 18/30 — avg loss: 611.288952
-Epoch 19/30 — avg loss: 597.016806
-Epoch 20/30 — avg loss: 597.988765
-Epoch 21/30 — avg loss: 614.616879
-Epoch 22/30 — avg loss: 620.866668
-Epoch 23/30 — avg loss: 654.918170
-Epoch 24/30 — avg loss: 656.901447
-Epoch 25/30 — avg loss: 666.423079
-Epoch 26/30 — avg loss: 402.022714
-Epoch 27/30 — avg loss: 130.435079
-Epoch 28/30 — avg loss: 78.631950
-Epoch 29/30 — avg loss: 60.271495
-Epoch 30/30 — avg loss: 46.439412
+Epoch 1/30 — avg loss: 3104.993312
+Epoch 2/30 — avg loss: 1553.838644
+Epoch 3/30 — avg loss: 1180.022451
+Epoch 4/30 — avg loss: 1080.212468
+Epoch 5/30 — avg loss: 1002.451353
+Epoch 6/30 — avg loss: 961.256044
+Epoch 7/30 — avg loss: 946.272524
+Epoch 8/30 — avg loss: 940.146763
+Epoch 9/30 — avg loss: 922.484585
+Epoch 10/30 — avg loss: 912.613039
+Epoch 11/30 — avg loss: 759.550089
+Epoch 12/30 — avg loss: 515.300170
+Epoch 13/30 — avg loss: 348.358730
+Epoch 14/30 — avg loss: 217.533562
+Epoch 15/30 — avg loss: 135.644443
+Epoch 16/30 — avg loss: 123.890198
+Epoch 17/30 — avg loss: 109.138874
+Epoch 18/30 — avg loss: 97.839790
+Epoch 19/30 — avg loss: 62.475057
+Epoch 20/30 — avg loss: 63.141047
+Epoch 21/30 — avg loss: 58.751940
+Epoch 22/30 — avg loss: 137.938276
+Epoch 23/30 — avg loss: 65.020549
+Epoch 24/30 — avg loss: 56.980933
+Epoch 25/30 — avg loss: 50.866341
+Epoch 26/30 — avg loss: 66.512467
+Epoch 27/30 — avg loss: 63.345595
+Epoch 28/30 — avg loss: 91.768856
+Epoch 29/30 — avg loss: 65.710088
+Epoch 30/30 — avg loss: 48.374846
 
-Test 
+Test Evalution:
 
-Accuracy: R2: -782.198962
+MSE: 397.141803, MAE: 16.599837
 
-MSE: 499.610908, MAE:18.913531
+Train Evaluation:
 
-Train 
-
-Accuracy: R2: -1798.576869
-
-MSE: 2922.292542, MAE:42.125006
-Saved model → models/LSTM_hs32_lr0.001_ep30.npz
-Saved loss plot → results/LSTM_hs32_lr0.001_ep30_loss.png
-Saved prediction plot → results/LSTM_hs32_lr0.001_ep30_predictions.png
-
+MSE: 2635.064864, MAE: 41.032007
+Saved model to models/LSTM_hs32_lr0.001_ep30.npz
+Saved loss plot to results/LSTM_hs32_lr0.001_ep30_loss.png
+Saved prediction plot to results/LSTM_hs32_lr0.001_ep30_predictions.png
 Training Model: LSTM_hs32_lr0.001_ep50
-Parameters:
-    Model Type          = LSTM
-    Hidden Size         = 32
-    Learning Rate       = 0.001
-    Epochs              = 50
-    Input Size          = 5
-    Output Size         = 1
-    Sequence Length     = 30
-    Batch Size          = 16
-    Error Function      = MSE/MAE
+Parameter Tested:
+	Model Type = LSTM
+	Hidden Size = 32
+	Learning Rate = 0.001
+	Epochs = 50
+	Number of Inputs = 5
+	Number of Outputs = 1
+	Window Length = 30
+	Batch Size = 16
+	Error Function = MSE/MAE
 
-Dataset:
-    Total Samples       = 1229
-    Train/Test Split    = 79:20
-    Train Samples       = 977
-    Test Samples        = 252
+Dataset Information:
+	Total Samples = 1199
+	Train/Test Split = 81:18
+	Train Samples = 977
+	Test Samples = 222
 Starting training.
 
-Epoch 1/50 — avg loss: 3130.197841
-Epoch 2/50 — avg loss: 1542.955240
-Epoch 3/50 — avg loss: 1175.282812
-Epoch 4/50 — avg loss: 1077.501668
-Epoch 5/50 — avg loss: 1007.036508
-Epoch 6/50 — avg loss: 961.517320
-Epoch 7/50 — avg loss: 948.017146
-Epoch 8/50 — avg loss: 933.490367
-Epoch 9/50 — avg loss: 937.454385
-Epoch 10/50 — avg loss: 926.947283
-Epoch 11/50 — avg loss: 903.124173
-Epoch 12/50 — avg loss: 806.382384
-Epoch 13/50 — avg loss: 734.875464
-Epoch 14/50 — avg loss: 693.246670
-Epoch 15/50 — avg loss: 643.396108
-Epoch 16/50 — avg loss: 609.018347
-Epoch 17/50 — avg loss: 600.829039
-Epoch 18/50 — avg loss: 601.158600
-Epoch 19/50 — avg loss: 590.656314
-Epoch 20/50 — avg loss: 612.329833
-Epoch 21/50 — avg loss: 590.611408
-Epoch 22/50 — avg loss: 624.861194
-Epoch 23/50 — avg loss: 643.133867
-Epoch 24/50 — avg loss: 660.766154
-Epoch 25/50 — avg loss: 648.192046
-Epoch 26/50 — avg loss: 619.056782
-Epoch 27/50 — avg loss: 471.156819
-Epoch 28/50 — avg loss: 224.113933
-Epoch 29/50 — avg loss: 134.097716
-Epoch 30/50 — avg loss: 89.485506
-Epoch 31/50 — avg loss: 69.936861
-Epoch 32/50 — avg loss: 49.544109
-Epoch 33/50 — avg loss: 36.986880
-Epoch 34/50 — avg loss: 31.375742
-Epoch 35/50 — avg loss: 29.232126
-Epoch 36/50 — avg loss: 27.554888
-Epoch 37/50 — avg loss: 28.505696
-Epoch 38/50 — avg loss: 27.108073
-Epoch 39/50 — avg loss: 23.752640
-Epoch 40/50 — avg loss: 22.511465
-Epoch 41/50 — avg loss: 22.581450
-Epoch 42/50 — avg loss: 21.870713
-Epoch 43/50 — avg loss: 20.313765
-Epoch 44/50 — avg loss: 17.852259
-Epoch 45/50 — avg loss: 16.872401
-Epoch 46/50 — avg loss: 17.830494
-Epoch 47/50 — avg loss: 17.316335
-Epoch 48/50 — avg loss: 16.707071
-Epoch 49/50 — avg loss: 14.791260
-Epoch 50/50 — avg loss: 14.662758
+Epoch 1/50 — avg loss: 3130.749125
+Epoch 2/50 — avg loss: 1514.943344
+Epoch 3/50 — avg loss: 1152.901565
+Epoch 4/50 — avg loss: 1050.738790
+Epoch 5/50 — avg loss: 995.292530
+Epoch 6/50 — avg loss: 961.411870
+Epoch 7/50 — avg loss: 947.275527
+Epoch 8/50 — avg loss: 936.230088
+Epoch 9/50 — avg loss: 931.382061
+Epoch 10/50 — avg loss: 919.608918
+Epoch 11/50 — avg loss: 876.663825
+Epoch 12/50 — avg loss: 776.389844
+Epoch 13/50 — avg loss: 712.980872
+Epoch 14/50 — avg loss: 686.890239
+Epoch 15/50 — avg loss: 640.145752
+Epoch 16/50 — avg loss: 616.643409
+Epoch 17/50 — avg loss: 607.528042
+Epoch 18/50 — avg loss: 592.730806
+Epoch 19/50 — avg loss: 582.033792
+Epoch 20/50 — avg loss: 587.969886
+Epoch 21/50 — avg loss: 566.303156
+Epoch 22/50 — avg loss: 582.868662
+Epoch 23/50 — avg loss: 583.027032
+Epoch 24/50 — avg loss: 592.566477
+Epoch 25/50 — avg loss: 622.120906
+Epoch 26/50 — avg loss: 585.764885
+Epoch 27/50 — avg loss: 270.364352
+Epoch 28/50 — avg loss: 187.138988
+Epoch 29/50 — avg loss: 139.202158
+Epoch 30/50 — avg loss: 88.732895
+Epoch 31/50 — avg loss: 69.694281
+Epoch 32/50 — avg loss: 47.064923
+Epoch 33/50 — avg loss: 34.445397
+Epoch 34/50 — avg loss: 26.387401
+Epoch 35/50 — avg loss: 22.879623
+Epoch 36/50 — avg loss: 20.559515
+Epoch 37/50 — avg loss: 18.838315
+Epoch 38/50 — avg loss: 17.789526
+Epoch 39/50 — avg loss: 18.207091
+Epoch 40/50 — avg loss: 17.928393
+Epoch 41/50 — avg loss: 17.983301
+Epoch 42/50 — avg loss: 18.546179
+Epoch 43/50 — avg loss: 19.042890
+Epoch 44/50 — avg loss: 21.583601
+Epoch 45/50 — avg loss: 27.868907
+Epoch 46/50 — avg loss: 31.848801
+Epoch 47/50 — avg loss: 33.479672
+Epoch 48/50 — avg loss: 33.422834
+Epoch 49/50 — avg loss: 32.089043
+Epoch 50/50 — avg loss: 21.559596
 
-Test 
+Test Evalution:
 
-Accuracy: R2: -356.690101
+MSE: 204.488437, MAE: 11.394431
 
-MSE: 228.174302, MAE:12.247001
+Train Evaluation:
 
-Train 
-
-Accuracy: R2: -1900.713559
-
-MSE: 3088.150024, MAE:43.619632
-Saved model → models/LSTM_hs32_lr0.001_ep50.npz
-Saved loss plot → results/LSTM_hs32_lr0.001_ep50_loss.png
-Saved prediction plot → results/LSTM_hs32_lr0.001_ep50_predictions.png
-
+MSE: 3058.810008, MAE: 43.421754
+Saved model to models/LSTM_hs32_lr0.001_ep50.npz
+Saved loss plot to results/LSTM_hs32_lr0.001_ep50_loss.png
+Saved prediction plot to results/LSTM_hs32_lr0.001_ep50_predictions.png
 Training Model: LSTM_hs32_lr0.005_ep20
-Parameters:
-    Model Type          = LSTM
-    Hidden Size         = 32
-    Learning Rate       = 0.005
-    Epochs              = 20
-    Input Size          = 5
-    Output Size         = 1
-    Sequence Length     = 30
-    Batch Size          = 16
-    Error Function      = MSE/MAE
+Parameter Tested:
+	Model Type = LSTM
+	Hidden Size = 32
+	Learning Rate = 0.005
+	Epochs = 20
+	Number of Inputs = 5
+	Number of Outputs = 1
+	Window Length = 30
+	Batch Size = 16
+	Error Function = MSE/MAE
 
-Dataset:
-    Total Samples       = 1229
-    Train/Test Split    = 79:20
-    Train Samples       = 977
-    Test Samples        = 252
+Dataset Information:
+	Total Samples = 1199
+	Train/Test Split = 81:18
+	Train Samples = 977
+	Test Samples = 222
 Starting training.
 
-Epoch 1/20 — avg loss: 1613.605885
-Epoch 2/20 — avg loss: 945.635062
-Epoch 3/20 — avg loss: 582.881837
-Epoch 4/20 — avg loss: 106.230653
-Epoch 5/20 — avg loss: 44.792101
-Epoch 6/20 — avg loss: 23.283293
-Epoch 7/20 — avg loss: 15.417415
-Epoch 8/20 — avg loss: 12.245485
-Epoch 9/20 — avg loss: 9.573209
-Epoch 10/20 — avg loss: 7.934897
-Epoch 11/20 — avg loss: 6.567437
-Epoch 12/20 — avg loss: 6.036818
-Epoch 13/20 — avg loss: 5.609897
-Epoch 14/20 — avg loss: 5.183040
-Epoch 15/20 — avg loss: 5.316006
-Epoch 16/20 — avg loss: 4.859824
-Epoch 17/20 — avg loss: 4.716991
-Epoch 18/20 — avg loss: 4.413061
-Epoch 19/20 — avg loss: 4.001339
-Epoch 20/20 — avg loss: 3.767567
+Epoch 1/20 — avg loss: 1574.174341
+Epoch 2/20 — avg loss: 942.013549
+Epoch 3/20 — avg loss: 497.682202
+Epoch 4/20 — avg loss: 95.967633
+Epoch 5/20 — avg loss: 38.133544
+Epoch 6/20 — avg loss: 22.258889
+Epoch 7/20 — avg loss: 16.902227
+Epoch 8/20 — avg loss: 18.428729
+Epoch 9/20 — avg loss: 13.258552
+Epoch 10/20 — avg loss: 13.448209
+Epoch 11/20 — avg loss: 7.686320
+Epoch 12/20 — avg loss: 6.893906
+Epoch 13/20 — avg loss: 5.954705
+Epoch 14/20 — avg loss: 5.168858
+Epoch 15/20 — avg loss: 4.697723
+Epoch 16/20 — avg loss: 4.436121
+Epoch 17/20 — avg loss: 4.804251
+Epoch 18/20 — avg loss: 4.265872
+Epoch 19/20 — avg loss: 50.952995
+Epoch 20/20 — avg loss: 36.884161
 
-Test 
+Test Evalution:
 
-Accuracy: R2: -452.661242
+MSE: 359.540862, MAE: 15.593875
 
-MSE: 289.395308, MAE:13.869404
+Train Evaluation:
 
-Train 
-
-Accuracy: R2: -1952.124638
-
-MSE: 3171.635323, MAE:44.222691
-Saved model → models/LSTM_hs32_lr0.005_ep20.npz
-Saved loss plot → results/LSTM_hs32_lr0.005_ep20_loss.png
-Saved prediction plot → results/LSTM_hs32_lr0.005_ep20_predictions.png
-
+MSE: 3071.713296, MAE: 43.433349
+Saved model to models/LSTM_hs32_lr0.005_ep20.npz
+Saved loss plot to results/LSTM_hs32_lr0.005_ep20_loss.png
+Saved prediction plot to results/LSTM_hs32_lr0.005_ep20_predictions.png
 Training Model: LSTM_hs32_lr0.005_ep30
-Parameters:
-    Model Type          = LSTM
-    Hidden Size         = 32
-    Learning Rate       = 0.005
-    Epochs              = 30
-    Input Size          = 5
-    Output Size         = 1
-    Sequence Length     = 30
-    Batch Size          = 16
-    Error Function      = MSE/MAE
+Parameter Tested:
+	Model Type = LSTM
+	Hidden Size = 32
+	Learning Rate = 0.005
+	Epochs = 30
+	Number of Inputs = 5
+	Number of Outputs = 1
+	Window Length = 30
+	Batch Size = 16
+	Error Function = MSE/MAE
 
-Dataset:
-    Total Samples       = 1229
-    Train/Test Split    = 79:20
-    Train Samples       = 977
-    Test Samples        = 252
+Dataset Information:
+	Total Samples = 1199
+	Train/Test Split = 81:18
+	Train Samples = 977
+	Test Samples = 222
 Starting training.
 
-Epoch 1/30 — avg loss: 1616.718319
-Epoch 2/30 — avg loss: 968.393036
-Epoch 3/30 — avg loss: 837.512242
-Epoch 4/30 — avg loss: 384.676698
-Epoch 5/30 — avg loss: 110.739356
-Epoch 6/30 — avg loss: 58.646010
-Epoch 7/30 — avg loss: 38.797866
-Epoch 8/30 — avg loss: 22.633206
-Epoch 9/30 — avg loss: 16.946303
-Epoch 10/30 — avg loss: 12.575404
-Epoch 11/30 — avg loss: 11.101401
-Epoch 12/30 — avg loss: 8.685663
-Epoch 13/30 — avg loss: 7.026332
-Epoch 14/30 — avg loss: 6.414968
-Epoch 15/30 — avg loss: 5.523088
-Epoch 16/30 — avg loss: 4.843820
-Epoch 17/30 — avg loss: 4.324429
-Epoch 18/30 — avg loss: 4.507187
-Epoch 19/30 — avg loss: 4.031080
-Epoch 20/30 — avg loss: 4.155588
-Epoch 21/30 — avg loss: 3.963833
-Epoch 22/30 — avg loss: 3.522294
-Epoch 23/30 — avg loss: 3.961298
-Epoch 24/30 — avg loss: 3.575403
-Epoch 25/30 — avg loss: 3.530281
-Epoch 26/30 — avg loss: 3.331041
-Epoch 27/30 — avg loss: 3.417066
-Epoch 28/30 — avg loss: 3.212690
-Epoch 29/30 — avg loss: 3.267663
-Epoch 30/30 — avg loss: 3.509586
+Epoch 1/30 — avg loss: 1526.414571
+Epoch 2/30 — avg loss: 921.216020
+Epoch 3/30 — avg loss: 725.349669
+Epoch 4/30 — avg loss: 164.004059
+Epoch 5/30 — avg loss: 47.990413
+Epoch 6/30 — avg loss: 25.515186
+Epoch 7/30 — avg loss: 17.815227
+Epoch 8/30 — avg loss: 16.015960
+Epoch 9/30 — avg loss: 13.527320
+Epoch 10/30 — avg loss: 11.611158
+Epoch 11/30 — avg loss: 10.603875
+Epoch 12/30 — avg loss: 8.242282
+Epoch 13/30 — avg loss: 7.012642
+Epoch 14/30 — avg loss: 6.224161
+Epoch 15/30 — avg loss: 5.470734
+Epoch 16/30 — avg loss: 5.144731
+Epoch 17/30 — avg loss: 5.369727
+Epoch 18/30 — avg loss: 5.001073
+Epoch 19/30 — avg loss: 4.872679
+Epoch 20/30 — avg loss: 4.547562
+Epoch 21/30 — avg loss: 3.823016
+Epoch 22/30 — avg loss: 3.645293
+Epoch 23/30 — avg loss: 3.434078
+Epoch 24/30 — avg loss: 3.211298
+Epoch 25/30 — avg loss: 3.242244
+Epoch 26/30 — avg loss: 3.240357
+Epoch 27/30 — avg loss: 3.071171
+Epoch 28/30 — avg loss: 3.053822
+Epoch 29/30 — avg loss: 3.157119
+Epoch 30/30 — avg loss: 2.971283
 
-Test 
+Test Evalution:
 
-Accuracy: R2: -494.048441
+MSE: 289.582291, MAE: 13.838268
 
-MSE: 315.796641, MAE:14.487067
+Train Evaluation:
 
-Train 
-
-Accuracy: R2: -1924.968194
-
-MSE: 3127.536583, MAE:43.870218
-Saved model → models/LSTM_hs32_lr0.005_ep30.npz
-Saved loss plot → results/LSTM_hs32_lr0.005_ep30_loss.png
-Saved prediction plot → results/LSTM_hs32_lr0.005_ep30_predictions.png
-
+MSE: 3166.179243, MAE: 44.130374
+Saved model to models/LSTM_hs32_lr0.005_ep30.npz
+Saved loss plot to results/LSTM_hs32_lr0.005_ep30_loss.png
+Saved prediction plot to results/LSTM_hs32_lr0.005_ep30_predictions.png
 Training Model: LSTM_hs32_lr0.005_ep50
-Parameters:
-    Model Type          = LSTM
-    Hidden Size         = 32
-    Learning Rate       = 0.005
-    Epochs              = 50
-    Input Size          = 5
-    Output Size         = 1
-    Sequence Length     = 30
-    Batch Size          = 16
-    Error Function      = MSE/MAE
+Parameter Tested:
+	Model Type = LSTM
+	Hidden Size = 32
+	Learning Rate = 0.005
+	Epochs = 50
+	Number of Inputs = 5
+	Number of Outputs = 1
+	Window Length = 30
+	Batch Size = 16
+	Error Function = MSE/MAE
 
-Dataset:
-    Total Samples       = 1229
-    Train/Test Split    = 79:20
-    Train Samples       = 977
-    Test Samples        = 252
+Dataset Information:
+	Total Samples = 1199
+	Train/Test Split = 81:18
+	Train Samples = 977
+	Test Samples = 222
 Starting training.
 
-Epoch 1/50 — avg loss: 1600.453988
-Epoch 2/50 — avg loss: 950.018896
-Epoch 3/50 — avg loss: 921.983273
-Epoch 4/50 — avg loss: 434.417122
-Epoch 5/50 — avg loss: 82.886920
-Epoch 6/50 — avg loss: 51.476580
-Epoch 7/50 — avg loss: 28.804046
-Epoch 8/50 — avg loss: 15.476779
-Epoch 9/50 — avg loss: 10.286974
-Epoch 10/50 — avg loss: 9.037322
-Epoch 11/50 — avg loss: 8.835271
-Epoch 12/50 — avg loss: 7.569696
-Epoch 13/50 — avg loss: 6.403922
-Epoch 14/50 — avg loss: 6.117406
-Epoch 15/50 — avg loss: 6.050280
-Epoch 16/50 — avg loss: 6.033201
-Epoch 17/50 — avg loss: 5.401916
-Epoch 18/50 — avg loss: 4.758725
-Epoch 19/50 — avg loss: 5.023444
-Epoch 20/50 — avg loss: 4.751844
-Epoch 21/50 — avg loss: 4.400074
-Epoch 22/50 — avg loss: 4.112812
-Epoch 23/50 — avg loss: 3.853270
-Epoch 24/50 — avg loss: 3.877327
-Epoch 25/50 — avg loss: 3.867820
-Epoch 26/50 — avg loss: 3.620909
-Epoch 27/50 — avg loss: 3.903932
-Epoch 28/50 — avg loss: 3.759849
-Epoch 29/50 — avg loss: 3.718474
-Epoch 30/50 — avg loss: 3.472294
-Epoch 31/50 — avg loss: 3.506172
-Epoch 32/50 — avg loss: 3.880859
-Epoch 33/50 — avg loss: 3.616189
-Epoch 34/50 — avg loss: 3.254704
-Epoch 35/50 — avg loss: 3.732230
-Epoch 36/50 — avg loss: 3.286739
-Epoch 37/50 — avg loss: 2.941732
-Epoch 38/50 — avg loss: 3.326961
-Epoch 39/50 — avg loss: 3.168096
-Epoch 40/50 — avg loss: 3.124601
-Epoch 41/50 — avg loss: 3.036953
-Epoch 42/50 — avg loss: 3.002360
-Epoch 43/50 — avg loss: 2.784109
-Epoch 44/50 — avg loss: 2.721866
-Epoch 45/50 — avg loss: 2.858217
-Epoch 46/50 — avg loss: 2.824443
-Epoch 47/50 — avg loss: 2.700259
-Epoch 48/50 — avg loss: 2.738916
-Epoch 49/50 — avg loss: 2.718799
-Epoch 50/50 — avg loss: 2.655359
+Epoch 1/50 — avg loss: 1568.999108
+Epoch 2/50 — avg loss: 935.112657
+Epoch 3/50 — avg loss: 599.393054
+Epoch 4/50 — avg loss: 144.777463
+Epoch 5/50 — avg loss: 62.788950
+Epoch 6/50 — avg loss: 39.825644
+Epoch 7/50 — avg loss: 21.506238
+Epoch 8/50 — avg loss: 16.449301
+Epoch 9/50 — avg loss: 9.838321
+Epoch 10/50 — avg loss: 7.598120
+Epoch 11/50 — avg loss: 7.663661
+Epoch 12/50 — avg loss: 7.230748
+Epoch 13/50 — avg loss: 6.612638
+Epoch 14/50 — avg loss: 4.785216
+Epoch 15/50 — avg loss: 4.068124
+Epoch 16/50 — avg loss: 4.172026
+Epoch 17/50 — avg loss: 3.818422
+Epoch 18/50 — avg loss: 3.804711
+Epoch 19/50 — avg loss: 3.611202
+Epoch 20/50 — avg loss: 4.165462
+Epoch 21/50 — avg loss: 3.502695
+Epoch 22/50 — avg loss: 3.274676
+Epoch 23/50 — avg loss: 3.539384
+Epoch 24/50 — avg loss: 3.451558
+Epoch 25/50 — avg loss: 3.200765
+Epoch 26/50 — avg loss: 3.253919
+Epoch 27/50 — avg loss: 3.387410
+Epoch 28/50 — avg loss: 3.375479
+Epoch 29/50 — avg loss: 3.435277
+Epoch 30/50 — avg loss: 4.055937
+Epoch 31/50 — avg loss: 3.143129
+Epoch 32/50 — avg loss: 2.861747
+Epoch 33/50 — avg loss: 2.859097
+Epoch 34/50 — avg loss: 3.070699
+Epoch 35/50 — avg loss: 2.932614
+Epoch 36/50 — avg loss: 2.887938
+Epoch 37/50 — avg loss: 2.657541
+Epoch 38/50 — avg loss: 2.652875
+Epoch 39/50 — avg loss: 2.927810
+Epoch 40/50 — avg loss: 2.647919
+Epoch 41/50 — avg loss: 2.665402
+Epoch 42/50 — avg loss: 2.593269
+Epoch 43/50 — avg loss: 2.686650
+Epoch 44/50 — avg loss: 2.628140
+Epoch 45/50 — avg loss: 2.622505
+Epoch 46/50 — avg loss: 2.585903
+Epoch 47/50 — avg loss: 2.403674
+Epoch 48/50 — avg loss: 2.561148
+Epoch 49/50 — avg loss: 2.495237
+Epoch 50/50 — avg loss: 2.461993
 
-Test 
+Test Evalution:
 
-Accuracy: R2: -538.505982
+MSE: 282.709399, MAE: 13.663352
 
-MSE: 344.156577, MAE:15.130624
+Train Evaluation:
 
-Train 
-
-Accuracy: R2: -2011.134090
-
-MSE: 3267.459449, MAE:44.847647
-Saved model → models/LSTM_hs32_lr0.005_ep50.npz
-Saved loss plot → results/LSTM_hs32_lr0.005_ep50_loss.png
-Saved prediction plot → results/LSTM_hs32_lr0.005_ep50_predictions.png
-
-Best LSTM Model: LSTM_hs16_lr0.005_ep50 with MSE: 203.761361, MAE: 11.739858
-Saved metric bar plot → results/LSTM_mse_comparison.png
-Saved metric bar plot → results/LSTM_mae_comparison.png
-Saved R² comparison plot → results/LSTM_r2_comparison.png
+MSE: 3189.186450, MAE: 44.284673
+Saved model to models/LSTM_hs32_lr0.005_ep50.npz
+Saved loss plot to results/LSTM_hs32_lr0.005_ep50_loss.png
+Saved prediction plot to results/LSTM_hs32_lr0.005_ep50_predictions.png
+Best LSTM Model: LSTM_hs32_lr0.001_ep50
+MSE: 204.488437
+MAE: 11.394431
+Saved metric bar plot to results/LSTM_mse_comparison.png
+Saved metric bar plot to results/LSTM_mae_comparison.png
