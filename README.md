@@ -98,9 +98,33 @@ Required packages include numpy, pandas, matplotlib, scikit-learn, torch (for Da
 
 ## Usage
 
-### Running the full training pipeline
+### Important: Data is not included in repository
 
-To train all 24 model configurations:
+The dataset is retrieved via Yahoo Finance API and is not hosted in this repository. You must download and preprocess the data before training.
+
+### Step 1: Download the data
+
+First, download AAPL stock data from Yahoo Finance API:
+
+```bash
+python src/data_loader.py
+```
+
+This downloads 5 years of AAPL data (2018-2022) and saves it to `data/raw/raw_data.parquet`.
+
+### Step 2: Preprocess the data
+
+Generate normalized sequences from the raw data:
+
+```bash
+python src/preprocess.py
+```
+
+This creates normalized features and 30-day sequences, saving them to `data/preprocessed/`.
+
+### Step 3: Train the models
+
+Run the full training pipeline to train all 24 model configurations:
 
 ```bash
 python src/train.py
@@ -109,22 +133,6 @@ python src/train.py
 This will train 12 RNN variants and 12 LSTM variants across different hyperparameter combinations, save all models to the models directory, generate visualizations in results, and log complete training details to results/training_output.log.
 
 Training typically takes 30-60 minutes depending on hardware.
-
-### Downloading data
-
-To download AAPL stock data separately:
-
-```bash
-python src/data_loader.py
-```
-
-### Preprocessing data
-
-To generate normalized sequences:
-
-```bash
-python src/preprocess.py
-```
 
 ## Hyperparameter Grid
 
@@ -174,6 +182,8 @@ The results directory contains comprehensive visualizations for each model:
 
 - Training loss curves showing convergence behavior
 - Prediction vs actual price comparisons on test data
+- Bar charts comparing MSE across all configurations
+- Bar charts comparing MAE across all configurations  
 - R-squared comparisons between training and test sets
 
 ## Implementation Details
@@ -214,8 +224,18 @@ Both implementations use backpropagation through time for gradient computation. 
 
 This project was completed as the final project for CS 4375 - Introduction to Machine Learning at the University of Texas at Dallas in Fall 2024. The project requirements included implementing a machine learning technique from scratch without using built-in libraries for the core algorithm, applying it to a real-world dataset, and producing a comprehensive analysis with visualizations.
 
+## References
+
+S. Hochreiter and J. Schmidhuber, "Long short-term memory," Neural Computation, vol. 9, no. 8, pp. 1735-1780, 1997.
+
+F. A. Gers, J. Schmidhuber, and F. Cummins, "Learning to forget: Continual prediction with LSTM," Neural Computation, vol. 12, no. 10, pp. 2451-2471, 2000.
+
+R. Pascanu, T. Mikolov, and Y. Bengio, "On the difficulty of training recurrent neural networks," in Proc. 30th Int. Conf. Machine Learning, 2013, pp. 1310-1318.
+
+Z. C. Lipton, J. Berkowitz, and C. Elkan, "A critical review of recurrent neural networks for sequence learning," arXiv preprint arXiv:1506.00019, 2015.
+
 ## Contact
 
 For questions about this project, contact the team members at their UTD email addresses.
 
-Last updated: November 28, 2024
+Last updated: November 30, 2024
