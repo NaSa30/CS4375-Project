@@ -19,20 +19,27 @@ def preprocess_data(csv_path, window_len=30, featureColumns=None, target_col='Cl
     train_split = df.iloc[:split_loc]
     test_split = df.iloc[split_loc:]
 
-    scaler = MinMaxScaler() #scale the features for performance
+    #scale the input features
+    scaler_input = MinMaxScaler() #scale the features for performance
     train_f = train_split[featureColumns].values.astype(np.float32)
-    train_f_scaled = scaler.fit_transform(train_f)
+    train_f_scaled = scaler_input.fit_transform(train_f)
     test_f = test_split[featureColumns].values.astype(np.float32)
-    test_f_scaled = scaler.transform(test_f)
+    test_f_scaled = scaler_input.transform(test_f)
+    #scale the output target
+    scaler_output = MinMaxScaler()
+    train_t = train_split[[target_col]].values.astype(np.float32)
+    train_t_scaled = scaler_output.fit_transform(train_t)
+    test_t = test_split[[target_col]].values.astype(np.float32)
+    test_t_scaled = scaler_output.transform(test_t)
     
     train_t = train_split[target_col].values.astype(np.float32)
     test_t = test_split[target_col].values.astype(np.float32)
-    
+
     # make windowed sequences for the model
-    X_train, y_train = sequence_maker(train_f_scaled, train_t, window_len)
-    X_test, y_test = sequence_maker(test_f_scaled, test_t, window_len)
+    X_train, y_train = sequence_maker(train_f_scaled, train_t_scaled, window_len)
+    X_test, y_test = sequence_maker(test_f_scaled, test_t_scaled, window_len)
     
-    return X_train, y_train, X_test, y_test, scaler
+    return X_train, y_train, X_test, y_test, scaler_input, scaler_output
 
 
 def sequence_maker(features, targets, window_len):

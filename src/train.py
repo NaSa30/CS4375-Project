@@ -2,7 +2,7 @@ import os
 import numpy as np
 from rnn import RNN
 from lstm import LSTM
-from preproc import preprocess_data
+from preprocess import preprocess_data
 import matplotlib.pyplot as plt
 import sys
 
@@ -45,20 +45,24 @@ def train(model, X_train, y_train, batch_size=16, epochs=10, verbose=1):
     return all_losses
 
 # evaluate model on test set
-def evaluate(model, X, y):
-    model_preds = []
+def evaluate(model, X, y, scaler_output):
+    model_preds_scaled = []
     
     for i in range(len(X)):
         pred = model.predict(X[i])
-        model_preds.append(pred)
+        model_preds_scaled.append(pred)
     
-    model_preds = np.array(model_preds)
-    targets = y
+    model_preds_scaled = np.array(model_preds_scaled).reshape(-1, 1)
+    targetsScaled = y.reshape(-1, 1)
+    #inverse scale the predictions and targets
+    model_preds = scaler_output.inverse_transform(model_preds_scaled).flatten()
+    targets = scaler_output.inverse_transform(targetsScaled).flatten()
     
     mse = np.mean((model_preds - targets)**2)
     mae = np.mean(np.abs(model_preds - targets))
-    print(f"\nMSE: {mse:.6f}, MAE: {mae:.6f}")
-    return model_preds, targets, {"mse": mse, "mae": mae}
+    rmse = np.sqrt(mse)
+    print(f"\nMSE: {mse:.6f}, MAE: {mae:.6f}, RMSE: {rmse:.6f}")
+    return model_preds, targets, {"mse": mse, "mae": mae, "rmse": rmse}
 
 
 def plot_losses(losses, plot_path="training_loss.png"):
@@ -78,7 +82,7 @@ def plot_predictions(model_preds, targets, title, plot_path):
     plt.plot(targets, label="True", linewidth=2)
     plt.plot(model_preds, label="Predicted", alpha=0.8)
     plt.xlabel("Time")
-    plt.ylabel("Scaled Price")
+    plt.ylabel("Actual Price")
     plt.title(title)
     plt.legend()
     plt.grid(True)
@@ -127,7 +131,7 @@ def main():
     epochs_list = [20, 30, 50]
     
     # Load and preprocess data once
-    X_train, y_train, X_test, y_test, scaler = preprocess_data(
+    X_train, y_train, X_test, y_test, scaler_input, scaler_output = preprocess_data(
         csv_path,
         window_len=window_len,
         train_test_split=0.8
@@ -176,11 +180,11 @@ def main():
                     
                     # Evaluate on test set
                     print("\nTest Evalution:")
-                    model_preds, targets, metrics = evaluate(model, X_test, y_test)
+                    model_preds, targets, metrics = evaluate(model, X_test, y_test, scaler_output)
                     
                     # Evaluate on train set
                     print("\nTrain Evaluation:")
-                    train_preds, train_targets, train_metrics = evaluate(model, X_train, y_train)
+                    train_preds, train_targets, train_metrics = evaluate(model, X_train, y_train, scaler_output)
                     
                     # Save model
                     model_path = os.path.join("models", f"{model_name}.npz")
