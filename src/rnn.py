@@ -1,23 +1,21 @@
-"""
-Using NumPy to create RNN from scratch
-"""
+#numpy used to create the RNN from scratch
 import numpy as np
 
-# convert_to_numpy() : Converts the input (like PyTorch tensors) to a numpy array
+# convert_to_numpy() :this function onverts the input to a numpy array
 def convert_to_numpy(x):
     return np.array(x)
 
 class RNN:
-    ### BASE : Calculate and initalize the required variables
+    #objective is to calc and initalize the required variables
     def __init__(self, inputSize, hiddenSize, outputSize, length, learnRate, seed=None):
         # check if seed is empty
         if seed is not None:
             np.random.seed(seed)
 
-        # Assign inputted variables to the designated class variables
-        self.inputSize = inputSize      # x
-        self.hiddenSize = hiddenSize    # h
-        self.outputSize = outputSize    # y
+        # Assign the inputted variables to the their corresponding class variables
+        self.inputSize = inputSize # x
+        self.hiddenSize = hiddenSize  # h
+        self.outputSize = outputSize  #y
         self.length = length
         self.learnRate = learnRate
         self.seed = seed
@@ -31,7 +29,7 @@ class RNN:
         self.bias_h = np.zeros((hiddenSize, 1)) # Bias for hidden layer
         self.bias_y = np.zeros((outputSize, 1)) # Bias for output lauer
 
-    ### forward() : Forward pass throughout time
+    # forward() : Forward pass throughout time
     def forward(self, input):
         input = convert_to_numpy(input)
         self.hiddenStates = {}
@@ -93,7 +91,7 @@ class RNN:
 
         return float(loss)
     
-    ### train_from_data() : Uses sample by sample SGD to train data from data_loader.py
+    # train_from_data() : Uses sample by sample SGD to train data from data_loader.py
     def train_from_data(self, data, epochs, verbose):
         losses = []
 
